@@ -17,6 +17,7 @@
   width: 380px;
   border-radius: 10px;
   height: 250px;
+  object-fit: contain;
 }
 
 .category-name {
