@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Meeting.css";
 import arrow from "../../../../assets/img/row.png";
 import { Link, useParams } from "react-router-dom";
-import meeting from "../../../../assets/img/meeting.png";
+import meeting from "../../../../assets/img/meeting.jpg";
 import play from "../../../../assets/img/play.png";
 import meetings from "../../../../assets/img/meetings.png";
 import OwlCarousel from "react-owl-carousel";
