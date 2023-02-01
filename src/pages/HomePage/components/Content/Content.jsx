@@ -8,7 +8,7 @@ import VideoModal from "../../../ReactModal/components/VideoModal/VideoModal";
 import { IoCloseOutline } from "react-icons/io5";
 import Audio from "../../../../assets/icons/audio";
 import Phone from "../../../../assets/icons/phone";
-import kamron from "../../../../assets/img/kamron.png";
+import kamron from "../../../../assets/img/kamron.jpg";
 import { useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
