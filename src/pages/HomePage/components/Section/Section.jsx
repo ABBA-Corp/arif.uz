@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section.css";
-import furniture from "../../../../assets/img/furniture.png";
+import furniture from "../../../../assets/img/furniture.jpg";
 import eye from "../../../../assets/img/eye.png";
 import kesh from "../../../../assets/img/kesh.png";
 import img1 from "../../../../assets/img/img1.png";
