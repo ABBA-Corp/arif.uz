@@ -4,7 +4,7 @@ import arrow from "../../../../assets/img/row.png";
 import { Link, useParams } from "react-router-dom";
 import meeting from "../../../../assets/img/meeting.jpg";
 import play from "../../../../assets/img/play.png";
-import meetings from "../../../../assets/img/meetings.png";
+import meetings from "../../../../assets/img/meetings.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
