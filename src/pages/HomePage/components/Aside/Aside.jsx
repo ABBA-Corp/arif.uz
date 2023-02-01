@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Aside.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import machine from "../../../../assets/img/machine.png";
-import img1 from "../../../../assets/img/img5.png";
 import close from "../../../../assets/img/+.png";
 import BuyModal from "../../../ReactModal/components/BuyModal/BuyModal";
 import ModalSucces from "../../../ReactModal/components/ModalSucces/ModalSucces";

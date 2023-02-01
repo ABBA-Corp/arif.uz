@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./News.css";
 import row from "../../../assets/img/row.png";
 import { Link, useParams } from "react-router-dom";
-import img1 from "../../../assets/img/img1.png";
 import axios from "axios";
 import { BASE_URL } from "../../../services";
 import { useTranslation } from "react-i18next";

@@ -2,7 +2,6 @@ import React from "react";
 import "./Catalog.css";
 import { Link, useParams } from "react-router-dom";
 import arrow from "../../../../assets/img/row.png";
-import background from "../../../../assets/img/bgs.jpg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import axios from "axios";

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Sublime.css";
 import download from "../../../../assets/img/download.png";
-import busines from "../../../../assets/img/busines.jpg";
 import dot from "../../../../assets/img/div.png";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -76,7 +75,7 @@ const Sublime = () => {
                 </p>
                 <spam className="sublime-spans">
                   {" "}
-                  {news?.createdAt.slice(0, 10)}
+                  {!! news?.createdAt && news?.createdAt.slice(0, 10)}
                 </spam>
               </div>
             ))}

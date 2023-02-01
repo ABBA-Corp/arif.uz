@@ -137,8 +137,15 @@
   margin-bottom: -20px;
 }
 
+.aside-logo{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
 .aside-items {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .aside-left {

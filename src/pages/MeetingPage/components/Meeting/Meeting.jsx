@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./Meeting.css";
 import arrow from "../../../../assets/img/row.png";
 import { Link, useParams } from "react-router-dom";
-import meeting from "../../../../assets/img/meeting.jpg";
 import play from "../../../../assets/img/play.png";
-import meetings from "../../../../assets/img/meetings.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import VideoModal from "../../../ReactModal/components/VideoModal/VideoModal";
 import { IoCloseOutline } from "react-icons/io5";
-import Person from "../Person/Person";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
@@ -56,7 +53,6 @@ const Meeting = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(about.images);
 
   return (
     <>
@@ -95,7 +91,9 @@ const Meeting = () => {
         <OwlCarousel {...options}>
           <div className="meeting-list">
             <img
-              src={`${BASE_URL}uploads/images/${about?.images[0]}`}
+              src={`${BASE_URL}uploads/images/${
+                !!about?.images && about?.images
+              }`}
               alt=""
               className="meeting-img"
             />
@@ -113,7 +111,7 @@ const Meeting = () => {
           {!!videoModal && (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${about.video_url}`}
+              src={`https://www.youtube.com/embed/${about?.video_url}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

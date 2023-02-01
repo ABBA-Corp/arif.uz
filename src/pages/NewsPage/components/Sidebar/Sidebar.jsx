@@ -15,7 +15,6 @@ const Sidebar = () => {
       .then((res) => setWorker(res.data.data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(worker);
   return (
     <div className="sidebar">
       <div className="container">

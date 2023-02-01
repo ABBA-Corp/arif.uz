@@ -1,5 +1,5 @@
 .homepage-list {
-  background-image: url("../../assets/img/bg.jpg");
+  background-image: url("../../assets/img/bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -492,6 +492,7 @@
   .header .header-img {
     width: 100px;
     margin: 0 10px;
+    object-fit: cover;
   }
 
   .header .header-span {
@@ -689,6 +690,7 @@
 
   .content .content-imgs {
     height: 600px;
+    object-fit: cover;
   }
 
   .content .content-btn {

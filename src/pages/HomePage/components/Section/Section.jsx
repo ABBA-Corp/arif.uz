@@ -1,9 +1,7 @@
 import React from "react";
 import "./Section.css";
-import furniture from "../../../../assets/img/furniture.jpg";
 import eye from "../../../../assets/img/eye.png";
 import kesh from "../../../../assets/img/kesh.png";
-import img1 from "../../../../assets/img/img1.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -35,7 +33,7 @@ const Section = () => {
     <div className="section">
       <div className="container">
         <div className="section-list">
-          <img src={furniture} alt="" className="section-img" />
+          <img src={`${BASE_URL}uploads/images/${filter.img_src}`} alt="" className="section-img" />
           <div className="section-item">
             <div className="section-items">
               <button className="section-btn">
