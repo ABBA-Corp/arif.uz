@@ -1,11 +1,73 @@
 .about {
-  background-image: url("../../../../assets/img/person.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding-top: 90px;
-  padding-bottom: 100px;
+  position: relative;
 }
 
+
+@media(max-width:2000px) {
+.about .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+}
+.about-imgs {
+  height: 904px !important
+  ;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 38.4%,
+      rgba(0, 0, 0, 0.7) 82.33%
+    );
+    object-fit: center;
+}
+  
+}
+@media(max-width:1800px) {
+.about .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left:-5% !important;
+}
+.about-imgs {
+  height: 894px !important
+  ;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 38.4%,
+      rgba(0, 0, 0, 0.7) 82.33%
+    );
+    object-fit: center;
+}
+}
+@media(max-width:1600px) {
+.about .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left:-11% !important;
+}
+.about-imgs {
+  height: 804px !important
+  ;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 38.4%,
+      rgba(0, 0, 0, 0.7) 82.33%
+    );
+    object-fit: center;
+}
+  
+}
 .about-title {
   display: flex;
   align-items: center;
@@ -17,7 +79,7 @@
   align-items: baseline;
 }
 
-.about .container{
+.about .container {
   padding-bottom: 15px;
 }
 
@@ -32,8 +94,9 @@
   margin-left: 35px;
 }
 
-.about-item-link{
+.about-item-link {
   margin-top: 80px;
+  margin-left: -230px;
 }
 
 .about-name {
@@ -58,6 +121,7 @@
   max-height: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: -40px;
 }
 
 .about-btn {
@@ -78,4 +142,14 @@
   background-color: #ffffff;
   color: #212733;
   border: 0.720862px solid #212733;
+}
+
+.about-imgs {
+  height: 834px;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 38.4%,
+      rgba(0, 0, 0, 0.7) 82.33%
+    );
 }

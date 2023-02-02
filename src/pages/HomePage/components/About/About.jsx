@@ -24,7 +24,6 @@ const About = () => {
       .catch((err) => console.log(err));
   }, []);
 
-
   return (
     <div className="about">
       <Swiper
@@ -36,6 +35,11 @@ const About = () => {
       >
         {about?.map((evt, i) => (
           <SwiperSlide key={i}>
+            <img
+              src={`${BASE_URL}uploads/images/${evt.img_src}`}
+              alt=""
+              className="about-imgs"
+            />
             <div className="container">
               <div className="about-title">
                 <img src={arif} alt="" className="about-img" />

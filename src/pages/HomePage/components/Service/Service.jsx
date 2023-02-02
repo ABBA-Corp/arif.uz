@@ -36,7 +36,7 @@ const Service = () => {
             />
           </div>
           <div className="service-title">
-            <p style={{ width: 200, paddingTop: 60 }} className="service-text">
+            <p style={{ width: 300, paddingTop: 60 }} className="service-text">
               {t("xizmat3")}
             </p>
             <img

@@ -9,6 +9,11 @@
   display: none;
 }
 
+.aside-page .splide__arrow {
+  width: 35.63px;
+  height: 35.63px;
+}
+
 .aside-page {
   background-color: #212733;
 }
@@ -137,7 +142,7 @@
   margin-bottom: -20px;
 }
 
-.aside-logo{
+.aside-logo {
   width: 55px;
   height: 55px;
 }
@@ -153,7 +158,7 @@
 
 .aside-right {
   width: 57%;
-  margin: 0 250px;
+  margin: 0 280px;
   height: 600px;
   overflow-y: scroll;
 }
@@ -451,7 +456,7 @@
     top: 37%;
   }
 
-  .aside .aside-item{
+  .aside .aside-item {
     margin-bottom: 10px;
   }
 }

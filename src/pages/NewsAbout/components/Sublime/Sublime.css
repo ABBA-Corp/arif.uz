@@ -7,7 +7,9 @@
 }
 
 .sublime-img {
-  width: 550px;
+  width: 716px;
+  height: 478px;
+  object-fit: contain;
 }
 
 .sublime-name {
@@ -30,10 +32,7 @@
 
 .sublime-page {
   display: flex;
-}
-
-.sublime-right {
-  margin: 0 50px;
+  justify-content: space-between;
 }
 
 .sublime-span {

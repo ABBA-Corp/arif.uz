@@ -36,7 +36,6 @@ const Slider = () => {
       <Swiper
         slidesPerView={1.25}
         spaceBetween={30}
-        freeMode={true}
         pagination={{
           clickable: true,
         }}

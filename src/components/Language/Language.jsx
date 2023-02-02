@@ -18,7 +18,7 @@ const Languages = () => {
 
   const [logo, setLogo] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 50) {
       setLogo(true);
     } else {
       setLogo(false);
