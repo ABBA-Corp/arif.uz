@@ -19,7 +19,7 @@
 
 .content-imgs{
   width: 100%;
-  height: 850px;
+  height: 650px;
 }
 
 .content-name {
@@ -62,7 +62,7 @@
 .content-list {
   display: flex;
   margin-left: -20px;
-  margin-top: 150px;
+  margin-top: 49px;
   margin-bottom: 50px;
 }
 
