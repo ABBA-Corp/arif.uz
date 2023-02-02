@@ -61,7 +61,7 @@
   }
 
   .news .news-title {
-    height: 340px;
+    height: 320px;
   }
 
   .App .news-list {
@@ -72,5 +72,23 @@
   }
   .App .news-home{
     justify-content: center;
+  }
+  .news .section-pic {
+    width: 92%;
+  }
+}
+
+
+@media (max-width:400px) {
+  
+  .container{
+    width: 100%;
+  }
+
+  .news .news-title{
+    height: 290px;
+  }
+  .news .news-subtext{
+    font-size: 12px;
   }
 }

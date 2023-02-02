@@ -140,12 +140,10 @@
 .aside-logo{
   width: 55px;
   height: 55px;
-  border-radius: 50%;
 }
 
 .aside-items {
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .aside-left {
@@ -451,5 +449,9 @@
 
   body .aside-button {
     top: 37%;
+  }
+
+  .aside .aside-item{
+    margin-bottom: 10px;
   }
 }

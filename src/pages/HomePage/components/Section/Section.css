@@ -17,6 +17,9 @@
 .section-img {
   width: 320px;
   height: 220px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
 }
 
 .section-list {
@@ -169,7 +172,7 @@ span {
 .section-pic {
   padding-left: 10px;
   padding-top: 9px;
-  width: 210px;
+  width: 220px;
   border-radius: 10px;
 }
 

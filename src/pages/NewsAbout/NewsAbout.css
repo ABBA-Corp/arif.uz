@@ -52,6 +52,10 @@
   .sublime .sublime-text {
     width: 100%;
   }
+
+  .sublime .sublime-img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 460px) {

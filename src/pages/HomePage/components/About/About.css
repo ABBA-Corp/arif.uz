@@ -33,7 +33,7 @@
 }
 
 .about-item-link{
-  margin-top: -20px;
+  margin-top: 80px;
 }
 
 .about-name {
@@ -43,7 +43,7 @@
   font-size: 40px;
   line-height: 120%;
   color: #ffffff;
-  padding-top: 150px;
+  padding-top: 120px;
   width: 400px;
 }
 
@@ -55,7 +55,9 @@
   line-height: 25px;
   color: #ffffff;
   width: 360px;
-  padding-bottom: 100px;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .about-btn {

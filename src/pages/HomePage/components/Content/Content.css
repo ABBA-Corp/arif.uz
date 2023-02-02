@@ -14,13 +14,12 @@
   flex-direction: column;
   position: absolute;
   top: 15%;
-  left: 0%;
+  left: -8%;
 }
 
 .content-imgs{
   width: 100%;
   height: 850px;
-  object-fit: cover;
 }
 
 .content-name {
@@ -116,8 +115,10 @@
   display: -webkit-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-   -webkit-box-align: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
 }
 
 .content-video-modal {

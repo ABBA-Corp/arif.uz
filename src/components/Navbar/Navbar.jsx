@@ -19,7 +19,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [logo, setLogo] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 50) {
       setNavbar(true);
       setLogo(true);
     } else {

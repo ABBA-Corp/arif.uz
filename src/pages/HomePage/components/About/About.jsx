@@ -24,7 +24,6 @@ const About = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(about);
 
   return (
     <div className="about">

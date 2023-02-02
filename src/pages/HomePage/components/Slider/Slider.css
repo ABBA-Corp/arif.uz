@@ -55,7 +55,7 @@
 .slider-img {
   position: absolute;
   top: 15%;
-  left: -36%;
+  left: 14%;
   object-fit: contain;
   width: 80px;
   height: 80px;
@@ -64,4 +64,9 @@
 .slider-pic {
   margin-left: 100px;
   margin-top: -20px;
+  object-fit: contain;
+}
+ 
+.slider .swiper-backface-hidden .swiper-slide:nth-child(1){
+  margin-left: 150px;
 }

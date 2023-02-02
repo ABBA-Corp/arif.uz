@@ -53,6 +53,7 @@ const Meeting = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  console.log(about);
 
   return (
     <>

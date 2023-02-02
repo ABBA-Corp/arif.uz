@@ -44,7 +44,11 @@ const News = () => {
               </h6>
               <p className="news-subtext">{evt[`text_${i18next.language}`]}</p>
               <div className="news-titles">
-                <Link to={`/news/about=${evt?.id}`} className="news-links">
+                <Link
+                  onClick={() => window.scrollTo({ top: 0 })}
+                  to={`/news/about=${evt?.id}`}
+                  className="news-links"
+                >
                   {t("link")}
                 </Link>
               </div>

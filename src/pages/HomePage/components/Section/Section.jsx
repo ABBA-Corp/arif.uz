@@ -33,7 +33,7 @@ const Section = () => {
     <div className="section">
       <div className="container">
         <div className="section-list">
-          <img src={`${BASE_URL}uploads/images/${filter.img_src}`} alt="" className="section-img" />
+          <img src={`${BASE_URL}uploads/images/${filter?.img_src}`} alt="" className="section-img" />
           <div className="section-item">
             <div className="section-items">
               <button className="section-btn">

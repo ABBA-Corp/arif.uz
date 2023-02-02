@@ -59,3 +59,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.service-img{
+  object-fit: contain;
+}
+
+.service__img{
+  padding-left: 200px;
+  width: 450px;
+}
