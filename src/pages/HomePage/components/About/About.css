@@ -1,6 +1,9 @@
 .about {
   position: relative;
 }
+.about .swiper-pagination-clickable .swiper-pagination-bullet{
+  background-color: #ffffff;
+}
 
 
 @media(max-width:2000px) {

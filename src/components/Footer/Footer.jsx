@@ -67,7 +67,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer-item">
-                <Link to="/news" className="footer-link">
+                <Link onClick={() => window.scrollTo({ top: 0 })} to="/news" className="footer-link">
                   {t(`head5`)}
                 </Link>
               </li>

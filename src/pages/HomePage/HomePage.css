@@ -570,7 +570,7 @@
 
   .about .about-name {
     font-size: 27px;
-    line-height: 35px;
+    line-height: 30px;
     width: 300px;
   }
 
@@ -596,6 +596,7 @@
 
   .App .form {
     padding: 0;
+    margin-top: -20px;
   }
   .form .form-input {
     width: 85%;
@@ -847,14 +848,25 @@
   .content .content-imgs {
     height: 450px;
   }
-  .homepage-list{
-    height: 78vh;
+  .homepage-list {
+    height: 81vh;
   }
 }
 
 @media (max-width: 400px) {
   .container {
     width: 100%;
+  }
+
+  .slider .slider-span {
+    padding-top: 20px;
+  }
+  body .App .slider .slider-pic {
+    margin-top: 10px;
+  }
+
+  .App .slider .slider-list {
+    height: 150px;
   }
 
   body .App .slider .slider-pic {
@@ -876,7 +888,7 @@
   }
 
   .slider .slider-list {
-    height: 200px;
+    height: 180px;
   }
 
   .App .content .container {
@@ -898,7 +910,7 @@
 
   .about .about-text {
     width: 85%;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .about .about-item-link {
@@ -907,5 +919,12 @@
 
   .App .meeting .meeting-button {
     top: 67%;
+  }
+
+  .about-img {
+    margin-left: 35px;
+  }
+  .about .about-name {
+    margin-left: 20px;
   }
 }

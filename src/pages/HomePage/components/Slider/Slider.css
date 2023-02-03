@@ -13,6 +13,10 @@
   margin: 0 auto;
   position: relative;
 }
+
+.slider .swiper-pagination-clickable .swiper-pagination-bullet{
+  background-color: #ffffff;
+}
   
 .App .slider .slider-pic{
   width: 180px;

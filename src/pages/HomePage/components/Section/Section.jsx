@@ -33,7 +33,11 @@ const Section = () => {
     <div className="section">
       <div className="container">
         <div className="section-list">
-          <img src={`${BASE_URL}uploads/images/${filter?.img_src}`} alt="" className="section-img" />
+          <img
+            src={`${BASE_URL}uploads/images/${filter?.img_src}`}
+            alt=""
+            className="section-img"
+          />
           <div className="section-item">
             <div className="section-items">
               <button className="section-btn">
@@ -58,8 +62,12 @@ const Section = () => {
             <p className="section-text">
               {!!filter && filter[`text_${i18next?.language}`]}
             </p>
-            <Link to={`/news/about=${filter?.id}`} className="section-link">
-              {t("batafsil")}
+            <Link
+              onClick={() => window.scrollTo({ top: 0 })}
+              to={`/news/about=${filter?.id}`}
+              className="section-link"
+            >
+              {t("link1")}
             </Link>
           </div>
         </div>
@@ -88,7 +96,7 @@ const Section = () => {
                   to={`/news/about=${evt?.id}`}
                   className="section-links"
                 >
-                  {t("link")}
+                  {t("link1")}
                 </Link>
               </Link>
             </div>
@@ -100,7 +108,7 @@ const Section = () => {
             to="/news"
             className="section-button"
           >
-            {t("link")}
+            {t("link1")}
           </Link>
         </div>
       </div>
