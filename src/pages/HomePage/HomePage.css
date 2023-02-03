@@ -126,7 +126,7 @@
   .navbar .navbar-links {
     font-size: 12px;
   }
-  .navbar .active {
+  .navbar .navbar-active {
     font-size: 12px;
   }
 
@@ -734,7 +734,7 @@
     margin-left: -20px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 35px;
+    max-height: 38px;
     width: 220px;
   }
 

@@ -320,7 +320,12 @@
 @media (max-width:1800px) {
   
   .aside-right{
-    margin-left: 300px;
+    margin-left: 250px;
+  }
+
+  body .App .aside-span {
+    position: relative;
+    left: -3%;
   }
 }
 

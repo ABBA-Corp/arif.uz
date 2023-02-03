@@ -92,12 +92,21 @@ const Meeting = () => {
           <div className="meeting-list">
             <img
               src={`${BASE_URL}uploads/images/${
-                !!about?.images && about?.images
+                !!about?.images && about?.images[1]
               }`}
               alt=""
               className="meeting-img"
             />
           </div>
+          {/* <div className="meeting-list">
+            <img
+              src={`${BASE_URL}uploads/images/${
+                !!about?.images && about?.images[1]
+              }`}
+              alt=""
+              className="meeting-img"
+            />
+          </div> */}
         </OwlCarousel>
       </div>
 
