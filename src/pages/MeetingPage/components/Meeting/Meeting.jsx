@@ -53,7 +53,6 @@ const Meeting = () => {
       .catch((err) => console.log(err));
   }, []);
 
-
   return (
     <>
       <div className="meeting">
@@ -88,26 +87,24 @@ const Meeting = () => {
       </div>
 
       <div className="meeting-box">
-        <OwlCarousel {...options}>
-          <div className="meeting-list">
-            <img
-              src={`${BASE_URL}uploads/images/${
-                !!about?.images && about?.images[1]
-              }`}
-              alt=""
-              className="meeting-img"
-            />
-          </div>
-          {/* <div className="meeting-list">
-            <img
-              src={`${BASE_URL}uploads/images/${
-                !!about?.images && about?.images[1]
-              }`}
-              alt=""
-              className="meeting-img"
-            />
-          </div> */}
-        </OwlCarousel>
+        <img
+          src={`${BASE_URL}uploads/images/${about?.img_src}`}
+          alt=""
+          className="meeting-box-img"
+        />
+        <div className="meeting-box-page">
+          <OwlCarousel {...options}>
+            <div className="meeting-list">
+              <img
+                src={`${BASE_URL}uploads/images/${
+                  !!about?.images && about?.images[1]
+                }`}
+                alt=""
+                className="meeting-img"
+              />
+            </div>
+          </OwlCarousel>
+        </div>
       </div>
 
       <VideoModal show={videoModal}>

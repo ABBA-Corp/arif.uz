@@ -19,6 +19,11 @@
     width: 100%;
   }
 
+  .meeting-box .meeting-box-img{
+    height: 650px;
+    object-fit: cover;
+  }
+
   .meeting .meeting-icons {
     width: 450px;
   }
@@ -86,10 +91,6 @@
   .App .meetingpage .meeting-img {
     width: 500px;
   }
-
-  .App .meetingpage .meeting-box {
-    padding: 50px 0;
-  }
   .meetingpage-navbar {
     display: block;
   }
@@ -108,6 +109,9 @@
 
   .meeting .meeting-icons {
     height: 350px;
+  }
+  .meeting-box .meeting-box-img{
+    height: 450px;
   }
 
   .meeting .meeting-button {

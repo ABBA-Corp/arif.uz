@@ -34,18 +34,18 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={navbar ? "navbar navbar-active" : "navbar"}>
+      <div className={navbar ? "navbar active" : "navbar"}>
         <div className="container">
           <ul className="navbar-list">
             <li className="navbar-item">
-              <Link className={navbar ? "navbar-active" : "navbar-links"} to="/">
+              <Link className={navbar ? "active" : "navbar-links"} to="/">
                 {t(`head1`)}
               </Link>
             </li>
             <li className="navbar-item">
               <Link
                 onClick={() => window.scrollTo({ top: 3100 })}
-                className={navbar ? "navbar-active" : "navbar-links"}
+                className={navbar ? "active" : "navbar-links"}
                 to="/"
               >
                 {t(`head2`)}
@@ -55,25 +55,25 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={() => window.scrollTo({ top: 700 })}
-                className={navbar ? "navbar-active" : "navbar-links"}
+                className={navbar ? "active" : "navbar-links"}
               >
                 {t(`head3`)}
               </Link>
             </li>
             <li className="navbar-item">
-              <Link className={navbar ? "navbar-active" : "navbar-links"} to="/">
+              <Link className={navbar ? "active" : "navbar-links"} to="/">
                 <Arif />
               </Link>
             </li>
             <li className="navbar-item">
-              <Link className={navbar ? "navbar-active" : "navbar-links"} to="/">
+              <Link className={navbar ? "active" : "navbar-links"} to="/">
                 {t(`head6`)}
               </Link>
             </li>
             <li className="navbar-item">
               <Link
                 onClick={() => window.scrollTo({ top: 3500 })}
-                className={navbar ? "navbar-active" : "navbar-links"}
+                className={navbar ? "active" : "navbar-links"}
                 to="/"
               >
                 {t(`head5`)}
@@ -81,7 +81,7 @@ const Navbar = () => {
             </li>
             <li className="navbar-item">
               <a href="#communication"
-                className={navbar ? "navbar-active" : "navbar-links"}
+                className={navbar ? "active" : "navbar-links"}
                 to="/"
               >
                 {t(`head4`)}

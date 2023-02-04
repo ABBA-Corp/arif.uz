@@ -173,7 +173,9 @@ span {
   padding-left: 10px;
   padding-top: 9px;
   width: 220px;
-  border-radius: 10px;
+  border-radius: 19.8852px;
+  height: 125px;
+  object-fit: cover;
 }
 
 .section-page {

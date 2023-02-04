@@ -8,7 +8,7 @@
   bottom: 87.7%;
 }
 
-.navbar-active {
+.active {
   color: #000;
   background: #fce8bd;
 }
@@ -16,7 +16,7 @@ svg path {
   fill: #fff;
 }
 
-.navbar-active svg path {
+.active svg path {
   fill: #000;
 }
 

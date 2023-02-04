@@ -34,12 +34,11 @@ const Slider = () => {
   return (
     <div className="slider">
       <Swiper
-        slidesPerView={1.25}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[Pagination]}
       >
         {service &&
           service?.map((evt, i) => (

@@ -12,6 +12,7 @@ import Aside from "./components/Aside/Aside";
 import About from "./components/About/About";
 import Form from "./components/Form/Form";
 import Footer from "../../components/Footer/Footer";
+import Bottom from "../../components/Bottom/Bottom";
 
 const HomePage = () => {
   return (
@@ -30,6 +31,7 @@ const HomePage = () => {
       <About />
       <Form />
       <Footer />
+      <Bottom />
     </div>
   );
 };

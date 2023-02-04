@@ -8,14 +8,6 @@
 }
 
 
-/* .content .container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 15%;
-  left: 4%;
-} */
 
 @media(max-width:2000px){
   .content .container{
@@ -37,7 +29,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: -2%;
   }
   .content-imgs{
@@ -51,7 +43,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 15%;
+    top: 3%;
     left: -7%;
   }
   .content-imgs{

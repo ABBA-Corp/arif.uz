@@ -2,6 +2,7 @@
   padding-top: 150px;
 }
 
+
 .header-name {
   font-family: "SF Pro";
   font-style: normal;
@@ -9,10 +10,8 @@
   font-size: 40.4938px;
   line-height: 48px;
   color: #ffffff;
-  width: 500px;
+  width: 600px;
 }
-
-
 
 .header-text {
   font-family: "SF Pro";

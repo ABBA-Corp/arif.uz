@@ -235,7 +235,7 @@ export default function Aside() {
               className="aside-input"
             />
             <input
-              type="tel"
+              type="number"
               name="tel"
               id="tel"
               placeholder={t("number")}

@@ -91,15 +91,24 @@
   padding-right: 100px;
 }
 
-.meeting-box {
-  background-image: url("../../../../assets/img/meting.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding: 100px 0;
+.meeting-box{
+  position: relative;
+  
+}
+
+.meeting-box-img {
+  width: 100%;
+  opacity: 0.2;
+  height: 918px;
 }
 
 .meeting-list {
   width: 900px;
-  /* height: 273px; */
   margin: 0 auto;
+}
+
+.meeting-box-page{
+  position: absolute;
+  width: 100%;
+  top: 23%;
 }
