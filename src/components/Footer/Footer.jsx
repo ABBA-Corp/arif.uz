@@ -101,7 +101,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">
+                <a href="https://goo.gl/maps/FqPydKZVYZhJWwxf7" className="footer-link">
                   {t("manzil")} <br />
                   {t("manzil1")}
                 </a>

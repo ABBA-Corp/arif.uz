@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import aylana from '../../../../assets/img/aylana.png'
 
 const About = () => {
   const [t, i18next] = useTranslation();
@@ -26,6 +27,7 @@ const About = () => {
 
   return (
     <div className="about">
+      <img src={aylana} alt="" className="about-icons" />
       <Swiper
         pagination={{
           dynamicBullets: true,

@@ -109,9 +109,6 @@
 }
 
 .news-links {
-  background: #4d5767;
-  border-radius: 6px;
-  padding: 9px 55px;
   margin-left: 8.5px;
   font-family: "SF Pro";
   font-style: normal;
@@ -119,11 +116,25 @@
   font-size: 12px;
   line-height: 14px;
   color: #ffffff;
-  transition: 0.5s all ease;
-  border: 1px solid #4d5767;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.news-links:hover {
+.news-titles {
+  background: #4d5767;
+  border-radius: 6px;
+  border: 1px solid #4d5767;
+  width: 201px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.5s all ease;
+}
+
+.news-titles:hover {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;

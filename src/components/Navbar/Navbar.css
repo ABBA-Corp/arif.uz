@@ -8,15 +8,16 @@
   bottom: 87.7%;
 }
 
-.active {
+.actives {
   color: #000;
   background: #fce8bd;
+  font-size: 14px;
 }
 svg path {
   fill: #fff;
 }
 
-.active svg path {
+.actives svg path {
   fill: #000;
 }
 
@@ -24,12 +25,12 @@ svg path {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
+  justify-content: center;
+  padding: 0 40px;
 }
 
 .navbar-item {
-  margin: 0 10px;
+  margin: 0 18px;
 }
 
 .navbar-link {
@@ -40,7 +41,7 @@ svg path {
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .navbar-links {
@@ -48,6 +49,7 @@ svg path {
   position: relative;
   padding-bottom: 5px;
   color: #fff;
+  font-size: 14px;
 }
 
 .navbar-links::before {

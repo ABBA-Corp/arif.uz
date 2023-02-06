@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="container">
-        <ul className="navbar-list">
+        <ul className="nav-list">
           <li className="navbar-item">
             <Link className="nav-link navbar-links" to="/">
               {t(`head1`)}

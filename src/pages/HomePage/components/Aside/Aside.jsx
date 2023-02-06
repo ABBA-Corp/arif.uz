@@ -9,9 +9,10 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { Link } from "react-router-dom";
+import aside from '../../../../assets/img/aside.png'
 
 function useDivScroll(ref) {
-  const [opacity, setOpacity] = useState(0.3);
+  const [opacity, setOpacity] = useState("aside-titles");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +39,6 @@ export default function Aside() {
   const [products, setProducts] = useState([]);
   const [greatModal, setGreatModal] = useState(false);
   const [linkId, setLinkId] = useState();
-  const [filter, setFilter] = useState([]);
 
   const [buy, setBuy] = useState(false);
   function handleBuy() {
@@ -161,7 +161,7 @@ export default function Aside() {
                   onClick={(e) => {
                     setDuration(e);
                     setLinkId(evt.id);
-                    window.scrollTo({ top: 4200 });
+                    window.scrollTo({ top: 3700 });
                   }}
                 >
                   {evt[`title_${i18next.language}`]}
@@ -199,17 +199,17 @@ export default function Aside() {
           </span>
           <div ref={divRef} className="aside-right">
             {discount?.map((evt, i) => (
-              <div style={{ opacity }} key={i} className="aside-titles">
+              <div key={i} className="aside-titles">
                 <img
                   src={`${BASE_URL}uploads/images/${evt.img_src}`}
                   alt=""
                   className="aside-logo"
                 />
                 <div className="aside-items">
-                  <h3 style={{ opacity }} className="aside-subname">
+                  <h3 className="aside-subname">
                     {evt[`title_${i18next.language}`]}
                   </h3>
-                  <p style={{ opacity }} className="aside-texts">
+                  <p className="aside-texts">
                     {evt[`description_${i18next.language}`]}
                   </p>
                 </div>

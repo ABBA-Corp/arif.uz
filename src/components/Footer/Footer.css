@@ -1,6 +1,6 @@
 .footer {
   background: #fce8bd;
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -11,7 +11,7 @@
 .footer-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer-name {

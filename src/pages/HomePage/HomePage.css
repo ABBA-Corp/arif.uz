@@ -10,15 +10,15 @@
     bottom: 90%;
   }
 
-  .homepage-list{
+  .homepage-list {
     height: 100vh;
   }
 
-  .header{
+  .header {
     padding-top: 300px;
   }
 
-  .header-name{
+  .header-name {
     font-size: 50px;
   }
 }
@@ -28,27 +28,47 @@
     bottom: 89%;
   }
 
-  .homepage-list{
+  .homepage-list {
     height: 100vh;
   }
-  .header{
+  .header {
     padding-top: 220px;
   }
 }
 
-@media (max-width:1600px) {
-  .homepage-list{
+@media (max-width: 1600px) {
+  .homepage-list {
     height: 100vh;
   }
 
-  .header{
+  .header {
     padding-top: 170px;
+  }
+  .header-name,
+  .header-text,
+  .header-title,
+  .header-list {
+    padding-left: 80px;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
     width: 100%;
+  }
+
+  .App .category .category-texts {
+    margin-left: 200px;
+  }
+
+  .header-name,
+  .header-text,
+  .header-title,
+  .header-list {
+    padding-left: 100px;
+  }
+  .section .section-names {
+    padding-left: 120px;
   }
 
   .App .category .container {
@@ -74,15 +94,54 @@
   body .close-modal {
     left: 96.7%;
   }
+  body .rating {
+    padding-left: 140px;
+    padding-bottom: 60px;
+  }
+
+  .App .catalog {
+    padding: 50px 120px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .section .section-names {
+    padding-left: 80px;
+  }
+  .news .news-top {
+    padding: 0 110px;
+  }
+  .news .news-home {
+    padding: 0 110px;
+  }
+  .news .news-list {
+    margin-left: 0;
+  }
+  .header-name, .header-text, .header-title, .header-list{
+    padding-left: 210px;
+  }
+
+  .App .form{
+    padding: 80px 200px;
+  }
 }
 
 @media (max-width: 1280px) {
   .container {
     width: 100%;
   }
+  .App .category .category-texts {
+    margin-left: 100px;
+  }
 
   body .header-close {
     left: 85%;
+  }
+  .header-name,
+  .header-text,
+  .header-title,
+  .header-list {
+    padding-left: 150px;
   }
 
   body .modal_content {
@@ -111,7 +170,7 @@
   }
 
   .slider .slider-img {
-    left: 13.5%;
+    right: 37%;
   }
   .slider .slider-pic {
     margin-left: 50px;
@@ -140,6 +199,13 @@
     width: 100%;
   }
 
+  .header-name,
+  .header-text,
+  .header-title,
+  .header-list {
+    padding-left: 60px;
+  }
+
   .navbar svg {
     width: 150px;
     height: 80px;
@@ -155,7 +221,7 @@
   .navbar .navbar-links {
     font-size: 12px;
   }
-  .navbar .active {
+  .navbar .actives {
     font-size: 12px;
   }
 
@@ -164,7 +230,7 @@
   }
 
   .App .navbar {
-    bottom: 84%;
+    bottom: 90.5%;
   }
 
   .section .section-list {
@@ -278,9 +344,35 @@
   }
 }
 
+@media (max-width: 900px) {
+  /* .header {
+    padding-left: 60px;
+  } */
+  .nav .navbar-item {
+    margin: 0 15px;
+  }
+
+  .news .news-top {
+    padding: 0 30px;
+  }
+  .news .news-name {
+    margin-top: 0;
+  }
+  .news .news-home {
+    padding: 0 30px;
+  }
+  .App .sidebar {
+    padding: 10px 0px;
+  }
+}
+
 @media (max-width: 780px) {
   .container {
     width: 100%;
+  }
+
+  .App .nav {
+    display: none;
   }
 
   .App .navbar {
@@ -450,6 +542,9 @@
   .container {
     width: 100%;
   }
+  body .rating {
+    padding-left: 50px;
+  }
 
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: 80px;
@@ -520,9 +615,10 @@
     height: 120px;
   }
   .slider .slider-list {
-    height: 240px;
-    width: 100%;
+    height: 220px;
+    width: 80%;
   }
+
   .slider .slider-text {
     margin-left: -30px;
     font-size: 12px;
@@ -553,13 +649,18 @@
   }
 
   .App .about .container {
-    left: -7%;
+    left: -7% !important;
   }
 }
 
 @media (max-width: 490px) {
   .container {
     width: 100%;
+  }
+  .section .section-names {
+    margin-left: auto;
+    padding-left: 0;
+    text-align: center;
   }
   .header .header-name {
     font-size: 27px;
@@ -721,9 +822,14 @@
     max-height: 32px;
   }
   .slider .slider-list {
-    height: 210px;
-    width: 100%;
-    margin: 0 auto;
+    height: 180px;
+    width: 330px;
+  }
+  .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
+    margin-left: auto;
+  }
+  .App .slider .slider-pic {
+    margin-top: 20px;
   }
   body .App .slider .slider-pic {
     width: 100px;
@@ -760,11 +866,11 @@
   }
   .slider .slider-text {
     font-size: 14px;
-    margin-left: -20px;
+    margin-left: -15px;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 38px;
-    width: 220px;
+    width: 200px;
   }
 
   .footer .footer--list {
@@ -799,6 +905,7 @@
   .content .content-btn {
     width: 200px;
     margin: 15px 10px;
+    font-size: 12px;
   }
 
   .content .content-img-span {
@@ -836,7 +943,7 @@
   }
 
   .App .header {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   .form .form-name {
@@ -878,13 +985,16 @@
     height: 450px;
   }
   .homepage-list {
-    height: 81vh;
+    height: 90vh;
   }
 }
 
 @media (max-width: 400px) {
   .container {
     width: 100%;
+  }
+  .homepage-list {
+    height: 80vh;
   }
 
   .slider .slider-span {

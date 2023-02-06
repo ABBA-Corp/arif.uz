@@ -48,6 +48,7 @@
 
   .news .news-titles {
     text-align: center;
+    width: 270px;
   }
 
   .sidebar {
@@ -61,7 +62,7 @@
   }
 
   .news .news-title {
-    height: 320px;
+    height: 290px;
   }
 
   .App .news-list {
@@ -70,7 +71,7 @@
   .App .news-button {
     margin: 0 auto;
   }
-  .App .news-home{
+  .App .news-home {
     justify-content: center;
   }
   .news .section-pic {
@@ -78,17 +79,19 @@
   }
 }
 
-
-@media (max-width:400px) {
-  
-  .container{
+@media (max-width: 400px) {
+  .container {
     width: 100%;
   }
 
-  .news .news-title{
+  .news .news-title {
     height: 290px;
   }
-  .news .news-subtext{
+  .news .news-subtext {
     font-size: 12px;
+  }
+
+  .news .news-titles{
+    width: 240px;
   }
 }

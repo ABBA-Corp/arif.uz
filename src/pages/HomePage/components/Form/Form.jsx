@@ -92,7 +92,7 @@ const Form = () => {
           />
           <input
             placeholder={t("number")}
-            type="tel"
+            type="number"
             id="tel"
             name="tel"
             maxlength="14"
@@ -106,17 +106,17 @@ const Form = () => {
         </form>
         <ul className="form-lists">
           <li className="form-item">
-            <a href="#" className="form-link">
+            <a href="https://www.instagram.com" className="form-link">
               <img src={insta} alt="" className="form-icon" />
             </a>
           </li>
           <li className="form-item">
-            <a href="#" className="form-link">
+            <a href="https://web.telegram.org/k/" className="form-link">
               <img src={telegram} alt="" className="form-icon" />
             </a>
           </li>
           <li className="form-item">
-            <a href="#" className="form-link">
+            <a href="tel:+998712770707" className="form-link">
               <img src={phone} alt="" className="form-icon" />
             </a>
           </li>

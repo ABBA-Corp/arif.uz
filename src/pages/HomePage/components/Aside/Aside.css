@@ -9,6 +9,7 @@
   display: none;
 }
 
+
 .aside-page .splide__arrow {
   width: 35.63px;
   height: 35.63px;
@@ -140,6 +141,13 @@
   align-items: center;
   display: flex;
   margin-bottom: -20px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+body .App .aside-titles:hover {
+  opacity: 1;
 }
 
 .aside-logo {
@@ -310,16 +318,14 @@
   margin-top: 15px;
 }
 
-@media (max-width:2000px) {
-  
-  .aside-right{
+@media (max-width: 2000px) {
+  .aside-right {
     margin-left: 330px;
   }
 }
 
-@media (max-width:1800px) {
-  
-  .aside-right{
+@media (max-width: 1800px) {
+  .aside-right {
     margin-left: 250px;
   }
 
@@ -477,5 +483,11 @@
 
   .aside .aside-item {
     margin-bottom: 10px;
+  }
+  .aside-page .splide__arrow--next{
+    left: 57%;
+  }
+  .aside-page .splide__arrow--prev{
+    left: 40%;
   }
 }
