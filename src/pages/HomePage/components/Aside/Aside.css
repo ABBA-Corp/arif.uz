@@ -5,10 +5,11 @@
   padding-bottom: 0;
 }
 
+
+
 .aside-spans {
   display: none;
 }
-
 
 .aside-page .splide__arrow {
   width: 35.63px;
@@ -143,11 +144,7 @@
   margin-bottom: -20px;
   transition: 0.5s;
   cursor: pointer;
-  opacity: 0.3;
-}
-
-body .App .aside-titles:hover {
-  opacity: 1;
+  z-index: 1002;
 }
 
 .aside-logo {
@@ -167,8 +164,9 @@ body .App .aside-titles:hover {
 .aside-right {
   width: 57%;
   margin: 0 280px;
-  height: 600px;
+  height: 580px;
   overflow-y: scroll;
+  z-index: 1003;
 }
 
 .numbers-closer {
@@ -484,10 +482,40 @@ body .App .aside-titles:hover {
   .aside .aside-item {
     margin-bottom: 10px;
   }
-  .aside-page .splide__arrow--next{
+  .aside-page .splide__arrow--next {
     left: 57%;
   }
-  .aside-page .splide__arrow--prev{
+  .aside-page .splide__arrow--prev {
     left: 40%;
   }
+}
+
+.aside-top {
+  width: 350px;
+  height: 140px;
+  position: absolute;
+  top: 7%;
+  opacity: 0.8;
+  background: #212733;
+  z-index: 1002;
+}
+
+.aside-bottom {
+  width: 350px;
+  height: 130px;
+  position: absolute;
+  top: 49%;
+  opacity: 0.8;
+  background: #212733;
+  z-index: 1002;
+}
+
+.aside-bottom-right {
+  width: 350px;
+  height: 130px;
+  position: absolute;
+  top: 64%;
+  opacity: 0.8;
+  background: #212733;
+  z-index: 1002;
 }

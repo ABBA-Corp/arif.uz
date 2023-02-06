@@ -148,7 +148,7 @@ export default function Aside() {
   }, []);
 
   return (
-    <>
+    <div className="aside-list">
       <div className="aside">
         <div className="container">
           <div className="aside-title">
@@ -198,6 +198,7 @@ export default function Aside() {
             <h3 className="aside-name">{t("uzexim")}</h3>
           </span>
           <div ref={divRef} className="aside-right">
+            <div className="aside-top"></div>
             {discount?.map((evt, i) => (
               <div key={i} className="aside-titles">
                 <img
@@ -215,6 +216,8 @@ export default function Aside() {
                 </div>
               </div>
             ))}
+             <div className="aside-bottom"></div>
+             <div className="aside-bottom-right"></div>
           </div>
         </div>
       </div>
@@ -276,6 +279,6 @@ export default function Aside() {
           </a>
         </div>
       </ModalSucces>
-    </>
+    </div>
   );
 }

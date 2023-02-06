@@ -16,7 +16,7 @@
   width: 380px;
   border-radius: 10px;
   height: 250px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .category-name {

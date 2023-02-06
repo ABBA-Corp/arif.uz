@@ -63,7 +63,7 @@
 .slider-img {
   position: absolute;
   top: 5%;
-  right: 39%;
+  left: 5%;
   object-fit: contain;
   width: 100px;
   height: 100px;
@@ -73,4 +73,8 @@
   margin-left: 100px;
   margin-top: -20px;
   object-fit: contain;
+}
+
+.slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
+  margin-left: 180px;
 }

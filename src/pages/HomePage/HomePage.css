@@ -65,7 +65,7 @@
   .header-text,
   .header-title,
   .header-list {
-    padding-left: 100px;
+    padding-left: 240px;
   }
   .section .section-names {
     padding-left: 120px;
@@ -570,7 +570,7 @@
   .category .category-img {
     width: 100%;
     height: 240px;
-    object-fit: contain;
+    object-fit: cover;
   }
   .category .mains {
     margin-top: 0;
@@ -580,7 +580,7 @@
     width: 100%;
   }
 
-  .category .category-texts {
+ .App .category .category-texts {
     margin-left: 40px;
   }
   .App .category .owl-item {
@@ -682,10 +682,10 @@
     width: 90%;
   }
   .rating .rating-number {
-    font-size: 30px;
+    font-size: 25px;
   }
   .rating .rating-text {
-    font-size: 18px;
+    font-size: 16px;
   }
   .rating .rating-list {
     margin: 0 10px;
@@ -884,8 +884,8 @@
   }
 
   .App .rating {
-    padding-bottom: 50px;
-    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   body .modal_contents {
@@ -943,7 +943,7 @@
   }
 
   .App .header {
-    padding-top: 40px;
+    padding-top: 100px;
   }
 
   .form .form-name {
@@ -958,7 +958,8 @@
     padding: 11px 28px;
   }
   .header .header-list {
-    margin-left: 15px;
+    margin-left: 0px;
+    padding-left: 20px;
   }
 
   body .modal_content {
@@ -1066,5 +1067,9 @@
   }
   .about .about-name {
     margin-left: 20px;
+  }
+
+  .App .header{
+    padding-top: 50px;
   }
 }
