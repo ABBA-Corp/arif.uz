@@ -210,3 +210,46 @@ span {
   margin: 15px 0;
   margin-top: 50px;
 }
+
+.section-splide {
+  display: none;
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: 100%;
+  }
+
+  .section-page {
+    display: none;
+  }
+  .section-splide {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.section .splide__arrow--next {
+  top: 0%;
+  left: 85%;
+  background: #000;
+  border: 0.462753px solid #ffffff;
+  width: 40px;
+  height: 40px;
+}
+
+.section .splide__arrow--prev {
+  top: 0%;
+  left: 70%;
+  background: #000;
+  border: 0.462753px solid #ffffff;
+  width: 40px;
+  height: 40px;
+}
+
+.section .splide__arrow svg {
+  width: 100px;
+  object-fit: contain;
+  height: 13px;
+}

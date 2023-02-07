@@ -2,37 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Aside.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-// import machine from "../../../../assets/img/machine.png";
-// import img1 from "../../../../assets/img/img5.png";
 import close from "../../../assets/img/+.png";
 import BuyModal from "../../ReactModal/components/BuyModal/BuyModal";
 import ModalSucces from "../../ReactModal/components/ModalSucces/ModalSucces";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../services";
-import { Link, useLocation, useParams } from "react-router-dom";
-
-function useDivScroll(ref) {
-  const [opacity, setOpacity] = useState(0.3);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!ref.current) {
-        return;
-      }
-      const { scrollTop, clientHeight, scrollHeight } = ref.current;
-      const totalHeight = scrollTop + clientHeight;
-      setOpacity(totalHeight / scrollHeight);
-    };
-    const div = ref.current;
-    div.addEventListener("scroll", handleScroll);
-    return () => {
-      div.removeEventListener("scroll", handleScroll);
-    };
-  }, [ref]);
-
-  return opacity;
-}
+import { Link, useLocation } from "react-router-dom";
 
 export default function Aside() {
   const [discount, setDiscount] = useState([]);
@@ -119,9 +95,6 @@ export default function Aside() {
 
   const [t, i18next] = useTranslation();
 
-  const divRef = React.useRef(null);
-  const opacity = useDivScroll(divRef);
-
   useEffect(() => {
     axios
       .get(BASE_URL + "promotions")
@@ -148,7 +121,6 @@ export default function Aside() {
   }, []);
 
   const linkId = location.pathname.slice(1, 37);
-  console.log(linkId);
 
   return (
     <>
@@ -201,19 +173,37 @@ export default function Aside() {
             <p className="aside-text">{t("uskuna")}</p>
             <h3 className="aside-name">{t("uzexim")}</h3>
           </span>
-          <div ref={divRef} className="aside-right">
+          <div
+            onScroll={() => {
+              let elements = document.querySelectorAll(".aside-titles");
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("opasity-killer");
+              }
+              elements[
+                Math.round(
+                  document.querySelector(".aside-right").scrollTop / 170
+                ) + 1
+              ].classList.add("opasity-killer");
+            }}
+            className="aside-right"
+          >
             {discount?.map((evt, i) => (
-              <div style={{ opacity }} key={i} className="aside-titles">
+              <div
+                key={i}
+                className={
+                  i == 1 ? "aside-titles opasity-killer" : "aside-titles"
+                }
+              >
                 <img
                   src={`${BASE_URL}uploads/images/${evt.img_src}`}
                   alt=""
                   className="aside-logo"
                 />
                 <div className="aside-items">
-                  <h3 style={{ opacity }} className="aside-subname">
+                  <h3 className="aside-subname">
                     {evt[`title_${i18next.language}`]}
                   </h3>
-                  <p style={{ opacity }} className="aside-texts">
+                  <p className="aside-texts">
                     {evt[`description_${i18next.language}`]}
                   </p>
                 </div>

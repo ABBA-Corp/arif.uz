@@ -1,6 +1,10 @@
 import "./App.css";
-import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import Redirect from "./Redirect";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
+
+
 
 function App() {
   return (

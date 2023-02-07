@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import arif from "../../assets/img/ariff.png";
+import Languages from "../Language/Language";
 import "./Nav.css";
 
 const Nav = () => {
@@ -57,6 +58,9 @@ const Nav = () => {
             >
               {t(`head4`)}
             </Link>
+          </li>
+          <li className="nav-item">
+            <Languages />
           </li>
         </ul>
       </div>

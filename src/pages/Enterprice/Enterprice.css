@@ -88,6 +88,10 @@
     display: none;
   }
 
+  body .App .catalog {
+    padding: 40px 30px;
+  }
+
   .slick .slick-item {
     width: 42%;
   }
@@ -123,11 +127,20 @@
     font-size: 20px;
     line-height: 23px;
   }
+  .slick .slick-names {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 500px) {
   .container {
     width: 100%;
+  }
+
+  .slick .slick-img {
+    width: 300px;
+    object-fit: cover;
+    margin-left: 0;
   }
 
   .slick .slick-item {
@@ -163,7 +176,7 @@
   }
 
   .slick .slick-item {
-    width: 90%;
+    width: 320px;
     height: 360px;
   }
 

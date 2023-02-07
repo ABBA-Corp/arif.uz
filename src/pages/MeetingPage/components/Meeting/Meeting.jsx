@@ -3,39 +3,20 @@ import "./Meeting.css";
 import arrow from "../../../../assets/img/row.png";
 import { Link, useParams } from "react-router-dom";
 import play from "../../../../assets/img/play.png";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import VideoModal from "../../../ReactModal/components/VideoModal/VideoModal";
 import { IoCloseOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/bundle";
+import { FreeMode, Pagination } from "swiper";
 
 const Meeting = () => {
-  const options = {
-    loop: true,
-    center: true,
-    items: 1,
-    margin: 0,
-    autoplay: true,
-    dots: true,
-    autoplayTimeout: 8500,
-    smartSpeed: 450,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1.2,
-      },
-      1000: {
-        items: 1.4,
-      },
-    },
-  };
-
   const [videoModal, setVideoModal] = useState(false);
 
   function handleVideoModal() {
@@ -93,17 +74,37 @@ const Meeting = () => {
           className="meeting-box-img"
         />
         <div className="meeting-box-page">
-          <OwlCarousel {...options}>
-            <div className="meeting-list">
-              <img
-                src={`${BASE_URL}uploads/images/${
-                  !!about?.images && about?.images[1]
-                }`}
-                alt=""
-                className="meeting-img"
-              />
-            </div>
-          </OwlCarousel>
+          <Swiper
+            slidesPerView={1.6}
+            spaceBetween={0}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[FreeMode, Pagination]}
+          >
+            <SwiperSlide>
+              {about?.images?.map((evt, i) => (
+                <img
+                  key={i}
+                  src={`${BASE_URL}uploads/images/${evt}`}
+                  alt=""
+                  className="meeting-img"
+                />
+              ))}
+            </SwiperSlide>
+          </Swiper>
+          {/* <OwlCarousel {...options}>
+            {about?.images?.map((evt,i) => (
+              <div key={i} className="meeting-list">
+                <img
+                  src={`${BASE_URL}uploads/images/${evt}`}
+                  alt=""
+                  className="meeting-img"
+                />
+              </div>
+            ))}
+          </OwlCarousel> */}
         </div>
       </div>
 

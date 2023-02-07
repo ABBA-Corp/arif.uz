@@ -65,6 +65,7 @@
 .slick-img {
   width: 280px;
   object-fit: cover;
+  height: 150px;
 }
 
 .slick-list {

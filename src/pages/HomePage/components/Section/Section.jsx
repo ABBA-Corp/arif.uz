@@ -9,6 +9,10 @@ import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
 
+//Mobile News
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+
 const Section = () => {
   const [news, setNews] = useState([]);
   const [filter, setFilter] = useState([]);
@@ -102,6 +106,37 @@ const Section = () => {
             </div>
           ))}
         </div>
+        <Splide className="section-splide">
+          {news?.map((evt, i) => (
+            <SplideSlide>
+              <div key={i} className="section-title">
+                <Link
+                  onClick={() => window.scrollTo({ top: 0 })}
+                  to={`/news/about=${evt?.id}`}
+                >
+                  <img
+                    src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                    alt=""
+                    className="section-pic"
+                  />
+                  <h6 className="section-subname">
+                    {evt[`title_${i18next?.language}`]}
+                  </h6>
+                  <p className="section-subtext">
+                    {evt[`text_${i18next?.language}`]}
+                  </p>
+                  <Link
+                    onClick={() => window.scrollTo({ top: 0 })}
+                    to={`/news/about=${evt?.id}`}
+                    className="section-links"
+                  >
+                    {t("link1")}
+                  </Link>
+                </Link>
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
         <div className="section-titles">
           <Link
             onClick={() => window.scrollTo({ top: 0 })}

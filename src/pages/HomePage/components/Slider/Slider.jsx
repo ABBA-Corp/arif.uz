@@ -29,10 +29,50 @@ const Slider = () => {
       <Swiper
         slidesPerView={1.4}
         spaceBetween={0}
+        loop={true}
         pagination={{
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
+        className="slider-item"
+      >
+        {service &&
+          service?.map((evt, i) => (
+            <SwiperSlide>
+              <div key={i} className="slider-list">
+                <img
+                  src={`${BASE_URL}uploads/images/${evt?.logo}`}
+                  alt=""
+                  className="slider-img"
+                />
+                <div className="slider-title">
+                  <img
+                    src={`${BASE_URL}uploads/images/${evt?.img_src}`}
+                    alt=""
+                    className="slider-pic"
+                  />
+                  <span className="slider-span">
+                    <h3 className="slider-name">
+                      {evt[`title_${i18next?.language}`]}
+                    </h3>
+                    <p className="slider-text">
+                      {evt[`description_${i18next?.language}`]}
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+      </Swiper>
+
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="slider-lists"
       >
         {service &&
           service?.map((evt, i) => (

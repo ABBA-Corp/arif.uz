@@ -100,7 +100,7 @@
   }
 
   .App .catalog {
-    padding: 50px 120px;
+    padding: 50px 200px;
   }
 }
 
@@ -117,11 +117,14 @@
   .news .news-list {
     margin-left: 0;
   }
-  .header-name, .header-text, .header-title, .header-list{
+  .header-name,
+  .header-text,
+  .header-title,
+  .header-list {
     padding-left: 210px;
   }
 
-  .App .form{
+  .App .form {
     padding: 80px 200px;
   }
 }
@@ -366,7 +369,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .container {
     width: 100%;
   }
@@ -580,7 +583,7 @@
     width: 100%;
   }
 
- .App .category .category-texts {
+  .App .category .category-texts {
     margin-left: 40px;
   }
   .App .category .owl-item {
@@ -609,6 +612,7 @@
   .slider .slider-name {
     margin-left: -30px;
     font-size: 14px;
+    width: 200px;
   }
   body .App .slider .slider-pic {
     width: 100px;
@@ -616,12 +620,14 @@
   }
   .slider .slider-list {
     height: 220px;
-    width: 80%;
+    width: 95%;
   }
 
   .slider .slider-text {
-    margin-left: -30px;
+    margin-left: 0px;
     font-size: 12px;
+    max-height: 30px;
+    width: 200px;
   }
   .footer .footer-list:nth-child(1) {
     margin-left: 60px;
@@ -657,10 +663,19 @@
   .container {
     width: 100%;
   }
+
+  .slider .slider-lists {
+    display: block;
+  }
+
+  .slider .slider-item {
+    display: none;
+  }
   .section .section-names {
     margin-left: auto;
     padding-left: 0;
     text-align: center;
+    padding-bottom: 15px;
   }
   .header .header-name {
     font-size: 27px;
@@ -749,8 +764,10 @@
   }
 
   .section .section-title {
-    width: 100%;
+    width: 80%;
     height: 300px;
+    margin: 0 auto;
+    margin-top: 35px;
   }
   .section .section-pic {
     width: 95%;
@@ -816,14 +833,14 @@
     color: #ffffff;
     width: 80%;
     font-size: 12px;
-    margin-left: 100px;
+    margin-left: 160px;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 32px;
   }
   .slider .slider-list {
     height: 180px;
-    width: 330px;
+    width: 350px;
   }
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: auto;
@@ -1069,7 +1086,11 @@
     margin-left: 20px;
   }
 
-  .App .header{
+  .App .header {
     padding-top: 50px;
+  }
+
+  .content .content-text {
+    margin-left: 100px;
   }
 }

@@ -9,29 +9,6 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { Link } from "react-router-dom";
-import aside from '../../../../assets/img/aside.png'
-
-function useDivScroll(ref) {
-  const [opacity, setOpacity] = useState("aside-titles");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!ref.current) {
-        return;
-      }
-      const { scrollTop, clientHeight, scrollHeight } = ref.current;
-      const totalHeight = scrollTop + clientHeight;
-      setOpacity(totalHeight / scrollHeight);
-    };
-    const div = ref.current;
-    div.addEventListener("scroll", handleScroll);
-    return () => {
-      div.removeEventListener("scroll", handleScroll);
-    };
-  }, [ref]);
-
-  return opacity;
-}
 
 export default function Aside() {
   const [discount, setDiscount] = useState([]);
@@ -119,9 +96,6 @@ export default function Aside() {
 
   const [t, i18next] = useTranslation();
 
-  const divRef = React.useRef(null);
-  const opacity = useDivScroll(divRef);
-
   useEffect(() => {
     axios
       .get(BASE_URL + "promotions")
@@ -197,10 +171,27 @@ export default function Aside() {
             <p className="aside-text">{t("uskuna")}</p>
             <h3 className="aside-name">{t("uzexim")}</h3>
           </span>
-          <div ref={divRef} className="aside-right">
-            <div className="aside-top"></div>
+          <div
+            onScroll={() => {
+              let elements = document.querySelectorAll(".aside-titles");
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("opasity-killer");
+              }
+              elements[
+                Math.round(
+                  document.querySelector(".aside-right").scrollTop / 170
+                ) + 1
+              ].classList.add("opasity-killer");
+            }}
+            className="aside-right"
+          >
             {discount?.map((evt, i) => (
-              <div key={i} className="aside-titles">
+              <div
+                key={i}
+                className={
+                  i == 1 ? "aside-titles opasity-killer" : "aside-titles"
+                }
+              >
                 <img
                   src={`${BASE_URL}uploads/images/${evt.img_src}`}
                   alt=""
@@ -216,8 +207,6 @@ export default function Aside() {
                 </div>
               </div>
             ))}
-             <div className="aside-bottom"></div>
-             <div className="aside-bottom-right"></div>
           </div>
         </div>
       </div>

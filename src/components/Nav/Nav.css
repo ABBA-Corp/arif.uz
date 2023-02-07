@@ -12,8 +12,13 @@
   justify-content:center;
 }
 
+.nav .nav-item{
+  margin-top: -5px;
+}
+
+
 .nav .navbar-item {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .nav-link {
