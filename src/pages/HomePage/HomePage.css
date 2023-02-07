@@ -58,7 +58,7 @@
   }
 
   .App .category .category-texts {
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .header-name,
@@ -109,10 +109,14 @@
     padding-left: 80px;
   }
   .news .news-top {
-    padding: 0 110px;
+    padding: 0 50px;
+  }
+
+  .App .category .category-texts {
+    margin-left: 180px;
   }
   .news .news-home {
-    padding: 0 110px;
+    padding: 0 50px;
   }
   .news .news-list {
     margin-left: 0;

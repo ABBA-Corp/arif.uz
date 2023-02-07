@@ -59,7 +59,7 @@ const Nav = () => {
               {t(`head4`)}
             </Link>
           </li>
-          <li className="nav-item">
+          <li style={{color:"#fff"}} className="nav-item">
             <Languages />
           </li>
         </ul>

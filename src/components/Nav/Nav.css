@@ -9,13 +9,17 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: space-between;
+  width: 1100px;
 }
 
-.nav .nav-item{
+.App .nav .nav-item .languagee {
+  color: #fff;
+}
+
+.nav .nav-item {
   margin-top: -5px;
 }
-
 
 .nav .navbar-item {
   margin: 0 10px;

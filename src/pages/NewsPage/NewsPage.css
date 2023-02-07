@@ -4,7 +4,7 @@
   }
 
   .news .news-list {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 

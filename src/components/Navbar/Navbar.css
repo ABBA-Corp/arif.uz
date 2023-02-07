@@ -8,7 +8,6 @@
   bottom: 87.7%;
 }
 
-
 .actives {
   color: #000;
   background: #fce8bd;
@@ -26,12 +25,14 @@ svg path {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 40px;
+  width: 1000px;
+  margin: 18px auto;
 }
 
 .navbar-item {
-  margin: 0 18px;
+  margin: 0 12px;
 }
 
 .navbar-link {

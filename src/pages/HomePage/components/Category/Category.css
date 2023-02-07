@@ -61,7 +61,7 @@
 
 .category-texts {
   margin-top: 210px;
-  margin-left: 270px;
+  margin-left: 100px;
   display: flex;
   align-items: center;
 }
@@ -126,16 +126,16 @@
 }
 
 @media (max-width: 1800px) {
-  .category-texts {
-    margin-left: 320px;
+  .App .category-texts {
+    margin-left: 250px;
   }
 }
 
 @media (max-width: 1600px) {
-  .category .category-left {
+  .App .category .category-left {
     margin-left: 100px;
   }
-  .category-texts {
+  .App .category .category-texts {
     margin-left: 280px;
   }
 }
