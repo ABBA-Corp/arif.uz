@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   width: 1100px;
+  margin: 0 auto;
 }
 
 .App .nav .nav-item .languagee {

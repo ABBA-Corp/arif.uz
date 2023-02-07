@@ -76,11 +76,11 @@
   }
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .about .container {
-    left: -20% !important;
+    left: -25% !important;
   }
-}
+} */
 .about-title {
   display: flex;
   align-items: center;

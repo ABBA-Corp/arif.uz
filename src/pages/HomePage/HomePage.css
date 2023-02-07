@@ -57,6 +57,10 @@
     width: 100%;
   }
 
+  .App .meeting{
+    padding: 70px 140px;
+  }
+
   .App .category .category-texts {
     margin-left: 100px;
   }
@@ -76,7 +80,7 @@
   }
 
   .App .about .container {
-    left: -20%;
+    left: -23% !important;
   }
 
   .service .service-list {
@@ -348,6 +352,10 @@
   }
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: 80px;
+  }
+
+  .App .nav .nav-list{
+    width: 950px;
   }
 }
 

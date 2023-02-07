@@ -12,6 +12,10 @@
   .container {
     width: 100%;
   }
+
+  .App .meeting {
+    padding: 70px 60px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -91,7 +95,7 @@
     font-size: 12px;
   }
 
-  .news .news-titles{
+  .news .news-titles {
     width: 240px;
   }
 }
