@@ -98,7 +98,7 @@
   line-height: 120%;
   width: 300px;
   margin: 0 auto;
-  max-height: 40px;
+  max-height: 47px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -126,8 +126,8 @@
 }
 
 @media (max-width: 1800px) {
-  .App .category-texts {
-    margin-left: 250px;
+  .App .category .category-texts {
+    margin-left: 280px;
   }
 }
 

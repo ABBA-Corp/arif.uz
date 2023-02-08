@@ -1,9 +1,9 @@
 import "./App.css";
 import Redirect from "./Redirect";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
-
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {

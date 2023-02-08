@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { BASE_URL } from "../../../../services";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import trues from '../../../../assets/icons/true.svg'
 
 const Sublime = () => {
   const [news, setNews] = useState([]);
@@ -45,7 +46,7 @@ const Sublime = () => {
             <div className="sublime-title">
               <button onClick={handleClick} className="sublime-btn">
                 {copy ? (
-                  <img src={download} alt="" className="sublime-logo" />
+                  <img src={trues} alt="" className="sublime-logos" />
                 ) : (
                   <img src={download} alt="" className="sublime-logo" />
                 )}

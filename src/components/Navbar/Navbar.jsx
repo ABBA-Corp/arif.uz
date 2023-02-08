@@ -9,6 +9,7 @@ import close from "../../assets/img/+.png";
 import NavModal from "../../pages/ReactModal/components/NavModal/NavModal";
 import Languages from "../Language/Language";
 import { useTranslation } from "react-i18next";
+import Language from "./Language/Language";
 
 const Navbar = () => {
   const [greatModal, setGreatModal] = useState(false);
@@ -161,6 +162,9 @@ const Navbar = () => {
             >
               {t(`head5`)}
             </a>
+          </li>
+          <li onClick={() => setGreatModal()} className="navbar-modal-item">
+            <Language  />
           </li>
         </ul>
       </NavModal>

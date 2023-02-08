@@ -16,6 +16,18 @@
     padding-left: 15px;
   }
 
+  .slick .container{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .slick .slick-items{
+    left: 68%;
+  }
+
+ body .App .catalog{
+    padding: 50px 40px;
+  }
+
   .slick .slick-list {
     justify-content: center;
   }
@@ -83,6 +95,24 @@
 @media (max-width: 780px) {
   .container {
     width: 100%;
+  }
+  .slick .slick-next{
+    top: -19%;
+    left: 78%;
+  }
+  .slick .slick-items{
+    top: 5%;
+    left: 60%;
+  }
+  .slick .slick-prev{
+    top: -19%;
+    left: 51%;
+  }
+  .slick{
+    padding: 50px 20px;
+  }
+  .slick-names{
+    font-size: 18px;
   }
   .nav .navbar-list {
     display: none;
@@ -206,5 +236,25 @@
 
   .footerr .footer-list:nth-child(2) {
     margin-top: -25px;
+  }
+  .slick .slick-next{
+    top: -19%;
+    left: 78%;
+    width: 40px;
+    height: 40px;
+  }
+  .slick .slick-items{
+    top: 4%;
+    left: 57%;
+    font-size: 22px;
+  }
+  .slick .slick-prev{
+    top: -19%;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+  }
+  .slick .slick-names{
+    margin-left: 15px;
   }
 }

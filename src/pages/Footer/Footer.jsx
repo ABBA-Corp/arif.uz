@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-list">
+          <div className="footer-list footer__list">
             <h3 className="footerr-name">{t("company")}</h3>
             <ul className="footer--list">
               <li className="footer-item">

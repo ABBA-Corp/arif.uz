@@ -30,6 +30,11 @@
   cursor: pointer;
 }
 
+.sublime-logos{
+  width: 25px;
+  height: 25px;
+}
+
 .sublime-page {
   display: flex;
   justify-content: space-evenly;

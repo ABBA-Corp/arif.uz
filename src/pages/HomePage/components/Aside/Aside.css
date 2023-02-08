@@ -5,6 +5,32 @@
   padding-bottom: 0;
 }
 
+.aside-button-right{
+  position: absolute;
+  top:115%;
+  left: 58%;
+  cursor: pointer;
+}
+
+.aside-button-left{
+  position: absolute;
+  top:115%;
+  left: 34%;
+  cursor: pointer;
+}
+
+.aside-slider-bottom {
+  position: absolute;
+  top: 118%;
+  left: 43%;
+  color: #fff;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 274;
+  font-size: 21.3207px;
+  line-height: 18px;
+}
+
 .aside-spans {
   display: none;
 }
@@ -36,7 +62,7 @@
 }
 
 .aside-active {
-  background-color: #555D6A;
+  background-color: #555d6a;
   color: #fff;
 }
 
@@ -164,7 +190,6 @@
   margin: 0 280px;
   height: 580px;
   overflow-y: auto;
-  z-index: 1003;
 }
 
 .numbers-closer {
@@ -363,7 +388,7 @@
 @media (max-width: 1080px) {
   body .App .aside-btn {
     margin: 0 8px;
-    width: 120px;
+    width: 160px;
   }
 
   body .App .aside-right {

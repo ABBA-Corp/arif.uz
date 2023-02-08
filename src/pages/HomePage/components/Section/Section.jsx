@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
+import right from '../../../../assets/icons/right.png'
+import left from '../../../../assets/icons/lefts.png'
 
 //Mobile News
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -32,6 +34,18 @@ const Section = () => {
   }, []);
 
   const [t, i18next] = useTranslation();
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    <img src={left} className="slick-left" alt="prevArrow" {...props} />
+  );
+
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    <img src={right} className="slick-right" alt="nextArrow" {...props} />
+  );
+
+  const settings = {
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
+  }
 
   return (
     <div className="section">
@@ -106,7 +120,7 @@ const Section = () => {
             </div>
           ))}
         </div>
-        <Splide className="section-splide">
+        <Splide {...settings} className="section-splide">
           {news?.map((evt, i) => (
             <SplideSlide>
               <div key={i} className="section-title">

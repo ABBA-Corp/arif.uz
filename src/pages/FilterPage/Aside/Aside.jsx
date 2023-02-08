@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../services";
 import { Link, useLocation } from "react-router-dom";
+import ImageSlider from "./ImageSlider";
 
 export default function Aside() {
   const [discount, setDiscount] = useState([]);
@@ -115,7 +116,7 @@ export default function Aside() {
     axios
       .get(BASE_URL + "products")
       .then((res) => {
-        setProducts(res?.data?.data);
+        setProducts(res?.data?.data?.filter((e) => e?.companyId === linkId));
       })
       .catch((err) => console.log(err));
   }, []);
@@ -151,19 +152,7 @@ export default function Aside() {
       </div>
       <div className="aside-page">
         <div className="aside-left">
-          <Splide>
-            {products
-              ?.filter((e) => e.companyId === linkId)
-              ?.map((evt, i) => (
-                <SplideSlide key={i}>
-                  <img
-                    className="aside-img"
-                    src={`${BASE_URL}uploads/images/${evt.img_src}`}
-                    alt=""
-                  />
-                </SplideSlide>
-              ))}
-          </Splide>
+          <ImageSlider slides={products} />
           <button onClick={handleBuy} className="aside-button">
             {t("buy")}
           </button>

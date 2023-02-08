@@ -2,24 +2,55 @@
   background-color: #e0cfaa;
   box-shadow: 0px 3.50542px 52.5813px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  width: 300px;
+  width: 260px;
   height: 380px;
   margin: 15px;
   cursor: pointer;
   transition: 0.5s all ease-out;
 }
 
-.slick .container{
-  width: 100%;
+.slick-left{
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.slick-item:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+.slick-items{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 274;
+  font-size: 28.6769px;
+  line-height: 25px;
+  color: #000000;
+  position: absolute;
+  top: 14.5%;
+  left: 74%;
+}
+
+.slick .slick-next{
+  position: absolute;
+  top: -10%;
+  width: 47.93px;
+  height: 47.93px;
+  left: 80%;
+}
+.slick .slick-prev{
+  position: absolute;
+  top: -10%;
+  width: 47.93px;
+  height: 47.93px;
+  left: 67%;
+}
+
+.slick .container{
+  width: 85%;
+  margin-left: 200px;
+}
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
 }
 
 .slick-title {
@@ -63,21 +94,16 @@
 }
 
 .slick-img {
-  width: 280px;
+  width: 250px;
   object-fit: cover;
   height: 150px;
-}
-
-.slick-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 .slick {
   background: #fce8bd;
   padding: 50px 0;
   margin-top: -10px;
+  position: relative;
 }
 
 .slick-names {
@@ -87,5 +113,40 @@
   font-size: 30px;
   line-height: 136.6%;
   color: #000000;
-  margin-left: 200px;
+  margin-left: 20px;
+}
+
+
+@media (max-width:1440px) {
+  .slick-items{
+    position: absolute;
+    top: 14.5%;
+    left: 73%;
+  }
+  
+  .slick .slick-next{
+    top: -10%;
+    left: 79%;
+  }
+  .slick .slick-prev{
+    top: -10%;
+    left: 64%;
+  }
+}
+
+@media (max-width:1360px) {
+  .slick-items{
+    position: absolute;
+    top: 14.5%;
+    left: 71%;
+  }
+  
+  .slick .slick-next{
+    top: -10%;
+    left: 77%;
+  }
+  .slick .slick-prev{
+    top: -10%;
+    left: 60%;
+  }
 }

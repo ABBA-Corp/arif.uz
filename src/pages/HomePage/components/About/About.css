@@ -76,14 +76,10 @@
   }
 }
 
-/* @media (max-width: 1400px) {
-  .about .container {
-    left: -25% !important;
-  }
-} */
 .about-title {
   display: flex;
   align-items: center;
+  margin-left: -60px;
 }
 
 .about-item {

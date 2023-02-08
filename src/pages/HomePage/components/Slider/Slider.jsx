@@ -30,6 +30,7 @@ const Slider = () => {
         slidesPerView={1.4}
         spaceBetween={0}
         loop={true}
+        
         pagination={{
           clickable: true,
         }}
@@ -38,7 +39,7 @@ const Slider = () => {
       >
         {service &&
           service?.map((evt, i) => (
-            <SwiperSlide>
+            <SwiperSlide itemScope={3}>
               <div key={i} className="slider-list">
                 <img
                   src={`${BASE_URL}uploads/images/${evt?.logo}`}

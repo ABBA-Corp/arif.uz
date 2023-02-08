@@ -57,12 +57,12 @@
     width: 100%;
   }
 
-  .App .meeting{
+  .App .meeting {
     padding: 70px 140px;
   }
 
   .App .category .category-texts {
-    margin-left: 100px;
+    margin-left: 230px;
   }
 
   .header-name,
@@ -354,15 +354,12 @@
     margin-left: 80px;
   }
 
-  .App .nav .nav-list{
+  .App .nav .nav-list {
     width: 950px;
   }
 }
 
 @media (max-width: 900px) {
-  /* .header {
-    padding-left: 60px;
-  } */
   .nav .navbar-item {
     margin: 0 15px;
   }
@@ -674,6 +671,15 @@
 @media (max-width: 490px) {
   .container {
     width: 100%;
+  }
+
+
+  .App .aside-button-right{
+    left: 63%;
+  }
+
+  .App .aside-button-left{
+    left: 30%;
   }
 
   .slider .slider-lists {
