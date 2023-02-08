@@ -40,6 +40,7 @@
   .news .news-title {
     width: 80%;
     height: 380px;
+    margin: 15px auto;
   }
   .news .section-pic {
     width: 95%;

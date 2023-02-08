@@ -19,8 +19,6 @@ const SliderPage = ({ company }) => {
     <img src={right} className="slick-right" alt="nextArrow" {...props} />
   );
     const settings = {
-      dots: false,
-      infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
