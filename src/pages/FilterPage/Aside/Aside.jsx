@@ -8,7 +8,7 @@ import ModalSucces from "../../ReactModal/components/ModalSucces/ModalSucces";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../services";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
 
 export default function Aside() {
@@ -16,7 +16,8 @@ export default function Aside() {
   const [company, setCompany] = useState([]);
   const [products, setProducts] = useState([]);
   const [greatModal, setGreatModal] = useState(false);
-  const location = useLocation();
+  const [linkId, setLinkId] = useState();
+
   const [buy, setBuy] = useState(false);
   function handleBuy() {
     setBuy(!buy);
@@ -116,27 +117,26 @@ export default function Aside() {
     axios
       .get(BASE_URL + "products")
       .then((res) => {
-        setProducts(res?.data?.data?.filter((e) => e?.companyId === linkId));
+        setProducts(res?.data?.data);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  const linkId = location.pathname.slice(1, 37);
-
   return (
-    <>
+    <div className="aside-list">
       <div className="aside">
         <div className="container">
           <div className="aside-title">
             <div className="aside-item">
               {company?.map((evt, i) => (
                 <Link
-                  to={`/${evt.id}`}
+                  to={`/${evt?.id}`}
                   className="aside-btn"
                   key={i}
-                  id={linkId}
                   onClick={(e) => {
                     setDuration(e);
+                    setLinkId(evt.id);
+                    window.scrollTo({ top: 3700 });
                   }}
                 >
                   {evt[`title_${i18next.language}`]}
@@ -200,7 +200,52 @@ export default function Aside() {
             ))}
           </div>
         </div>
+        <div className="aside-box-right">
+          <span className="aside-spans">
+            <p className="aside-text">{t("uskuna")}</p>
+            <h3 className="aside-name">{t("uzexim")}</h3>
+          </span>
+          <div
+            onScroll={() => {
+              let elements = document.querySelectorAll(".aside-titles1");
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("opasity-killer1");
+              }
+              elements[
+                Math.round(
+                  document.querySelector(".aside-right1").scrollTop / 45
+                ) + 1
+              ].classList.add("opasity-killer1");
+            }}
+            className="aside-right1"
+          >
+            {discount?.map((evt, i) => (
+              <div
+                key={i}
+                className={
+                  i == 1 ? "aside-titles1 opasity-killer1" : "aside-titles1"
+                }
+              >
+                <img
+                  src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                  alt=""
+                  className="aside-logo"
+                />
+                <div className="aside-items">
+                  <h3 className="aside-subname">
+                    {evt[`title_${i18next.language}`]}
+                  </h3>
+                  <p className="aside-texts">
+                    {evt[`description_${i18next.language}`]}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+     
 
       <BuyModal showbuy={buy}>
         <button onClick={() => setBuy()} className="aside-modal-close">
@@ -259,6 +304,6 @@ export default function Aside() {
           </a>
         </div>
       </ModalSucces>
-    </>
+    </div>
   );
 }

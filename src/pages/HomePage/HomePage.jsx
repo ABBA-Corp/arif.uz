@@ -13,6 +13,8 @@ import About from "./components/About/About";
 import Form from "./components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import Bottom from "../../components/Bottom/Bottom";
+import Number from "./components/Number/Number";
+import Contact from "./components/Contact/Contact";
 
 const HomePage = () => {
   return (
@@ -26,6 +28,7 @@ const HomePage = () => {
       <Content />
       <Slider />
       <Rating />
+      <Number />
       <Section />
       <Aside />
       <About />

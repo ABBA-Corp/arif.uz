@@ -1,0 +1,53 @@
+.number {
+  background: url("../../../../assets/img/ratingg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 105px;
+  margin-top: -25px;
+}
+
+.rating-list {
+  margin: 0 50px;
+}
+
+.number{
+    display: none;
+}
+
+.rating-name {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 136.6%;
+  color: #ffffff;
+}
+
+.rating-number {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 136.6%;
+  color: #ffffff;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.rating-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 126.34%;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.rating-title {
+  display: flex;
+  margin-left: -50px;
+}

@@ -4,13 +4,11 @@
 
 @font-face {
   font-family: SF Pro;
-  src: url('../../../../assets/icons/San\ Francisco\ Font.otf');
+  src: url("../../../../assets/icons/San\ Francisco\ Font.otf");
 }
 
-
-
-@media(max-width:2000px){
-  .content .container{
+@media (max-width: 2000px) {
+  .content .container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18,13 +16,13 @@
     top: 15%;
     left: 4%;
   }
-  .content-imgs{
+  .content-imgs {
     width: 100%;
     height: 820px !important;
   }
 }
-@media(max-width:1800px){
-  .content .container{
+@media (max-width: 1800px) {
+  .content .container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,13 +30,13 @@
     top: 10%;
     left: -2%;
   }
-  .content-imgs{
+  .content-imgs {
     width: 100%;
     height: 705px !important;
   }
 }
-@media(max-width:1600px){
-  .content .container{
+@media (max-width: 1600px) {
+  .content .container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -46,14 +44,13 @@
     top: 3%;
     left: -7%;
   }
-  .content-imgs{
+  .content-imgs {
     width: 100%;
     height: 640px !important;
   }
 }
 
-
-.content-imgs{
+.content-imgs {
   width: 100%;
   height: 700px;
 }
@@ -123,11 +120,10 @@
   transition: 0.5s all ease-out;
 }
 
-.content-btn:hover{
-  background-color:rgb(239, 235, 235);
+.content-btn:hover {
+  background-color: rgb(239, 235, 235);
   color: #000;
 }
-
 
 .content .swiper .swiper-pagination {
   top: 100%;
@@ -158,23 +154,26 @@
 }
 
 .content-video-modal {
-  margin-top:-3px;
   border-radius: 0 0 20px 20px;
   width: 100%;
-  height: 465px;
+  height: 470px;
 }
 
 .close-modal {
   position: relative;
   left: 97.5%;
-  bottom: 0;
+  border: none;
+  cursor: pointer;
   width: 25px;
   height: 25px;
-  background-color: red;
-  color: #fff;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-close-img{
+  width: 25px;
+  height: 20px;
 }
 
 .content-img-span {

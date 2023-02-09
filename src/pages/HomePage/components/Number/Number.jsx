@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Rating.css";
+import "./Number.css";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useEffect } from "react";
@@ -7,7 +7,7 @@ import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
 
-const Rating = () => {
+const Number = () => {
   const [count, setCount] = useState(false);
 
   const [rating, setRating] = useState([]);
@@ -22,7 +22,7 @@ const Rating = () => {
   const [t, i18next] = useTranslation();
 
   return (
-    <div className="rating">
+    <div className=" number">
       <div className="container">
         <h2 className="rating-name">{t("rating")}</h2>
         <ScrollTrigger
@@ -55,4 +55,4 @@ const Rating = () => {
   );
 };
 
-export default Rating;
+export default Number;

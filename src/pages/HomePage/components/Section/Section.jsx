@@ -21,14 +21,14 @@ const Section = () => {
   useEffect(() => {
     axios
       .get(BASE_URL + "news")
-      .then((res) => setNews(res.data.data))
+      .then((res) => setNews(res?.data?.data))
       .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
     axios
       .get(BASE_URL + "news?is_primary=true")
-      .then((res) => setFilter(res.data.data[0]))
+      .then((res) => setFilter(res?.data?.data[0]))
       .catch((err) => console.log(err));
   }, []);
 

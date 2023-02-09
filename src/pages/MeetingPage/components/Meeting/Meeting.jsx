@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { Swiper, SwiperSlide } from "swiper/react";
+import closes from "../../../../assets/icons/close.png";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -79,7 +80,7 @@ const Meeting = () => {
             spaceBetween={0}
             loop={true}
             pagination={{
-              clickable: true,
+              clickable: true
             }}
             modules={[FreeMode, Pagination]}
           >
@@ -94,17 +95,6 @@ const Meeting = () => {
               ))}
             </SwiperSlide>
           </Swiper>
-          {/* <OwlCarousel {...options}>
-            {about?.images?.map((evt,i) => (
-              <div key={i} className="meeting-list">
-                <img
-                  src={`${BASE_URL}uploads/images/${evt}`}
-                  alt=""
-                  className="meeting-img"
-                />
-              </div>
-            ))}
-          </OwlCarousel> */}
         </div>
       </div>
 
@@ -112,7 +102,7 @@ const Meeting = () => {
         <div>
           <div className="content-modal-item">
             <button onClick={() => setVideoModal()} className="close-modal">
-              <IoCloseOutline style={{ marginLeft: "-3px" }} />
+              <img className="aside-close-img" src={closes} alt="" />
             </button>
           </div>
           {!!videoModal && (

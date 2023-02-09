@@ -5,8 +5,44 @@
   padding-bottom: 0;
 }
 
+.aside-item {
+  display: flex;
+  align-items: center;
+}
+
+.aside-button-right {
+  position: absolute;
+  top: 115%;
+  left: 58%;
+  cursor: pointer;
+}
+
+.aside-button-left {
+  position: absolute;
+  top: 115%;
+  left: 34%;
+  cursor: pointer;
+}
+
+.aside-slider-bottom {
+  position: absolute;
+  top: 118%;
+  left: 43%;
+  color: #fff;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 274;
+  font-size: 21.3207px;
+  line-height: 18px;
+}
+
 .aside-spans {
   display: none;
+}
+
+.aside-page .splide__arrow {
+  width: 35.63px;
+  height: 35.63px;
 }
 
 .aside-page {
@@ -16,11 +52,11 @@
 .aside-btn {
   border: 2px solid #ffffff;
   border-radius: 98.7166px;
-  width: 165px;
+  width: 160px;
   height: 47.84px;
   background-color: transparent;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   margin: 0 8px;
   transition: 0.5s;
@@ -50,12 +86,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.aside-item {
-  width: 330px;
-  display: flex;
-  align-items: center;
 }
 
 .aside-name {
@@ -141,10 +171,27 @@
   align-items: center;
   display: flex;
   margin-bottom: -20px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.aside-titles1 {
+  align-items: center;
+  display: flex;
+  margin-bottom: -20px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.aside-logo {
+  width: 55px;
+  height: 55px;
 }
 
 .aside-items {
-  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .aside-left {
@@ -154,9 +201,16 @@
 
 .aside-right {
   width: 57%;
-  margin: 0 250px;
-  height: 600px;
-  overflow-y: scroll;
+  margin: 0 280px;
+  height: 480px !important;
+  overflow-y: auto;
+}
+
+.aside-right1 {
+  width: 57%;
+  margin: 0 280px;
+  height: 580px;
+  overflow-y: auto;
 }
 
 .numbers-closer {
@@ -306,6 +360,23 @@
   margin-top: 15px;
 }
 
+@media (max-width: 2000px) {
+  .aside-right {
+    margin-left: 330px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .aside-right {
+    margin-left: 250px;
+  }
+
+  body .App .aside-span {
+    position: relative;
+    left: -3%;
+  }
+}
+
 @media (max-width: 1440px) {
   body .App .aside-right {
     margin: 0 150px;
@@ -338,10 +409,15 @@
 @media (max-width: 1080px) {
   body .App .aside-btn {
     margin: 0 8px;
-    width: 120px;
+    width: 160px;
   }
 
   body .App .aside-right {
+    left: 4%;
+    width: 100%;
+    margin: 0 80px;
+  }
+  body .App .aside-right1 {
     left: 4%;
     width: 100%;
     margin: 0 80px;
@@ -402,7 +478,25 @@
     left: 0;
   }
 
+  body .App .aside-right1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 180px;
+  }
+
+  body .App .aside-right1 {
+    left: 0;
+  }
+
   body .aside-titles {
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  body .aside-titles1 {
     justify-content: center;
     width: 80%;
     margin: 0 auto;
@@ -433,22 +527,60 @@
     width: 100%;
   }
 
+  body .App .aside-box {
+    display: none;
+  }
+  body .App .aside-list .aside-box-right {
+    display: block;
+  }
+
   body .App .aside-btn {
     width: 140px;
     height: 40px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   body .aside-spans {
     display: block;
     position: absolute;
-    top: 43%;
+    top: 45%;
   }
+
   body .App .aside-right {
     margin-top: 300px;
+    height: 500px !important;
+  }
+  body .App .aside-right1 {
+    margin-top: 300px;
+    height: 500px !important;
   }
 
   body .aside-button {
-    top: 37%;
+    top: 39%;
   }
+
+  .aside .aside-item {
+    margin-bottom: 10px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+  }
+  .aside-page .splide__arrow--next {
+    left: 57%;
+  }
+  .aside-page .splide__arrow--prev {
+    left: 40%;
+  }
+}
+
+.opasity-killer {
+  opacity: 1;
+}
+
+.opasity-killer1 {
+  opacity: 1;
+}
+
+body .App .aside-box-right {
+  display: none;
 }

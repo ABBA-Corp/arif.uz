@@ -215,7 +215,7 @@ span {
   display: none;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
   .container {
     width: 100%;
   }
@@ -228,7 +228,6 @@ span {
     margin: 0 auto;
   }
 }
-
 
 .section .splide__arrow--next {
   top: 0%;
@@ -254,20 +253,20 @@ span {
   height: 13px;
 }
 
-.slider-next{
+.slider-next {
   top: 15%;
   width: 40px;
   height: 40px;
 }
 
-.section .slick-prev{
+.section .slick-prev {
   left: 60%;
   width: 40px;
   height: 40px;
   top: 0;
 }
 
-.section .slick-next{
+.section .slick-next {
   left: 75%;
   width: 40px;
   height: 40px;

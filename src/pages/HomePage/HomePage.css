@@ -61,7 +61,7 @@
     width: 100%;
   }
 
-  .App .navbar{
+  .App .navbar {
     bottom: 88%;
   }
 
@@ -156,7 +156,7 @@
     margin-left: -750px;
   }
 
-  .App .footerr{
+  .App .footerr {
     padding-left: 100px;
   }
 }
@@ -266,7 +266,7 @@
   }
 
   .App .navbar {
-    bottom:85%;
+    bottom: 85%;
   }
 
   .section .section-list {
@@ -701,9 +701,13 @@
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
   .container {
     width: 100%;
+  }
+
+  .App .rating .rating-name {
+    padding-top: 20px;
   }
 
   body .App .header {
@@ -854,7 +858,6 @@
     margin-left: 10px;
   }
   .footer .footer-list:nth-child(2) {
-    margin-left: -30px;
     margin-top: -20px;
   }
   .footer .footer-links {
@@ -955,8 +958,9 @@
   }
 
   .App .rating {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-size: cover;
   }
 
   body .modal_contents {
@@ -1054,7 +1058,8 @@
     top: 8%;
   }
   .content .content-imgs {
-    height: 450px;
+    height: 550px !important;
+    object-fit: cover;
   }
   .homepage-list {
     height: 100vh;
@@ -1078,13 +1083,21 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .container {
     width: 100%;
   }
   .homepage-list {
     height: 100vh;
   }
+
+  .App .footer {
+    padding-left: 0px;
+  }
+
+  /* .footer .footer-list:nth-child(2){
+    margin-left: -55px;
+  } */
 
   .slider .slider-span {
     padding-top: 20px;
@@ -1164,7 +1177,7 @@
   .content .content-text {
     margin-left: 100px;
   }
-  .about .about-title{
+  .about .about-title {
     margin-left: 0;
   }
 }

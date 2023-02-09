@@ -200,7 +200,52 @@ export default function Aside() {
             ))}
           </div>
         </div>
+        <div className="aside-box-right">
+          <span className="aside-spans">
+            <p className="aside-text">{t("uskuna")}</p>
+            <h3 className="aside-name">{t("uzexim")}</h3>
+          </span>
+          <div
+            onScroll={() => {
+              let elements = document.querySelectorAll(".aside-titles1");
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("opasity-killer1");
+              }
+              elements[
+                Math.round(
+                  document.querySelector(".aside-right1").scrollTop / 45
+                ) + 1
+              ].classList.add("opasity-killer1");
+            }}
+            className="aside-right1"
+          >
+            {discount?.map((evt, i) => (
+              <div
+                key={i}
+                className={
+                  i == 3 ? "aside-titles1 opasity-killer1" : "aside-titles1"
+                }
+              >
+                <img
+                  src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                  alt=""
+                  className="aside-logo"
+                />
+                <div className="aside-items">
+                  <h3 className="aside-subname">
+                    {evt[`title_${i18next.language}`]}
+                  </h3>
+                  <p className="aside-texts">
+                    {evt[`description_${i18next.language}`]}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+     
 
       <BuyModal showbuy={buy}>
         <button onClick={() => setBuy()} className="aside-modal-close">

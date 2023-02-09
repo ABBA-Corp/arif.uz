@@ -19,11 +19,11 @@ const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 1;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? slides?.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
   const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === slides?.length - 1;
     const newIndex = isLastSlide ? 1 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };

@@ -12,13 +12,14 @@ import { useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
+import closes from "../../../../assets/icons/close.png";
 
 const settings = {
   dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToScroll: 1
 };
 
 const Content = () => {
@@ -52,7 +53,7 @@ const Content = () => {
     <div className="content">
       <Swiper
         pagination={{
-          dynamicBullets: true,
+          dynamicBullets: true
         }}
         modules={[Pagination]}
         className="mySwiper"
@@ -105,9 +106,10 @@ const Content = () => {
         <div>
           <div className="content-modal-item">
             <button onClick={() => setVideoModal()} className="close-modal">
-              <IoCloseOutline style={{ marginLeft: "-3px" }} />
+              <img className="aside-close-img" src={closes} alt="" />
             </button>
           </div>
+
           {!!videoModal && (
             <iframe
               className="content-video-modal"
