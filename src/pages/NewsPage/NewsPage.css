@@ -4,7 +4,12 @@
   }
 
   .news .news-list {
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  .news{
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -14,13 +19,17 @@
   }
 
   .App .meeting {
-    padding: 70px 60px;
+    padding: 70px 100px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 790px) {
   .container {
     width: 100%;
+  }
+
+  .App .meeting{
+    padding: 40px 30px;
   }
 
   .sidebar .sidebar-item {

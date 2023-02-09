@@ -30,7 +30,6 @@ const Slider = () => {
         slidesPerView={1.4}
         spaceBetween={0}
         loop={true}
-        
         pagination={{
           clickable: true,
         }}

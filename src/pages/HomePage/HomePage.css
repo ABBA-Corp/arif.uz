@@ -25,7 +25,7 @@
 
 @media (max-width: 1800px) {
   .App .navbar {
-    bottom: 89%;
+    bottom: 87%;
   }
 
   .homepage-list {
@@ -63,6 +63,10 @@
 
   .App .category .category-texts {
     margin-left: 230px;
+  }
+
+  .header {
+    padding-top: 110px;
   }
 
   .header-name,
@@ -112,6 +116,11 @@
   .section .section-names {
     padding-left: 80px;
   }
+
+  .App .catalog {
+    padding: 50px 160px;
+  }
+
   .news .news-top {
     padding: 0 50px;
   }
@@ -135,6 +144,9 @@
   .App .form {
     padding: 80px 200px;
   }
+  .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
+    margin-left: -750px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -142,7 +154,7 @@
     width: 100%;
   }
   .App .category .category-texts {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 
   body .header-close {
@@ -238,10 +250,11 @@
 
   .navbar .navbar-list {
     justify-content: space-around;
+    width: 900px;
   }
 
   .App .navbar {
-    bottom: 90.5%;
+    bottom:85%;
   }
 
   .section .section-list {
@@ -381,6 +394,14 @@
 @media (max-width: 800px) {
   .container {
     width: 100%;
+  }
+
+  .header {
+    padding-top: 50px;
+  }
+
+  .homepage-list {
+    height: 108vh;
   }
 
   .App .nav {
@@ -673,6 +694,10 @@
     width: 100%;
   }
 
+  body .App .header {
+    padding-top: 60px;
+  }
+
   .App .aside-button-right {
     left: 63%;
   }
@@ -714,7 +739,7 @@
     width: 90%;
   }
   .rating .rating-number {
-    font-size: 25px;
+    font-size: 30px;
   }
   .rating .rating-text {
     font-size: 16px;
@@ -749,7 +774,7 @@
   }
   .about .about-text {
     width: 85%;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   .about .about-item-link {
@@ -842,7 +867,7 @@
   }
   .content .content-span {
     font-size: 14px;
-    width: 70px;
+    width: 95px;
     left: 95%;
     margin-top: -40px;
   }
@@ -1020,7 +1045,7 @@
     height: 450px;
   }
   .homepage-list {
-    height: 90vh;
+    height: 100vh;
   }
 
   body .App .aside-name {
@@ -1030,9 +1055,14 @@
     padding: 20px 10px;
   }
 
-  body .App .news{
+  body .App .news {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  body .about-icons {
+    top: 31%;
+    left: 0%;
   }
 }
 
@@ -1041,7 +1071,7 @@
     width: 100%;
   }
   .homepage-list {
-    height: 88vh;
+    height: 100vh;
   }
 
   .slider .slider-span {
@@ -1109,17 +1139,20 @@
   }
 
   .about-img {
-    margin-left: 35px;
+    margin-left: 0;
   }
   .about .about-name {
     margin-left: 20px;
   }
 
-  .App .header {
-    padding-top: 50px;
+  body .App .header {
+    padding-top: 30px;
   }
 
   .content .content-text {
     margin-left: 100px;
+  }
+  .about .about-title{
+    margin-left: 0;
   }
 }

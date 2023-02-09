@@ -8,12 +8,11 @@ import { useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
-import right from '../../../../assets/icons/right.png'
-import left from '../../../../assets/icons/lefts.png'
-
-//Mobile News
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/splide.min.css";
+import right from "../../../../assets/img/next.png";
+import left from "../../../../assets/img/prev.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Section = () => {
   const [news, setNews] = useState([]);
@@ -34,18 +33,32 @@ const Section = () => {
   }, []);
 
   const [t, i18next] = useTranslation();
+
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={left} className="slick-left" alt="prevArrow" {...props} />
+    <img src={left} className="slider-prev" alt="prevArrow" {...props} />
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src={right} className="slick-right" alt="nextArrow" {...props} />
+    <img src={right} className="slider-next" alt="nextArrow" {...props} />
   );
 
   const settings = {
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
-  }
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <div className="section">
@@ -120,37 +133,36 @@ const Section = () => {
             </div>
           ))}
         </div>
-        <Splide {...settings} className="section-splide">
+
+        <Slider className="section-splide" {...settings}>
           {news?.map((evt, i) => (
-            <SplideSlide>
-              <div key={i} className="section-title">
+            <div key={i} className="section-title">
+              <Link
+                onClick={() => window.scrollTo({ top: 0 })}
+                to={`/news/about=${evt?.id}`}
+              >
+                <img
+                  src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                  alt=""
+                  className="section-pic"
+                />
+                <h6 className="section-subname">
+                  {evt[`title_${i18next?.language}`]}
+                </h6>
+                <p className="section-subtext">
+                  {evt[`text_${i18next?.language}`]}
+                </p>
                 <Link
                   onClick={() => window.scrollTo({ top: 0 })}
                   to={`/news/about=${evt?.id}`}
+                  className="section-links"
                 >
-                  <img
-                    src={`${BASE_URL}uploads/images/${evt.img_src}`}
-                    alt=""
-                    className="section-pic"
-                  />
-                  <h6 className="section-subname">
-                    {evt[`title_${i18next?.language}`]}
-                  </h6>
-                  <p className="section-subtext">
-                    {evt[`text_${i18next?.language}`]}
-                  </p>
-                  <Link
-                    onClick={() => window.scrollTo({ top: 0 })}
-                    to={`/news/about=${evt?.id}`}
-                    className="section-links"
-                  >
-                    {t("link1")}
-                  </Link>
+                  {t("link1")}
                 </Link>
-              </div>
-            </SplideSlide>
+              </Link>
+            </div>
           ))}
-        </Splide>
+        </Slider>
         <div className="section-titles">
           <Link
             onClick={() => window.scrollTo({ top: 0 })}

@@ -253,3 +253,23 @@ span {
   object-fit: contain;
   height: 13px;
 }
+
+.slider-next{
+  top: 15%;
+  width: 40px;
+  height: 40px;
+}
+
+.section .slick-prev{
+  left: 60%;
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
+
+.section .slick-next{
+  left: 75%;
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
