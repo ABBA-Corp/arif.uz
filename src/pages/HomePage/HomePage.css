@@ -7,7 +7,7 @@
 
 @media (max-width: 2000px) {
   .App .navbar {
-    bottom: 90%;
+    bottom: 93%;
   }
 
   .homepage-list {
@@ -25,7 +25,7 @@
 
 @media (max-width: 1800px) {
   .App .navbar {
-    bottom: 87%;
+    bottom: 93%;
   }
 
   .homepage-list {
@@ -50,11 +50,19 @@
   .header-list {
     padding-left: 80px;
   }
+
+  .App .navbar {
+    bottom: 87%;
+  }
 }
 
 @media (max-width: 1440px) {
   .container {
     width: 100%;
+  }
+
+  .App .navbar{
+    bottom: 88%;
   }
 
   .App .meeting {
@@ -126,7 +134,7 @@
   }
 
   .App .category .category-texts {
-    margin-left: 180px;
+    margin-left: 200px;
   }
   .news .news-home {
     padding: 0 50px;
@@ -146,6 +154,10 @@
   }
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: -750px;
+  }
+
+  .App .footerr{
+    padding-left: 100px;
   }
 }
 
