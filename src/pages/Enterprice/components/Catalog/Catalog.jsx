@@ -17,7 +17,7 @@ const Catalog = () => {
   useEffect(() => {
     axios
       .get(BASE_URL + `companies/${id}`)
-      .then((res) => setCompany(res.data.data))
+      .then((res) => setCompany(res?.data?.data))
       .catch((err) => console.log(err));
   }, []);
   return (
@@ -33,10 +33,10 @@ const Catalog = () => {
             <span>{t("enterprice1")}</span>
           </p>
           <h3 className="catalog-subname">
-            {company[`title_${i18next.language}`]}
+            {company[`title_${i18next?.language}`]}
           </h3>
           <p className="catalog-text">
-            {company[`description_${i18next.language}`]}
+            {company[`description_${i18next?.language}`]}
           </p>
         </div>
       </div>
