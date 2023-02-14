@@ -3,6 +3,10 @@
   background: #222936;
   padding-bottom: 0;
   border-bottom: 4px solid #63625f;
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  top: 0;
 }
 
 .nav-list {

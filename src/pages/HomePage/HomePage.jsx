@@ -32,6 +32,7 @@ const HomePage = () => {
       <Section />
       <Aside />
       <About />
+      <Contact />
       <Form />
       <Footer />
       <Bottom />

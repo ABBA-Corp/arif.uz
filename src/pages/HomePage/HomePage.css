@@ -150,7 +150,7 @@
   }
 
   .App .form {
-    padding: 80px 200px;
+    padding: 40px 70px;
   }
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: -750px;
@@ -283,7 +283,7 @@
   }
 
   .App .form {
-    padding: 120px;
+    padding: 40px;
   }
 
   .form .form-input {
@@ -356,6 +356,7 @@
 
   .footer .footer-title {
     flex-wrap: wrap;
+    align-items: baseline;
   }
 
   .footer .footer-logos {
@@ -369,8 +370,9 @@
     font-size: 18px;
   }
   .footer .footer-list {
-    margin: 0 30px;
+    margin:0 30px;
   }
+
 
   body .mySwiper {
     padding-left: 0px;
@@ -408,6 +410,32 @@
     width: 100%;
   }
 
+  .form .container {
+    display: none;
+  }
+  .App .contact {
+    display: block;
+  }
+
+  .App .contact {
+    padding: 20px 30px;
+  }
+
+  .App .form {
+    padding: 0;
+  }
+
+  .App .about .container {
+    left: -10% !important;
+  }
+  .about .about-title {
+    margin-left: 0;
+  }
+
+  .App .meeting {
+    margin-top: 0;
+  }
+
   .header {
     padding-top: 50px;
   }
@@ -440,17 +468,17 @@
     padding-left: 20px;
   }
 
-  .App .form {
+  .App .contact {
     padding: 30px;
   }
 
-  .form .form-list {
+  .contact .form-list {
     padding-left: 30px;
   }
-  .form .form-name {
+  .contact .form-name {
     padding-left: 30px;
   }
-  .form .form-lists {
+  .contact .form-lists {
     padding-left: 20px;
   }
 
@@ -475,7 +503,7 @@
   }
   .section .section-title {
     width: 200px;
-    height: 210px;
+    height: 230px;
   }
   .section .section-pic {
     width: 180px;
@@ -503,7 +531,6 @@
   .content .content-span {
     font-size: 16px;
     margin-top: -48px;
-    left: 86%;
   }
   .content .content-text {
     font-size: 16px;
@@ -512,7 +539,7 @@
   }
 
   .content .content-list {
-    margin-left: 160px;
+    margin-left: 100px;
   }
 
   .footer .footer-links {
@@ -546,6 +573,7 @@
   }
   .App .content .container {
     top: 15%;
+    left: -9%;
   }
 
   body .modal_content-video {
@@ -587,8 +615,23 @@
   .container {
     width: 100%;
   }
+
+  .App .contact .container {
+    padding-bottom: 30px;
+  }
   body .rating {
     padding-left: 50px;
+  }
+
+  .footer--list {
+    margin: 0;
+  }
+  .App .footerr {
+    padding-left: 0px;
+  }
+
+  .footerr-name {
+    margin-left: 40px;
   }
 
   .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
@@ -706,6 +749,14 @@
     width: 100%;
   }
 
+  .contact .form-lists {
+    padding-left: 30px;
+  }
+
+  .header .container {
+    height: calc(790px - 126px - 80px);
+  }
+
   .App .rating .rating-name {
     padding-top: 20px;
   }
@@ -786,10 +837,10 @@
   }
 
   .about .about-title {
-    margin-left: 15px;
+    margin-left: 0px;
   }
   .about .about-text {
-    width: 85%;
+    width: 80%;
     margin-left: 90px;
   }
 
@@ -797,19 +848,19 @@
     margin-left: -130px;
   }
 
-  .App .form {
+  .App .contact {
     padding: 0;
     margin-top: -20px;
   }
-  .form .form-input {
+  .contact .form-input {
     width: 85%;
   }
-  .form textarea {
+  .contact textarea {
     width: 85%;
   }
 
-  .form .form-list {
-    padding-left: 10px;
+  .contact .form-list {
+    padding-left: 30px;
   }
 
   .header .header-span {
@@ -842,6 +893,7 @@
   .section .section-subname {
     font-size: 18px;
     line-height: 20px;
+    margin: 10px 0;
   }
   .section .section-links {
     font-size: 12px;
@@ -861,8 +913,8 @@
     margin-top: -20px;
   }
   .footer .footer-links {
-    width: 35px;
-    height: 37px;
+    width: 40px;
+    height: 43px;
   }
   .footer .footer-logos {
     width: 100px;
@@ -883,8 +935,9 @@
   .content .content-span {
     font-size: 14px;
     width: 95px;
-    left: 95%;
     margin-top: -40px;
+    max-height: 38px;
+    left: 25%;
   }
   .content .content-text {
     color: #ffffff;
@@ -991,7 +1044,7 @@
   .content .content-list {
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin-left: -65px;
     margin-top: 50px;
   }
 
@@ -1021,10 +1074,11 @@
     padding-top: 100px;
   }
 
-  .form .form-name {
+  .contact .form-name {
     font-size: 25px;
+    padding-left: 30px;
   }
-  .App .form .container {
+  .App .contact .container {
     padding-bottom: 35px;
   }
 
@@ -1035,6 +1089,7 @@
   .header .header-list {
     margin-left: 0px;
     padding-left: 20px;
+    margin-top: 140px;
   }
 
   body .modal_content {
@@ -1062,7 +1117,7 @@
     object-fit: cover;
   }
   .homepage-list {
-    height: 100vh;
+    max-height: 100vh;
   }
 
   body .App .aside-name {
@@ -1094,10 +1149,6 @@
   .App .footer {
     padding-left: 0px;
   }
-
-  /* .footer .footer-list:nth-child(2){
-    margin-left: -55px;
-  } */
 
   .slider .slider-span {
     padding-top: 20px;
@@ -1159,9 +1210,9 @@
     margin-left: -130px;
   }
 
-  .App .meeting .meeting-button {
+  /* .App .meeting .meeting-button {
     top: 67%;
-  }
+  } */
 
   .about-img {
     margin-left: 0;
@@ -1178,6 +1229,6 @@
     margin-left: 100px;
   }
   .about .about-title {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }

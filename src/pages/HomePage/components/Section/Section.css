@@ -87,6 +87,9 @@ span {
   color: #000000;
   opacity: 0.85;
   width: 460px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 58px;
 }
 
 .section-item {
@@ -139,6 +142,9 @@ span {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 22px;
+  max-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .section-subtext {

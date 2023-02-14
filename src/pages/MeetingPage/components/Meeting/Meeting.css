@@ -2,6 +2,7 @@
   background: #fce8bd;
   padding: 70px 20px;
   position: relative;
+  margin-top: 70px;
 }
 
 .meeting-name {
@@ -50,13 +51,12 @@
   background-blend-mode: soft-light;
   backdrop-filter: blur(18.9779px);
   border-radius: 109.053px;
-  position: absolute;
   width: 205.31px;
   height: 53.25px;
   display: flex;
   align-items: center;
   position: absolute;
-  top: 73%;
+  top: 64%;
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;

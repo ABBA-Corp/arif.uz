@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import aylana from '../../../../assets/img/aylana.png'
+import aylana from "../../../../assets/img/aylana.png";
 
 const About = () => {
   const [t, i18next] = useTranslation();
@@ -30,7 +30,7 @@ const About = () => {
       <img src={aylana} alt="" className="about-icons" />
       <Swiper
         pagination={{
-          dynamicBullets: true,
+          dynamicBullets: true
         }}
         modules={[Pagination]}
         className="mySwiper"
@@ -51,12 +51,11 @@ const About = () => {
               <p className="about-text">
                 {evt[`description_${i18next.language}`]}
               </p>
-              <div className="about-item-link">
-                <Link
-                  onClick={() => window.scrollTo({ top: 0 })}
-                  to={`/meeting=${evt.id}`}
-                  className="about-btn"
-                >
+              <div
+                onClick={() => window.scrollTo({ top: 0 })}
+                className="about-item-link"
+              >
+                <Link to={`/meeting=${evt?.id}`} className="about-btn">
                   {t("batafsil")}
                 </Link>
               </div>

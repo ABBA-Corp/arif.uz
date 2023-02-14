@@ -1,9 +1,12 @@
 .contact {
   background: #202733;
   padding: 100px 208px;
+  display: none;
 }
 
-.form .container {
+
+
+.contact .container {
   background: url("../../../../assets/img/forms.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;

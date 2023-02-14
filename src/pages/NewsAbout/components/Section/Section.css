@@ -1,0 +1,9 @@
+.new-section {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .new-section {
+    display: block;
+  }
+}

@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="footer-title">
-          <div className="footer-list">
+          <div className="footer-list footer__list">
             <div className="footer-sub">
               <img src={arif} alt="" className="footer-logos" />
               <p className="footer-text">{t("xojalik")}</p>
@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="footer-texts">{t(`footer2`)}</p>
             <ul className="footer-lists">
               <li className="footer-items">
-                <a href="https://www.instagram.com" className="footer-links">
+                <a href="https://www.instagram.com/uzexim/" className="footer-links">
                   <Instagram />
                 </a>
               </li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-items">
-                <a href="https://www.facebook.com" className="footer-links">
+                <a href="https://www.facebook.com/people/Uzexim/100079201327733/" className="footer-links">
                   <Facebook />
                 </a>
               </li>
@@ -43,15 +43,15 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-items">
-                <a href="https://www.instagram.com" className="footer-links">
+                <a href="https://www.instagram.com/uzexim/" className="footer-links">
                   <Instagram />
                 </a>
               </li>
             </ul>
           </div>
-          <div className="footer-list">
+          <div className="footer-list footer__list">
             <h3 className="footer-name">{t("company")}</h3>
-            <ul className="footer--list">
+            <ul className="footer--list ">
               <li className="footer-item">
                 <Link onClick={() => window.scrollTo({ top: 500 })} to="/" className="footer-link">
                   {t(`head3`)}

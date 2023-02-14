@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import "swiper/css/bundle"
+import "swiper/css/bundle";
 import { FreeMode, Pagination } from "swiper";
 const Slider = () => {
   const [service, setService] = useState([]);
@@ -30,10 +30,7 @@ const Slider = () => {
         slidesPerView={1.4}
         spaceBetween={0}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         className="slider-item"
       >
         {service &&
@@ -69,7 +66,7 @@ const Slider = () => {
         slidesPerView={1}
         spaceBetween={0}
         pagination={{
-          clickable: true,
+          clickable: true
         }}
         modules={[FreeMode, Pagination]}
         className="slider-lists"

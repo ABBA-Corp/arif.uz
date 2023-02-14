@@ -29,6 +29,12 @@
     width: 100%;
   }
 
+  .meeting-text{
+    max-height: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .meeting {
     padding: 70px 40px;
   }
@@ -39,7 +45,7 @@
   }
 
   .meeting .meeting-icons {
-    width: 450px;
+    width: 400px;
   }
 
   .meeting .meeting-text {
@@ -48,7 +54,7 @@
   }
 
   .meeting .meeting-button {
-    top: 75%;
+    top: 70%;
     width: 170px;
     font-size: 12px;
   }
@@ -98,7 +104,7 @@
   }
 
   .meeting .meeting-button {
-    top: 75%;
+    top: 58%;
   }
 
   .meeting .meeting-text {
@@ -133,7 +139,7 @@
   }
 
   .meeting .meeting-button {
-    top: 70%;
+    top: 55%;
   }
 
   .App .meetingpage .meeting-img {
@@ -163,7 +169,7 @@
   }
 
   .meeting .meeting-button {
-    top: 67%;
+    top: 50%;
   }
 
   .meeting .meeting-name {

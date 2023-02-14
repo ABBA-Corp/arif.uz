@@ -1,79 +1,68 @@
 import React from "react";
-import { useState } from "react";
 import right from "../../../assets/icons/right.png";
 import left from "../../../assets/icons/left.png";
-
-const slideStyles = {
-  width: "100%",
-  height: "100%",
-  borderRadius: "10px",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  transition: "0.4s ease",
-};
-
-// const rightArrowStyles = {
-//   position: "absolute",
-//   top: "50%",
-//   transform: "translate(0, -50%)",
-//   right: "32px",
-//   fontSize: "45px",
-//   color: "#fff",
-//   zIndex: 1,
-//   cursor: "pointer",
-// };
-
-// const leftArrowStyles = {
-//   position: "absolute",
-//   top: "50%",
-//   transform: "translate(0, -50%)",
-//   left: "32px",
-//   fontSize: "45px",
-//   color: "#fff",
-//   zIndex: 1,
-//   cursor: "pointer",
-// };
-
-const sliderStyles = {
-  position: "relative",
-  height: "100%",
-};
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { BASE_URL } from "../../../services";
 
 const ImageSlider = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 1;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 1 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-  const slideStylesWidthBackground = {
-    ...slideStyles,
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    <div>
+      <p className="aside-counts">0{currentSlide + 1} / </p>
+      <img src={left} alt="prevArrow" {...props} />
+    </div>
+  );
+
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    <div>
+      <p className="aside-count"> 0{slideCount}</p>
+      <img src={right} alt="nextArrow" {...props} />
+    </div>
+  );
+
+  const settings = {
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
-    <div style={sliderStyles}>
-      <div>
-        <div onClick={goToPrevious} className="aside-button-left">
-          <img src={left} />
-        </div>
-        <div onClick={goToNext} className="aside-button-right">
-          <img src={right} />
-        </div>
-      </div>
-      <div style={slideStylesWidthBackground}>
-        <img
-          className="aside-img"
-          src={`https://api.arif.uz/uploads/images/${slides[currentIndex]?.img_src}`}
-        />
-      </div>
-      <div className="aside-slider-bottom">
-        0{currentIndex} / 0{slides.length - 1}
-      </div>
+    <div>
+      <Slider {...settings}>
+        {slides?.map((evt, i) => (
+          <img key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
+        ))}
+      </Slider>
     </div>
   );
 };

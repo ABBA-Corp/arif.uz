@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Sidebar from "../NewsPage/components/Sidebar/Sidebar";
 import Sublime from "./components/Sublime/Sublime";
 import Navbar from "../../components/Navbar/Navbar";
+import Section from "./components/Section/Section";
 
 const NewsAbout = () => {
   return (
@@ -15,6 +16,7 @@ const NewsAbout = () => {
       <Nav />
       <Sidebar />
       <Sublime />
+      <Section />
       <Footer />
     </div>
   );

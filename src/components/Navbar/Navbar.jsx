@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li className="navbar-item">
               <Link
-                onClick={() => window.scrollTo({ top: 3100 })}
+                onClick={() => window.scrollTo({ top: 5100 })}
                 className={navbar ? "actives" : "navbar-links"}
                 to="/"
               >

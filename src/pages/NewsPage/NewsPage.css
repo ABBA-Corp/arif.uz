@@ -23,9 +23,28 @@
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width:1080px) {
+  
+  .container{
+    width: 100%;
+  }
+  .App .sidebar{
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 800px) {
   .container {
     width: 100%;
+  }
+
+  .App .sidebar{
+    margin-top: 0;
+  }
+
+  .news{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .App .meeting{
@@ -38,6 +57,7 @@
 
   .news .news-name {
     font-size: 22px;
+    line-height: 30px;
     margin-top: 0;
   }
 }
@@ -46,9 +66,15 @@
   .container {
     width: 100%;
   }
+  .news .news-home{
+    justify-content: center;
+  }
+  .news-button{
+    margin: 0 auto;
+  }
   .news .news-title {
     width: 80%;
-    height: 380px;
+    height: 290px;
     margin: 15px auto;
   }
   .news .section-pic {
@@ -62,7 +88,7 @@
 
   .news .news-titles {
     text-align: center;
-    width: 270px;
+    width:90%;
   }
 
   .sidebar {
@@ -106,6 +132,32 @@
   }
 
   .news .news-titles {
-    width: 240px;
+    width: 90%;
+  }
+}
+
+
+@media (max-width:330px) {
+  .news .news-home{
+    padding: 0;
+  }
+  .news .news-name{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footerr .footer-sub{
+    display: flex;
+    flex-direction: column;
+  } 
+  .footerr .footerr-links{
+    width: 35px;
+    height: 35px;
+  }
+  .footerr .footerr-texts {
+    width: 100%;
+  }
+  .footerr .footerr-link{
+    line-height: 18px;
   }
 }

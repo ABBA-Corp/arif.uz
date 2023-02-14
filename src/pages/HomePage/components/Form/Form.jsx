@@ -106,17 +106,17 @@ const Form = () => {
         </form>
         <ul className="form-lists">
           <li className="form-item">
-            <a href="https://www.instagram.com" className="form-link">
+            <a href="https://www.instagram.com/uzexim/" className="form-link">
               <img src={insta} alt="" className="form-icon" />
             </a>
           </li>
           <li className="form-item">
-            <a href="https://web.telegram.org/k/" className="form-link">
+            <a href="https://t.me/uzeximmachinery" className="form-link">
               <img src={telegram} alt="" className="form-icon" />
             </a>
           </li>
           <li className="form-item">
-            <a href="tel:+998712770707" className="form-link">
+            <a href="tel:+998950701070" className="form-link">
               <img src={phone} alt="" className="form-icon" />
             </a>
           </li>

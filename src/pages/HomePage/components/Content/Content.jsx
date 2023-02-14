@@ -66,13 +66,13 @@ const Content = () => {
               className="content-imgs"
             />
             <div className="container">
-              <h2 className="content-name">
-                {evt.name}
+              <div className="content-titles">
+                <h2 className="content-name">{evt.name}</h2>
                 <p className="content-span">
                   {" "}
                   {evt[`position_${i18next.language}`]}
                 </p>
-              </h2>
+              </div>
               <p className="content-text">
                 {evt[`description_${i18next.language}`]}
               </p>
@@ -83,7 +83,7 @@ const Content = () => {
                     handleVideoModal();
                     setLinkId(evt?.id);
                   }}
-                  className="content-btn"
+                  className="content-btn content__btn"
                 >
                   <span className="content-img-span">
                     <Audio />

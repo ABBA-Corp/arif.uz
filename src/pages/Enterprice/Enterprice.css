@@ -65,6 +65,10 @@
   .container {
     width: 100%;
   }
+  .slick .slick-img{
+    width: 90%;
+    height: 150px;
+  }
 
   .footerr .footer-title {
     flex-wrap: wrap;
@@ -92,10 +96,11 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .container {
     width: 100%;
   }
+
   .slick .slick-next {
     top: -19%;
     left: 78%;
@@ -106,7 +111,7 @@
   }
   .slick .slick-prev {
     top: -19%;
-    left: 51%;
+    left: 54%;
   }
   .slick {
     padding: 50px 20px;
@@ -120,6 +125,7 @@
 
   body .App .catalog {
     padding: 40px 30px;
+    margin-top: 0px;
   }
 
   .slick .slick-item {
@@ -227,7 +233,6 @@
   }
 
   .footerr .footer-list:nth-child(1) {
-    width: 95%;
     margin-left: 30px;
   }
 
@@ -274,5 +279,21 @@
   .slick .slick-items{
     left: 54%;
     top: 3%;
+  }
+
+  .slick .slick-next {
+    top: -19%;
+    left: 86%;
+    width: 40px;
+    height: 40px;
+  }
+  .slick-counts{
+    left: 54%;
+  }
+  .slick .slick-prev {
+    top: -19%;
+    left: 38%;
+    width: 40px;
+    height: 40px;
   }
 }

@@ -13,11 +13,17 @@ const SliderPage = ({ company }) => {
   const [t, i18next] = useTranslation();
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={left} className="slick-left" alt="prevArrow" {...props} />
+    <div>
+      <p className="slick-counts">0{currentSlide + 1} / </p>
+      <img src={left} className="slick-left" alt="prevArrow" {...props} />
+    </div>
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src={right} className="slick-right" alt="nextArrow" {...props} />
+    <div>
+       <p className="slick-count"> 0{slideCount}</p>
+      <img src={right} className="slick-right" alt="nextArrow" {...props} />
+    </div>
   );
   const settings = {
     speed: 500,
@@ -31,17 +37,17 @@ const SliderPage = ({ company }) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToScroll:1,
+          initialSlide: 1
         }
       },
       {
@@ -58,9 +64,6 @@ const SliderPage = ({ company }) => {
     <div className="slick">
       <div className="container">
         <h2 className="slick-names">{t("enterprice2")}</h2>
-        <div className="slick-items">
-          0{settings.slidesToScroll + 1} / 0{company?.products?.length}
-        </div>
         <div className="slick-page">
           <Slider {...settings}>
             {company?.products?.map((evt, i) => (

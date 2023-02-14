@@ -12,7 +12,7 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.slick-items {
+.slick-count {
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 274;
@@ -20,8 +20,20 @@
   line-height: 25px;
   color: #000000;
   position: absolute;
-  top: 14.5%;
-  left: 74%;
+  top: -20%;
+  left: 75.5%;
+}
+
+.slick-counts {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 274;
+  font-size: 28.6769px;
+  line-height: 25px;
+  color: #000000;
+  position: absolute;
+  top: -20%;
+  left: 71.5%;
 }
 
 .slick .slick-next {
@@ -138,6 +150,14 @@
     left: 71%;
   }
 
+  .slick-counts {
+    left: 66%;
+  }
+
+  .slick-count {
+    left: 71%;
+  }
+
   .slick .slick-next {
     top: -10%;
     left: 77%;
@@ -145,5 +165,18 @@
   .slick .slick-prev {
     top: -10%;
     left: 60%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .slick-counts {
+    left: 63%;
+    top: -29%;
+  }
+
+  .slick-count {
+    left: 71%;
+    top: -29%;
   }
 }

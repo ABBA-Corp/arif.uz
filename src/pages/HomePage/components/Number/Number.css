@@ -11,8 +11,8 @@
   margin: 0 50px;
 }
 
-.number{
-    display: none;
+.number {
+  display: none;
 }
 
 .rating-name {
@@ -34,7 +34,10 @@
   margin-bottom: 0;
   display: flex;
   align-items: center;
-  margin-left: -15px;
+}
+
+.rating-number span{
+  margin: 0;
 }
 
 .rating-text {

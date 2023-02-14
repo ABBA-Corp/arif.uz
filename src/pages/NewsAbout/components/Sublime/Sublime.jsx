@@ -2,13 +2,13 @@ import React from "react";
 import "./Sublime.css";
 import download from "../../../../assets/img/download.png";
 import dot from "../../../../assets/img/div.png";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 import { BASE_URL } from "../../../../services";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import trues from '../../../../assets/icons/true.svg'
+import trues from "../../../../assets/icons/true.svg";
 
 const Sublime = () => {
   const [news, setNews] = useState([]);
@@ -17,9 +17,9 @@ const Sublime = () => {
   useEffect(() => {
     axios
       .get(BASE_URL + `news/${id}`)
-      .then((res) => setNews(res.data.data))
+      .then((res) => setNews(res?.data?.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   const [t, i18next] = useTranslation();
   const [information, setInformation] = useState([]);
@@ -52,11 +52,11 @@ const Sublime = () => {
                 )}
               </button>
               <span className="sublime-span">
-                {!!news.worker && news?.createdAt.slice(0, 10)}
+                {!!news?.worker && news?.createdAt.slice(0, 10)}
               </span>
             </div>
             <img
-              src={`${BASE_URL}uploads/images/${news.img_src}`}
+              src={`${BASE_URL}uploads/images/${news?.img_src}`}
               alt=""
               className="sublime-img"
             />
@@ -65,20 +65,21 @@ const Sublime = () => {
               {!!news.worker && news?.worker[`position_${i18next?.language}`]}
             </h5>
             <img src={dot} alt="" className="sublime-pic" />
-            <p className="sublime-text">{news[`text_${i18next.language}`]}</p>
+            <p className="sublime-text">{news[`text_${i18next?.language}`]}</p>
           </div>
           <div className="sublime-right">
             <h3 className="sublime-names">{t("news2")}</h3>
             {information?.map((evt, i) => (
-              <div className="sublime-item">
-                <p className="sublime-texts">
-                  {evt[`text_${i18next.language}`]}
-                </p>
-                <spam className="sublime-spans">
-                  {" "}
-                  {!! news?.createdAt && news?.createdAt.slice(0, 10)}
-                </spam>
-              </div>
+              <Link id={evt?.id} key={i} to={`/news/about=${evt?.id}`}>
+                <div className="sublime-item">
+                  <p className="sublime-texts">
+                    {evt[`text_${i18next.language}`]}
+                  </p>
+                  <spam className="sublime-spans">
+                    {!!news?.createdAt && news?.createdAt.slice(0, 10)}
+                  </spam>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Footer.css";
 import arif from "../../assets/img/ariff.png";
-import instagram from "../../assets/icons/instagram.png";
-import twitter from "../../assets/icons/twitter.png";
-import facebook from "../../assets/icons/facebook.png";
-import github from "../../assets/icons/github.png";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Insta from "../../assets/icons/insta";
+import Twit from "../../assets/icons/twit";
+import Face from "../../assets/icons/face";
+import Git from "../../assets/icons/git";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -23,28 +23,37 @@ const Footer = () => {
             <p className="footerr-texts">{t(`footer2`)}</p>
             <ul className="footer-lists">
               <li className="footerr-items">
-                <a href="https://www.instagram.com" className="footerr-links">
-                  <img src={instagram} alt="" className="footer-logo" />
+                <a
+                  href="https://www.instagram.com/uzexim/"
+                  className="footerr-links"
+                >
+                  <Insta />
                 </a>
               </li>
               <li className="footerr-items">
                 <a href="https://www.twitter.com" className="footerr-links">
-                  <img src={twitter} alt="" className="footer-logo" />
+                  <Twit />
                 </a>
               </li>
               <li className="footerr-items">
-                <a href="https://www.facebook.com" className="footerr-links">
-                  <img src={facebook} alt="" className="footer-logo" />
+                <a
+                  href="https://www.facebook.com/people/Uzexim/100079201327733/"
+                  className="footerr-links"
+                >
+                  <Face />
                 </a>
               </li>
               <li className="footerr-items">
                 <a href="https://www.github.com" className="footerr-links">
-                  <img src={github} alt="" className="footer-logo" />
+                  <Git />
                 </a>
               </li>
               <li className="footerr-items">
-                <a href="https://www.instagram.com" className="footerr-links">
-                  <img src={instagram} alt="" className="footer-logo" />
+                <a
+                  href="https://www.instagram.com/uzexim/"
+                  className="footerr-links"
+                >
+                  <Insta />
                 </a>
               </li>
             </ul>
@@ -109,7 +118,10 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-item">
-                <a href="https://goo.gl/maps/FqPydKZVYZhJWwxf7" className="footerr-link">
+                <a
+                  href="https://goo.gl/maps/FqPydKZVYZhJWwxf7"
+                  className="footerr-link"
+                >
                   {t("manzil")} <br />
                   {t("manzil1")}
                 </a>
