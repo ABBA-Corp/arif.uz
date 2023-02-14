@@ -169,6 +169,15 @@
     margin-left: 140px;
   }
 
+  .meeting .meeting-button {
+    top: 68%;
+  }
+  .meeting .meeting-text {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    max-height: 230px;
+  }
+
   body .header-close {
     left: 85%;
   }
@@ -228,6 +237,14 @@
     bottom: 89%;
   }
 }
+
+/* @media (max-width: 1180px) {
+  .meeting .meeting-text {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    max-height: 230px;
+  }
+} */
 
 @media (max-width: 1080px) {
   .container {
@@ -356,7 +373,6 @@
 
   .footer .footer-title {
     flex-wrap: wrap;
-    align-items: baseline;
   }
 
   .footer .footer-logos {
@@ -370,9 +386,8 @@
     font-size: 18px;
   }
   .footer .footer-list {
-    margin:0 30px;
+    margin: 0 30px;
   }
-
 
   body .mySwiper {
     padding-left: 0px;
@@ -382,7 +397,11 @@
   }
 
   .App .nav .nav-list {
-    width: 950px;
+    max-width: 900px;
+    padding: 0 15px;
+  }
+  .nav .navbar-item{
+    margin: 0 5px;
   }
 }
 
@@ -402,6 +421,19 @@
   }
   .App .sidebar {
     padding: 10px 0px;
+  }
+  .App .nav .nav-list {
+    max-width: 800px;
+    padding: 0 15px;
+  }
+  .nav .navbar-item{
+    margin: 0 5px;
+  }
+  .nav .nav-link img{
+    width: 120px;
+  }
+  .nav .navbar-links{
+    font-size: 10px;
   }
 }
 
@@ -749,6 +781,10 @@
     width: 100%;
   }
 
+  .category .category-subtext{
+    margin: 10px auto;
+  }
+
   .contact .form-lists {
     padding-left: 30px;
   }
@@ -815,7 +851,7 @@
     margin: 0 10px;
   }
   .App .rating {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   .rating .rating-title {
@@ -1209,11 +1245,6 @@
   .about .about-item-link {
     margin-left: -130px;
   }
-
-  /* .App .meeting .meeting-button {
-    top: 67%;
-  } */
-
   .about-img {
     margin-left: 0;
   }
@@ -1230,5 +1261,25 @@
   }
   .about .about-title {
     margin-left: 20px;
+  }
+  .footer .footer-list:nth-child(2) {
+    margin-left: -30px;
+  }
+  .footer .footer-title {
+    justify-content: center;
+  }
+  .content .content-name {
+    font-size: 35px;
+    line-height: 40px;
+    width: 170px;
+  }
+  .contact .form-name {
+    padding-left: 15px;
+  }
+  .contact .form-list {
+    padding-left: 15px;
+  }
+  .contact .form-lists {
+    padding-left: 15px;
   }
 }

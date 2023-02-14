@@ -29,7 +29,6 @@ const Service = () => {
               {t("xizmat3")}
             </p>
             <img
-              style={{ width: 300, height: 180 }}
               src={setting}
               alt=""
               className="service-img service_img"

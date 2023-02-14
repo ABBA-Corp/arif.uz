@@ -8,6 +8,10 @@
   transition: 0.5s all ease-out;
 }
 
+.slick .slick-box{
+  display: none;
+}
+
 .slick-left {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
@@ -59,7 +63,7 @@
 .slick-slide > div {
   margin: 0 16px;
 }
-.slick-list {
+.slick .slick-list {
   margin: 0 -10px;
 }
 

@@ -52,8 +52,7 @@
 
 .content-imgs {
   width: 100%;
-  object-fit: cover;
-  height: 700px !important;
+  height: 800px !important;
 }
 
 .content-name {
@@ -102,11 +101,10 @@
 
 .content-list {
   display: flex;
-  margin-top: 80px;
+  margin-top: 160px;
   margin-bottom: 50px;
   margin-left: -60px;
 }
-
 
 .content-btn {
   margin: 0 20px;

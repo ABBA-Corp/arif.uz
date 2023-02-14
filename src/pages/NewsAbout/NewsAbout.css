@@ -66,6 +66,8 @@
   .sublime .sublime-name{
     width: 100%;
     margin-bottom: 15px;
+    line-height: 40px;
+    font-size: 25px;
   }
   .sublime .sublime-title{
     margin-bottom: 0;
@@ -73,4 +75,11 @@
   .sublime .sublime-img{
     height: 350px;
   }
+  .header .header-text{
+    width: 80%;
+  }
+}
+
+.newsabout .section{
+  padding: 0;
 }
