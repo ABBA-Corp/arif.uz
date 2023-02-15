@@ -42,7 +42,8 @@
   line-height: 26px;
   color: #fce8bd;
   opacity: 0.6;
-  display: block;
+  display: inline-block;
+  width: auto;
   position: relative;
   padding-bottom: 5px;
 }

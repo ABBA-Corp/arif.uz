@@ -22,6 +22,9 @@
   color: #ffffff;
   width: 400px;
   margin: 20px 0;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  max-height: 70px;
 }
 
 .header-btn {
