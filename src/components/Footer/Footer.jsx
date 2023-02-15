@@ -37,11 +37,11 @@ const Footer = () => {
                   <Facebook />
                 </a>
               </li>
-              <li className="footer-items">
+              {/* <li className="footer-items">
                 <a href="https://www.github.com" className="footer-links">
                   <Github />
                 </a>
-              </li>
+              </li> */}
               <li className="footer-items">
                 <a href="https://www.instagram.com/uzexim/" className="footer-links">
                   <Instagram />
