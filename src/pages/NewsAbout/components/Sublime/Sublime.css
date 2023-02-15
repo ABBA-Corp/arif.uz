@@ -9,7 +9,7 @@
 .sublime-img {
   width: 716px;
   height: 478px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .sublime-name {

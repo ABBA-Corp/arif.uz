@@ -37,7 +37,7 @@
     width: 100%;
   }
 
-  .App .sidebar {
+  body .App .sidebar {
     margin-top: 0;
   }
 
@@ -157,25 +157,25 @@
     width: 100%;
     text-align: center;
   }
-  .footer .footer-text{
+  .footer .footer-text {
     width: 100%;
     text-align: center;
   }
-  .footer .footer-sub{
+  .footer .footer-sub {
     display: flex;
     flex-direction: column;
   }
-  .footer .footer-texts{
+  .footer .footer-texts {
     text-align: center;
   }
   .footerr .footerr-link {
     line-height: 18px;
     font-size: 16px;
   }
-  .footerr .footer--list{
+  .footerr .footer--list {
     text-align: center;
   }
-  .footerr .footerr-name{
+  .footerr .footerr-name {
     text-align: center;
   }
   .footerr .footer-list:nth-child(1) {
@@ -347,22 +347,22 @@
   .footer .footer-list:nth-child(2) {
     margin: 0;
   }
-  .footer .footer--list{
-    margin-right:35px;
+  .footer .footer--list {
+    margin-right: 35px;
   }
 
-  body .footer-lists{
+  body .footer-lists {
     justify-content: center;
   }
   .footerr .footer-title {
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
   }
 
-  body .header-subname{
+  body .header-subname {
     font-size: 22px;
   }
-  .modal .header-close{
+  .modal .header-close {
     left: 82%;
   }
 }

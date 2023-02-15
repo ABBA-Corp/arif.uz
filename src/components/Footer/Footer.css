@@ -121,3 +121,11 @@
 .footer-links:hover svg path {
   fill: #000;
 }
+
+.footer-logos{
+  width: 150px;
+}
+
+.footer .container{
+  width: 1100px;
+}

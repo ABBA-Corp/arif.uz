@@ -1,11 +1,22 @@
 .new-section {
   display: none;
+  background-color: #fce8bd;
 }
 
-@media (max-width: 500px) {
+.App .new-section .new-section-name {
+  font-size: 22px;
+  line-height: 26px;
+  padding: 0 30px;
+}
+
+@media (max-width: 520px) {
   .new-section {
     display: block;
+    background-color: #fce8bd;
+  }
+
+ .new-section .slick-slide > div{
+    width: 90%;
+    margin: 0 auto;
   }
 }
-
-

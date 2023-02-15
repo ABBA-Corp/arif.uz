@@ -400,7 +400,7 @@
     max-width: 900px;
     padding: 0 15px;
   }
-  .nav .navbar-item{
+  .nav .navbar-item {
     margin: 0 5px;
   }
 }
@@ -419,20 +419,21 @@
   .news .news-home {
     padding: 0 30px;
   }
-  .App .sidebar {
+  body .App .sidebar {
     padding: 10px 0px;
+    margin-top: 70px;
   }
   .App .nav .nav-list {
     max-width: 800px;
     padding: 0 15px;
   }
-  .nav .navbar-item{
+  .nav .navbar-item {
     margin: 0 5px;
   }
-  .nav .nav-link img{
+  .nav .nav-link img {
     width: 120px;
   }
-  .nav .navbar-links{
+  .nav .navbar-links {
     font-size: 10px;
   }
 }
@@ -781,7 +782,7 @@
     width: 100%;
   }
 
-  .category .category-subtext{
+  .category .category-subtext {
     margin: 10px auto;
   }
 
@@ -1125,7 +1126,7 @@
   .header .header-list {
     margin-left: 0px;
     padding-left: 20px;
-    margin-top: 140px;
+    margin-top: 110px;
   }
 
   body .modal_content {
@@ -1171,6 +1172,30 @@
   body .about-icons {
     top: 31%;
     left: 0%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+  }
+  .about .about-text {
+    margin-left: 20px;
+  }
+  .about .about-name {
+    margin-left: -20px;
+  }
+  .about .about-item-link {
+    margin-left: -160px;
+  }
+  .slick-box .slick-slide > div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .aside-page .slick-slide > div{
+    margin: 0 auto;
+    width: 95%;
   }
 }
 

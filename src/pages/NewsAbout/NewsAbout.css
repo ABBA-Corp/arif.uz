@@ -74,6 +74,7 @@
   }
   .sublime .sublime-img{
     height: 350px;
+    margin: 15px 0;
   }
   .header .header-text{
     width: 80%;
@@ -81,5 +82,6 @@
 }
 
 .newsabout .section{
-  padding: 0;
+  padding: 25px 0;
+  background-color: #fce8bd;
 }

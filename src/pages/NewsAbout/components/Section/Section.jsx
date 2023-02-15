@@ -10,6 +10,7 @@ import left from "../../../../assets/img/prev.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './Section.css'
 
 const Section = () => {
   const [news, setNews] = useState([]);
@@ -50,35 +51,38 @@ const Section = () => {
   return (
     <div className="section">
       <div className="new-section">
-        <Slider className="section-splide" {...settings}>
-          {news?.map((evt, i) => (
-            <div key={i} className="section-title">
-              <Link
-                onClick={() => window.scrollTo({ top: 0 })}
-                to={`/news/about=${evt?.id}`}
-              >
-                <img
-                  src={`${BASE_URL}uploads/images/${evt.img_src}`}
-                  alt=""
-                  className="section-pic"
-                />
-                <h6 className="section-subname">
-                  {evt[`title_${i18next?.language}`]}
-                </h6>
-                <p className="section-subtext">
-                  {evt[`text_${i18next?.language}`]}
-                </p>
+        <div className="container">
+          <h3 className="new-section-name">{t("news2")}</h3>
+          <Slider className="section-splide" {...settings}>
+            {news?.map((evt, i) => (
+              <div key={i} className="section-title">
                 <Link
                   onClick={() => window.scrollTo({ top: 0 })}
                   to={`/news/about=${evt?.id}`}
-                  className="section-links"
                 >
-                  {t("link1")}
+                  <img
+                    src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                    alt=""
+                    className="section-pic"
+                  />
+                  <h6 className="section-subname">
+                    {evt[`title_${i18next?.language}`]}
+                  </h6>
+                  <p className="section-subtext">
+                    {evt[`text_${i18next?.language}`]}
+                  </p>
+                  <Link
+                    onClick={() => window.scrollTo({ top: 0 })}
+                    to={`/news/about=${evt?.id}`}
+                    className="section-links"
+                  >
+                    {t("link1")}
+                  </Link>
                 </Link>
-              </Link>
-            </div>
-          ))}
-        </Slider>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
