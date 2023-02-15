@@ -204,6 +204,10 @@
     width: 100%;
   }
 
+  .footerr .footer-logos{
+    width: 100px;
+  }
+
   .slick .slick-page{
     display: none;
   }
@@ -272,7 +276,7 @@
   }
 
   .footerr .footer-list:nth-child(1) {
-    margin-left: 30px;
+    margin-left: 60px;
   }
 
   .footerr .footerr-texts {
@@ -281,8 +285,8 @@
     width: 80%;
   }
   .footerr .footerr-text {
-    font-size: 12px;
-    width: 100%;
+    font-size: 14px;
+    width: 180px;
   }
 
   .footerr .footer-list:nth-child(2) {

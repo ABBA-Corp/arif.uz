@@ -4,6 +4,10 @@
   padding-bottom: 150px;
 }
 
+.category-box{
+  display: none;
+}
+
 .category .container {
   overflow-x: scroll;
   width: 100%;

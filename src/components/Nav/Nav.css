@@ -9,6 +9,10 @@
   top: 0;
 }
 
+.nav-arif-img{
+  object-fit: contain;
+}
+
 .nav-list {
   list-style: none;
   display: flex;

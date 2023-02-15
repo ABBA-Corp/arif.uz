@@ -45,7 +45,7 @@ const About = () => {
             <div className="container">
               <div className="about-title">
                 <img src={arif} alt="" className="about-img" />
-                <p className="about-subname">{t("tadbir")}</p>
+                {/* <p className="about-subname">{t("tadbir")}</p> */}
               </div>
               <h2 className="about-name">{evt[`title_${i18next.language}`]}</h2>
               <p className="about-text">

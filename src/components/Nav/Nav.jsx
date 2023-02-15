@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import arif from "../../assets/img/ariff.png";
+import arif from "../../assets/img/navarif.svg";
 import Languages from "../Language/Language";
 import "./Nav.css";
 
@@ -33,7 +33,7 @@ const Nav = () => {
           </li>
           <li className="navbar-item">
             <Link className="nav-link" to="/">
-              <img src={arif} alt="" />
+              <img className="nav-arif-img" src={arif} alt="" />
             </Link>
           </li>
           <li className="navbar-item">

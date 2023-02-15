@@ -7,7 +7,7 @@
 
 @media (max-width: 2000px) {
   .App .navbar {
-    bottom: 93%;
+    bottom: 90%;
   }
 
   .homepage-list {
@@ -20,6 +20,10 @@
 
   .header-name {
     font-size: 50px;
+  }
+
+  .about .about-icons {
+    left: 14%
   }
 }
 
@@ -459,10 +463,13 @@
   }
 
   .App .about .container {
-    left: -10% !important;
+    left: -17% !important;
+  }
+  .App .about-icons {
+    left: 0%;
   }
   .about .about-title {
-    margin-left: 0;
+    margin-left: -230px;
   }
 
   .App .meeting {
@@ -784,6 +791,7 @@
 
   .category .category-subtext {
     margin: 10px auto;
+    max-height: 40px;
   }
 
   .contact .form-lists {
@@ -866,7 +874,7 @@
   }
 
   .about-img {
-    width: 120px;
+    width: 160px;
   }
 
   .about-subname {
@@ -874,7 +882,7 @@
   }
 
   .about .about-title {
-    margin-left: 0px;
+    margin-left: -140px;
   }
   .about .about-text {
     width: 80%;
@@ -1193,9 +1201,52 @@
     margin: 0 auto;
   }
 
-  .aside-page .slick-slide > div{
+  .aside-page .slick-slide > div {
     margin: 0 auto;
     width: 95%;
+  }
+
+  .scroll-horizontal {
+    display: none;
+  }
+
+  .category-box {
+    display: block;
+  }
+  .App .category .category-right {
+    padding-bottom: 25px;
+  }
+
+  .category .slick-slide > div {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .category .mains {
+    margin: 0 auto;
+  }
+
+  .App .category .category-texts {
+    margin-top: 20px;
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .slick .slick-prev {
+    top: -25%;
+    left: 36%;
+  }
+  .slick .slick-next {
+    top: -25%;
+  }
+  .slick .slick-count {
+    top: -35%;
+  }
+  .slick .slick-counts {
+    top: -35%;
+  }
+  .about .about-title {
+    margin-left: -160px;
   }
 }
 
@@ -1271,7 +1322,7 @@
     margin-left: -130px;
   }
   .about-img {
-    margin-left: 0;
+    margin-left: -140px;
   }
   .about .about-name {
     margin-left: 20px;

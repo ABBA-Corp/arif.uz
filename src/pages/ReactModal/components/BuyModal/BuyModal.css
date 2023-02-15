@@ -5,7 +5,7 @@
   left: 0%;
   right: 0;
   z-index: 1004;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(18px);
   display: flex;
   justify-content: center;
