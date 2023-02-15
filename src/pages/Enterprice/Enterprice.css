@@ -2,6 +2,9 @@
   .container {
     width: 100%;
   }
+ .App .about .about-icons{
+    left: 6%;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -310,7 +313,8 @@
     height: 40px;
   }
   .slick .slick-names {
-    margin-left: 15px;padding-top: 25px;
+    margin-left: 15px;
+    padding-top: 25px;
   }
   .slick .slick-count{
     top: -30%;

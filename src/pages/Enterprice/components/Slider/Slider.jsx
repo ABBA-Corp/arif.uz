@@ -37,7 +37,6 @@ const SliderPage = ({ company }) => {
     slidesToShow: 4,
     initialSlide: 0,
     slidesToScroll: 1,
-    infinite:company.length > 4,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
     responsive: [

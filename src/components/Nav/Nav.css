@@ -9,6 +9,13 @@
   top: 0;
 }
 
+.nav .nav-item .nav__current-lang{
+  color: #fce8bd;
+}
+.nav .nav-item .nav__lang{
+  color: #fce8bd;
+}
+
 .nav-arif-img{
   object-fit: contain;
 }
@@ -34,7 +41,7 @@
   margin: 0 10px;
 }
 
-.nav-link {
+.nav .nav-link {
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 400;

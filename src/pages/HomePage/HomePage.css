@@ -6,9 +6,9 @@
 }
 
 @media (max-width: 2000px) {
-  .App .navbar {
+  /* .App .navbar {
     bottom: 90%;
-  }
+  } */
 
   .homepage-list {
     height: 100vh;
@@ -28,9 +28,9 @@
 }
 
 @media (max-width: 1800px) {
-  .App .navbar {
+  /* .App .navbar {
     bottom: 93%;
-  }
+  } */
 
   .homepage-list {
     height: 100vh;
@@ -55,9 +55,9 @@
     padding-left: 80px;
   }
 
-  .App .navbar {
+  /* .App .navbar {
     bottom: 87%;
-  }
+  } */
 }
 
 @media (max-width: 1440px) {
@@ -65,9 +65,9 @@
     width: 100%;
   }
 
-  .App .navbar {
-    bottom: 88%;
-  }
+  /* .App .navbar {
+    bottom: 86%;
+  } */
 
   .App .meeting {
     padding: 70px 140px;
