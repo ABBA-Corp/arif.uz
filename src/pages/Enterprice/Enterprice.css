@@ -310,7 +310,7 @@
     height: 40px;
   }
   .slick .slick-names {
-    margin-left: 15px;
+    margin-left: 15px;padding-top: 25px;
   }
   .slick .slick-count{
     top: -30%;
