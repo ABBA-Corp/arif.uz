@@ -1,7 +1,7 @@
 .category {
   background: #fce8bd;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 90px;
+  padding-bottom: 70px;
 }
 
 .category-box{
@@ -64,7 +64,6 @@
 }
 
 .category-texts {
-  margin-top: 210px;
   margin-left: 100px;
   display: flex;
   align-items: center;

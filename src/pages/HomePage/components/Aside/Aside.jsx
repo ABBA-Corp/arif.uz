@@ -245,8 +245,6 @@ export default function Aside() {
         </div>
       </div>
 
-     
-
       <BuyModal showbuy={buy}>
         <button onClick={() => setBuy()} className="aside-modal-close">
           <img src={close} alt="" className="aside-modal-img" />

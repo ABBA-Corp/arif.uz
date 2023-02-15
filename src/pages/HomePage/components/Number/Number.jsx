@@ -9,7 +9,6 @@ import { useTranslation } from "react-i18next";
 
 const Number = () => {
   const [count, setCount] = useState(false);
-
   const [rating, setRating] = useState([]);
 
   useEffect(() => {
