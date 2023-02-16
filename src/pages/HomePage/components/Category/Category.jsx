@@ -21,7 +21,7 @@ const Category = () => {
 
   useEffect(() => {
     axios
-      .get(BASE_URL + "companies")  
+      .get(BASE_URL + "companies")
       .then((res) => setCompany(res.data.data))
       .catch((err) => console.log(err));
   }, []);
@@ -47,58 +47,60 @@ const Category = () => {
   return (
     <div className="category">
       <div className="container">
-        <Swiper
-          direction={"horizontal"}
-          slidesPerView={"auto"}
-          freeMode={true}
-          scrollbar={false}
-          mousewheel={true}
-          modules={[FreeMode, Scrollbar, Mousewheel]}
-          speed={2000}
-          className="mySwiper"
-        >
-          {company?.map((evt, i) => (
-            <SwiperSlide>
-              <div key={i} className="category-page">
-                <div className="category-left">
-                  <h2 className="category-name">{t("arif")}</h2>
-                  <p className="category-text">{t("loyiha")}</p>
-                  <Link
-                    onClick={() => window.scrollTo({ top: 0 })}
-                    className="category-link"
-                    to={`/enterprice=${evt?.id}`}
-                  >
-                    {t("batafsil")}
-                  </Link>
-                </div>
-                <div className="mains">
-                  <div className="category-right">
-                    <img
-                      src={`${BASE_URL}uploads/images/${evt.img_src}`}
-                      alt=""
-                      className="category-img"
-                    />
-                    <h3 className="category-subname">
-                      {evt[`title_${i18next.language}`]}
-                    </h3>
-                    <p className="category-subtext">
-                      {evt[`description_${i18next.language}`]}
-                    </p>
-                    <div className="category-list-link">
-                      <Link
-                        onClick={() => window.scrollTo({ top: 0 })}
-                        className="category-link"
-                        to={`/enterprice=${evt?.id}`}
-                      >
-                        {t("batafsil")}
-                      </Link>
+        <div className="category-page-box">
+          <Swiper
+            direction={"horizontal"}
+            slidesPerView={"auto"}
+            freeMode={true}
+            scrollbar={false}
+            mousewheel={true}
+            modules={[FreeMode, Scrollbar, Mousewheel]}
+            speed={2000}
+            className="mySwiper"
+          >
+            {company?.map((evt, i) => (
+              <SwiperSlide>
+                <div key={i} className="category-page">
+                  <div className="category-left">
+                    <h2 className="category-name">{t("arif")}</h2>
+                    <p className="category-text">{t("loyiha")}</p>
+                    <Link
+                      onClick={() => window.scrollTo({ top: 0 })}
+                      className="category-link"
+                      to={`/enterprice=${evt?.id}`}
+                    >
+                      {t("batafsil")}
+                    </Link>
+                  </div>
+                  <div className="mains">
+                    <div className="category-right">
+                      <img
+                        src={`${BASE_URL}uploads/images/${evt.img_src}`}
+                        alt=""
+                        className="category-img"
+                      />
+                      <h3 className="category-subname">
+                        {evt[`title_${i18next.language}`]}
+                      </h3>
+                      <p className="category-subtext">
+                        {evt[`description_${i18next.language}`]}
+                      </p>
+                      <div className="category-list-link">
+                        <Link
+                          onClick={() => window.scrollTo({ top: 0 })}
+                          className="category-link"
+                          to={`/enterprice=${evt?.id}`}
+                        >
+                          {t("batafsil")}
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
         <div className="category-box">
           <Slider {...settings}>
             {company?.map((evt, i) => (

@@ -1187,6 +1187,10 @@
   .container {
     width: 100%;
   }
+
+  .category .category-page-box{
+    display: none;
+  }
   .about .about-text {
     margin-left: 20px;
   }

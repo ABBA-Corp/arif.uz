@@ -60,7 +60,7 @@ const ImageSlider = ({ slides }) => {
     <div>
       <Slider {...settings}>
         {slides?.map((evt, i) => (
-          <img key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
+          <img className="imageslider-img" key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
         ))}
       </Slider>
     </div>

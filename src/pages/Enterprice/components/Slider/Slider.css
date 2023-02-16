@@ -90,6 +90,9 @@
   color: #000000;
   padding: 20px 15px;
   text-align: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  max-height: 22px;
 }
 
 .slick-text {

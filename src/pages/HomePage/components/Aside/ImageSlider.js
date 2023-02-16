@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import right from "../../../../assets/icons/right.png";
 import left from "../../../../assets/icons/left.png";
 import Slider from "react-slick";
@@ -61,7 +60,7 @@ const ImageSlider = ({ slides }) => {
     <div>
       <Slider {...settings}>
         {slides?.map((evt, i) => (
-          <img key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
+          <img className="imageslider-img" key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
         ))}
       </Slider>
     </div>
