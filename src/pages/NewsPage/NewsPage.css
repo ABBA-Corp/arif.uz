@@ -243,12 +243,12 @@
     height: 45px;
   }
   body .aside-button {
-    top: 28%;
+    top: 37%;
   }
   body .aside-spans {
-    top: 34%;
+    top: 42%;
   }
-  .aside-page .slick-next {
+  /* .aside-page .slick-next {
     left: 66%;
     width: 40px;
     height: 40px;
@@ -257,7 +257,7 @@
     left: 18%;
     width: 40px;
     height: 40px;
-  }
+  } */
   .aside-counts {
     top: 101%;
     left: 38%;
@@ -290,17 +290,12 @@
   }
   .slick .slick-name {
     padding: 10px 8px;
+    max-height: 16px;
   }
   .slick .slick-text {
     margin-left: 8px;
   }
-  .slick .slick-next {
-    top: -24%;
-  }
-  .slick .slick-prev {
-    top: -24%;
-    left: 34%;
-  }
+
   .slick .slick-names {
     margin: 15px 10px;
     margin-top: 25px;
@@ -360,6 +355,7 @@
   }
   .footer .footer--list {
     margin-right: 35px;
+    text-align: center;
   }
 
   body .footer-lists {
@@ -375,5 +371,30 @@
   }
   .modal .header-close {
     left: 82%;
+  }
+
+  .slick .slick-button-next {
+    top: -36%;
+  }
+  .slick .slick-count {
+    top: -37.5%;
+  }
+  .slick .slick-counts {
+    top: -37.5%;
+  }
+  .slick .slick-button-prev {
+    top: -36%;
+    left: 26%;
+  }
+
+  .App .section .section-sub {
+    font-size: 9px;
+  }
+  .App .section .section-btn {
+    width: 65px;
+  }
+
+  body .App .footer .footer-list {
+    text-align: center;
   }
 }
