@@ -7,6 +7,8 @@ import Insta from "../../assets/icons/insta";
 import Twit from "../../assets/icons/twit";
 import Face from "../../assets/icons/face";
 import Git from "../../assets/icons/git";
+import Call from "../../assets/icons/call";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -31,11 +33,6 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footerr-items">
-                <a href="https://www.twitter.com" className="footerr-links">
-                  <Twit />
-                </a>
-              </li>
-              <li className="footerr-items">
                 <a
                   href="https://www.facebook.com/people/Uzexim/100079201327733/"
                   className="footerr-links"
@@ -43,17 +40,14 @@ const Footer = () => {
                   <Face />
                 </a>
               </li>
-              {/* <li className="footerr-items">
-                <a href="https://www.github.com" className="footerr-links">
-                  <Git />
-                </a>
-              </li> */}
               <li className="footerr-items">
-                <a
-                  href="https://www.instagram.com/uzexim/"
-                  className="footerr-links"
-                >
-                  <Insta />
+                <a href="tel:+998950701070" className="footerr-links">
+                  <Call />
+                </a>
+              </li>
+              <li className="footerr-items">
+                <a href="https://t.me/uzeximmachinery" className="footerr-links footer-teleg">
+                  <FaTelegramPlane />
                 </a>
               </li>
             </ul>

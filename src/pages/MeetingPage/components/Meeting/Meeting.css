@@ -1,9 +1,10 @@
 .meeting {
   background: #fce8bd;
-  padding: 70px 20px;
+  padding: 70px 30px;
   position: relative;
   margin-top: 70px;
 }
+
 
 .meeting-name {
   font-family: "SF Pro";

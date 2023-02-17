@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Form.css";
-import insta from "../../../../assets/img/insta.png";
-import telegram from "../../../../assets/img/telegram.png";
-import phone from "../../../../assets/img/phone.png";
+import insta from "../../../../assets/img/insta.svg";
+import telegram from "../../../../assets/img/phone.svg";
+import phone from "../../../../assets/img/call.svg";
 import close from "../../../../assets/img/+.png";
 import ModalSucces from "../../../ReactModal/components/ModalSucces/ModalSucces";
 import { useTranslation } from "react-i18next";
@@ -78,7 +78,7 @@ const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="communication" className="form">
+    <div className="form">
       <div className="container">
         <h2 className="form-name">{t("form")}</h2>
         <form onSubmit={formBtn} action="" className="form-list">
@@ -99,7 +99,7 @@ const Form = () => {
             required
             className="form-input"
           />
-          <textarea placeholder={t("text")} name="tel" id="tel"  />
+          <textarea placeholder={t("text")} name="tel" id="tel" />
           <button type="submit" className="form-button">
             {t("send")}
           </button>
@@ -129,13 +129,13 @@ const Form = () => {
         </button>
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <a
-            href="/"
-            onClick={() => window.scrollTo({ top: 0 })}
+          <button
+            // href="/"
+            onClick={() => setGreatModal()}
             className="form-modal-link"
           >
             Ok
-          </a>
+          </button>
         </div>
       </ModalSucces>
     </div>

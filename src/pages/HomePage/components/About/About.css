@@ -116,6 +116,7 @@
   color: #ffffff;
   padding-top: 120px;
   width: 400px;
+  margin-left: 25px;
 }
 
 .about-text {
@@ -125,8 +126,8 @@
   font-size: 16px;
   line-height: 25px;
   color: #ffffff;
-  width: 360px;
-  max-height: 50px;
+  width: 330px;
+  max-height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-left: -40px;

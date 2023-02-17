@@ -3,10 +3,12 @@ import "./Footer.css";
 import arif from "../../assets/img/arif.png";
 import { Link } from "react-router-dom";
 import Instagram from "../../assets/icons/instagram";
-import Twitter from "../../assets/icons/twitter";
+// import Twitter from "../../assets/icons/twitter";
 import Facebook from "../../assets/icons/facebook";
-import Github from "../../assets/icons/github";
+// import Github from "../../assets/icons/github";
 import { useTranslation } from "react-i18next";
+import Call from "../../assets/icons/call";
+import { FaTelegramPlane} from 'react-icons/fa'
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -23,28 +25,29 @@ const Footer = () => {
             <p className="footer-texts">{t(`footer2`)}</p>
             <ul className="footer-lists">
               <li className="footer-items">
-                <a href="https://www.instagram.com/uzexim/" className="footer-links">
+                <a
+                  href="https://www.instagram.com/uzexim/"
+                  className="footer-links"
+                >
                   <Instagram />
                 </a>
               </li>
               <li className="footer-items">
-                <a href="https://www.twitter.com" className="footer-links">
-                  <Twitter />
-                </a>
-              </li>
-              <li className="footer-items">
-                <a href="https://www.facebook.com/people/Uzexim/100079201327733/" className="footer-links">
+                <a
+                  href="https://www.facebook.com/people/Uzexim/100079201327733/"
+                  className="footer-links"
+                >
                   <Facebook />
                 </a>
               </li>
-              {/* <li className="footer-items">
-                <a href="https://www.github.com" className="footer-links">
-                  <Github />
-                </a>
-              </li> */}
               <li className="footer-items">
-                <a href="https://www.instagram.com/uzexim/" className="footer-links">
-                  <Instagram />
+                <a href="tel:+998950701070" className="footer-links">
+                  <Call />
+                </a>
+              </li>
+              <li className="footer-items">
+                <a href="https://t.me/uzeximmachinery" className="footer-links footer-telegram">
+                  <FaTelegramPlane /> 
                 </a>
               </li>
             </ul>
@@ -53,7 +56,11 @@ const Footer = () => {
             <h3 className="footer-name">{t("company")}</h3>
             <ul className="footer--list ">
               <li className="footer-item">
-                <Link onClick={() => window.scrollTo({ top: 500 })} to="/" className="footer-link">
+                <Link
+                  onClick={() => window.scrollTo({ top: 500 })}
+                  to="/"
+                  className="footer-link"
+                >
                   {t(`head3`)}
                 </Link>
               </li>
@@ -67,7 +74,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer-item">
-                <Link onClick={() => window.scrollTo({ top: 0 })} to="/news" className="footer-link">
+                <Link
+                  onClick={() => window.scrollTo({ top: 0 })}
+                  to="/news"
+                  className="footer-link"
+                >
                   {t(`head5`)}
                 </Link>
               </li>
@@ -101,7 +112,10 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-item">
-                <a href="https://goo.gl/maps/FqPydKZVYZhJWwxf7" className="footer-link">
+                <a
+                  href="https://goo.gl/maps/FqPydKZVYZhJWwxf7"
+                  className="footer-link"
+                >
                   {t("manzil")} <br />
                   {t("manzil1")}
                 </a>

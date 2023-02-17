@@ -1,11 +1,11 @@
-.nav--langs p{
-    color: black;
-    text-transform: uppercase;
-    margin: 10px;
+.nav--langs p {
+  color: black;
+  text-transform: uppercase;
+  margin: 10px;
 }
 
-.nav--langs{
-    display: flex;
-    align-items: center;
-    margin-left: -10px;
+.nav--langs {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
 }

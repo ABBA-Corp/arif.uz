@@ -109,18 +109,18 @@
     width: 100%;
   }
 
-  .slick .slick-next {
+  /* .slick .slick-next {
     top: -19%;
     left: 78%;
-  }
+  } */
   .slick .slick-items {
     top: 5%;
     left: 60%;
   }
-  .slick .slick-prev {
+  /* .slick .slick-prev {
     top: -19%;
     left: 54%;
-  }
+  } */
   .slick {
     padding: 50px 20px;
   }
@@ -185,20 +185,28 @@
   .slick .slick-item {
     height: 340px;
   }
-  .slick .slick-prev {
-    left: 45%;
-    top: -22%;
-  }
-  .slick .slick-next {
-    top: -22%;
-  }
+
   .slick .slick-counts {
-    left: 53%;
-    top: -33%;
+    left: 69%;
+    top: -31%;
   }
   .slick .slick-count {
-    left: 69%;
-    top: -33%;
+    left: 79%;
+    top: -31%;
+  }
+
+  .slick .slick-button-next{
+    left: 86%;
+    top: -28%;
+  }
+  .slick .slick-button-prev{
+    left: 52%;
+    top: -28%;
+  }
+
+  .slick .slick-text{
+    margin-top: 0px;
+    margin-left: 15px;
   }
 }
 
@@ -220,7 +228,6 @@
 
   .slick .slick-img {
     width: 92%;
-    object-fit: cover;
     margin-left: 0;
     padding: 10px 15px;
   }
@@ -295,60 +302,74 @@
   .footerr .footer-list:nth-child(2) {
     margin-top: -25px;
   }
-  .slick .slick-next {
+  /* .slick .slick-next {
     top: -19%;
     left: 78%;
     width: 40px;
     height: 40px;
-  }
+  } */
   .slick .slick-items {
     top: 4%;
     left: 57%;
     font-size: 22px;
   }
-  .slick .slick-prev {
+
+  .slick .slick-button-prev{
+    left: 40%;
+  }
+  /* .slick .slick-prev {
     top: -19%;
     left: 45%;
     width: 40px;
     height: 40px;
-  }
+  } */
   .slick .slick-names {
     margin-left: 15px;
     padding-top: 25px;
   }
   .slick .slick-count{
-    top: -30%;
+    top: -31%;
+    left: 78%;
   }
   .slick .slick-counts{
-    top: -30%;
+    top: -31%;
+    left: 63%;
   }
 }
 
 @media (max-width: 450px) {
-  .slick .slick-next {
+  /* .slick .slick-next {
     top: -19%;
     left: 84%;
-  }
+  } */
   .slick .slick-items {
     left: 54%;
     top: 3%;
   }
 
-  .slick .slick-next {
+  .slick .slick-name{
+    max-height: 24px;
+  }
+
+  .slick .slick-button-prev{
+    left: 30%;
+  }
+
+  /* .slick .slick-next {
     top: -19%;
     left: 86%;
     width: 40px;
     height: 40px;
-  }
+  } */
   .slick-counts {
     left: 54%;
   }
-  .slick .slick-prev {
+  /* .slick .slick-prev {
     top: -19%;
     left: 38%;
     width: 40px;
     height: 40px;
-  }
+  } */
 }
 
 @media (max-width: 400px) {

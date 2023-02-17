@@ -14,7 +14,7 @@ const Redirect = () => {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:id" element={<FilterPage />} />
+        {/* <Route path="/:id" element={<FilterPage />} /> */}
         <Route path="/enterprice=:id" element={<Enterprice />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/news=:id" element={<Information />} />

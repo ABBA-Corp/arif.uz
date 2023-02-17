@@ -9,11 +9,19 @@
 .actives {
   color: #000;
   background: #fce8bd;
-  font-size: 14px;
   padding-bottom: 0;
+  width: 100%;
+  margin: auto;
+  padding-left: auto;
+  padding-right: auto;
 }
+
 svg path {
   fill: #fff;
+}
+
+.actives svg{
+  object-fit: cover;
 }
 
 .actives svg path {
@@ -26,8 +34,8 @@ svg path {
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  width: 1000px;
-  margin: 10px auto;
+  width: 1100px;
+  margin: 15px auto;
 }
 
 .navbar-item {
@@ -42,7 +50,6 @@ svg path {
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  /* padding: 0 10px; */
 }
 
 .navbar-links {

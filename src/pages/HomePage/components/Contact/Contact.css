@@ -147,6 +147,8 @@ textarea {
 
 .form-modal-link {
   border: 2px solid #202733;
+  background-color: transparent;
+  cursor: pointer;
   padding: 12px 40px;
   border-radius: 30px;
   font-size: 18px;

@@ -1,6 +1,6 @@
 import React from "react";
-import right from "../../../assets/icons/right.png";
-import left from "../../../assets/icons/left.png";
+import right from "../../../assets/img/right.svg";
+import left from "../../../assets/img/left.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -60,7 +60,11 @@ const ImageSlider = ({ slides }) => {
     <div>
       <Slider {...settings}>
         {slides?.map((evt, i) => (
-          <img className="imageslider-img" key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
+          <img
+            className="imageslider-img"
+            key={i}
+            src={`${BASE_URL}uploads/images/${evt.img_src}`}
+          />
         ))}
       </Slider>
     </div>

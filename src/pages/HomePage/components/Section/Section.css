@@ -15,7 +15,7 @@
 }
 
 .section-img {
-  width: 412px;
+  width: 400px;
   height: 220px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -41,6 +41,7 @@ span {
 .section-items {
   display: flex;
   align-items: center;
+  margin-top: -6px;
 }
 
 .section-btn {
@@ -90,6 +91,7 @@ span {
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 58px;
+  margin-top: -5px;
 }
 
 .section-item {

@@ -144,10 +144,6 @@ const Category = () => {
             ))}
           </Slider>
         </div>
-        <p className="category-texts">
-          {t("scroll")}
-          <img src={scroll} alt="" className="category-logo" />{" "}
-        </p>
       </div>
     </div>
   );

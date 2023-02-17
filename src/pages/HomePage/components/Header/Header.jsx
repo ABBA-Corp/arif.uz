@@ -63,7 +63,7 @@ const Header = () => {
       e.target[0].value = "";
 
       e.target[1].value = "";
-
+      setConnection();
       openGreatModal();
     } else {
       if (e.target[0].value.length < 1) {
@@ -100,7 +100,7 @@ const Header = () => {
     <div className="header">
       <Swiper
         pagination={{
-          dynamicBullets: true,
+          dynamicBullets: true
         }}
         modules={[Pagination]}
         className="mySwiper"
@@ -183,13 +183,9 @@ const Header = () => {
         </button>
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <a
-            href="/"
-            onClick={() => window.scrollTo({ top: 0 })}
-            className="form-modal-link"
-          >
+          <button onClick={() => setGreatModal()} className="form-modal-link">
             Ok
-          </a>
+          </button>
         </div>
       </ModalSucces>
     </div>

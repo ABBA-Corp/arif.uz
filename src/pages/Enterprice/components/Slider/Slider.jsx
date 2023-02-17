@@ -3,23 +3,23 @@ import "./Slider.css";
 import { useTranslation } from "react-i18next";
 import { BASE_URL } from "../../../../services";
 import Slider from "react-slick";
-import right from "../../../../assets/icons/right.png";
-import left from "../../../../assets/icons/lefts.png";
+import right from "../../../../assets/icons/right.svg";
+import left from "../../../../assets/icons/left.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Arrow from "../../../../assets/Arrow";
 
 const SliderPage = ({ company }) => {
   const [t, i18next] = useTranslation();
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => {
-    // let firstCount = currentSlide + 1;
-    // if (firstCount === "0") {
-    //   return firstCount + 1;
-    // }
     return (
       <div>
         <p className="slick-counts">0{currentSlide + 1} / </p>
-        <img src={left} className="slick-left" alt="prevArrow" {...props} />
+        <span className="slick-button-prev">
+          <Arrow {...props} />
+        </span>
+        {/* <img src={left} className="slick-left" alt="prevArrow" {...props} /> */}
       </div>
     );
   };
@@ -28,7 +28,10 @@ const SliderPage = ({ company }) => {
     return (
       <div>
         <p className="slick-count"> 0{slideCount}</p>
-        <img src={right} className="slick-right" alt="nextArrow" {...props} />
+        <span className="slick-button-next">
+          <Arrow {...props} />
+        </span>
+        {/* <img src={right} className="slick-right" alt="nextArrow" {...props} /> */}
       </div>
     );
   };
@@ -76,7 +79,9 @@ const SliderPage = ({ company }) => {
     return (
       <div>
         <p className="slick-counts">0{firstCount + 1} / </p>
-        <img src={left} className="slick-left" alt="prevArrow" {...props} />
+        <span className="slick-button-prev">
+          <Arrow {...props} />
+        </span>
       </div>
     );
   };
@@ -85,7 +90,9 @@ const SliderPage = ({ company }) => {
     return (
       <div>
         <p className="slick-count"> 0{slideCount + 1}</p>
-        <img src={right} className="slick-right" alt="nextArrow" {...props} />
+        <span className="slick-button-next">
+          <Arrow {...props} />
+        </span>
       </div>
     );
   };

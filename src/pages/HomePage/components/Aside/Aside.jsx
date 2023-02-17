@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Aside.css";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import close from "../../../../assets/img/+.png";
 import BuyModal from "../../../ReactModal/components/BuyModal/BuyModal";
@@ -16,8 +15,7 @@ export default function Aside() {
   const [company, setCompany] = useState([]);
   const [products, setProducts] = useState([]);
   const [greatModal, setGreatModal] = useState(false);
-  const [linkId, setLinkId] = useState();
-
+  const [linkId, setLinkId] = useState("c67e5f18-240e-462a-8205-4e171905f7c2");
   const [buy, setBuy] = useState(false);
   function handleBuy() {
     setBuy(!buy);
@@ -67,6 +65,7 @@ export default function Aside() {
 
       e.target[2].value = "";
 
+      setBuy()
       openGreatModal();
     } else {
       if (e.target[0].value.length < 1) {
@@ -115,12 +114,12 @@ export default function Aside() {
 
   useEffect(() => {
     axios
-      .get(BASE_URL + "products")
+      .get(BASE_URL + `products`)
       .then((res) => {
-        setProducts(res?.data?.data);
+        setProducts(res?.data?.data?.filter((e) => e.companyId === linkId));
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [linkId]);
 
   return (
     <div className="aside-list">
@@ -129,18 +128,16 @@ export default function Aside() {
           <div className="aside-title">
             <div className="aside-item">
               {company?.map((evt, i) => (
-                <Link
-                  to={`/${evt?.id}`}
+                <button
                   className="aside-btn"
                   key={i}
                   onClick={(e) => {
                     setDuration(e);
-                    setLinkId(evt.id);
-                    window.scrollTo({ top: 3700 });
+                    setLinkId(evt?.id);
                   }}
                 >
                   {evt[`title_${i18next.language}`]}
-                </Link>
+                </button>
               ))}
             </div>
             <span className="aside-span">
@@ -150,9 +147,10 @@ export default function Aside() {
           </div>
         </div>
       </div>
+
       <div className="aside-page">
         <div className="aside-left">
-          <ImageSlider slides={products} />
+          <ImageSlider linkId={linkId} slides={products} />
           <button onClick={handleBuy} className="aside-button">
             {t("buy")}
           </button>
@@ -170,7 +168,7 @@ export default function Aside() {
               }
               elements[
                 Math.round(
-                  document.querySelector(".aside-right").scrollTop / 170
+                  document.querySelector(".aside-right").scrollTop / 100
                 ) + 1
               ].classList.add("opasity-killer");
             }}
@@ -256,6 +254,7 @@ export default function Aside() {
             <input
               type="name"
               name="name"
+              required
               id="name"
               placeholder={t("name")}
               className="aside-input"
@@ -264,6 +263,7 @@ export default function Aside() {
               type="number"
               name="tel"
               id="tel"
+              required
               placeholder={t("number")}
               className="aside-input"
             />
@@ -271,7 +271,7 @@ export default function Aside() {
               className="aside-textarea"
               name="tel"
               id="tel"
-              maxlength="14"
+              // maxlength="14"
               required
               placeholder={t("aside3")}
             />
@@ -293,13 +293,12 @@ export default function Aside() {
         </button>
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <a
-            href="/"
-            onClick={() => window.scrollTo({ top: 0 })}
+          <button
+            onClick={() => setGreatModal()}
             className="form-modal-link"
           >
             Ok
-          </a>
+          </button>
         </div>
       </ModalSucces>
     </div>

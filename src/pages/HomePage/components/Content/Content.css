@@ -81,7 +81,7 @@
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
-  width: 100px;
+  width: 180px;
   position: relative;
   max-height: 46px;
   overflow: hidden;
@@ -168,7 +168,7 @@
 
 .close-modal {
   position: relative;
-  left: 97.5%;
+  left: 97.43%;
   border: none;
   cursor: pointer;
   width: 25px;

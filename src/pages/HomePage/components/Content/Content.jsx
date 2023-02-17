@@ -76,7 +76,6 @@ const Content = () => {
               <p className="content-text">
                 {evt[`description_${i18next.language}`]}
               </p>
-
               <div className="content-list">
                 <button
                   onClick={() => {

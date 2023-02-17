@@ -35,7 +35,7 @@ const Number = () => {
                   {count && (
                     <CountUp
                       start={0}
-                      duration={2.75}
+                      duration={2.5}
                       end={evt.count}
                       delay={0}
                     />

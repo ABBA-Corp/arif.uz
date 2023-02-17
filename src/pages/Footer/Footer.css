@@ -4,14 +4,18 @@
   padding-bottom: 50px;
 }
 
-.footer__list{
+.footer-teleg{
+  font-size: 20px;
+}
+
+.footer__list {
   margin-top: -27px;
 }
 
 .footer-title {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .footerr-name {
@@ -21,12 +25,12 @@
   font-size: 22px;
   line-height: 26px;
   color: #fce8bd;
-  margin-left: 55px;
+  margin-left: 40px;
   margin-top: 60px;
 }
 .footer--list {
   list-style: none;
-  margin: 0 20px;
+  margin: 0px;
 }
 
 .footer-sub {
@@ -76,7 +80,7 @@
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 274;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   color: #fce8bd;
   width: 280px;
@@ -116,16 +120,15 @@
   margin: 0 10px;
 }
 
-.footerr-links svg path{
+.footerr-links svg path {
   fill: #000;
 }
 
-
-.footerr-links:hover svg path{
+.footerr-links:hover svg path {
   fill: #fce8bd;
 }
 
-.footerr-links:hover{
+.footerr-links:hover {
   background-color: transparent;
   border: 2px solid #fce8bd;
 }

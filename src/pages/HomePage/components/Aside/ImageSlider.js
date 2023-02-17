@@ -1,23 +1,30 @@
 import React from "react";
-import right from "../../../../assets/icons/right.png";
-import left from "../../../../assets/icons/left.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BASE_URL } from "../../../../services";
+import arrow from "../../../../assets/img/arrow.svg";
+import arrow1 from "../../../../assets/img/arrows.svg";
+import Arrow from "../../../../assets/Arrow";
 
 const ImageSlider = ({ slides }) => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <div>
       <p className="aside-counts">0{currentSlide + 1} / </p>
-      <img src={left} alt="prevArrow" {...props} />
+      <span className="aside-button-prev">
+        <Arrow {...props} />
+        {/* <img src={arrow} alt="prevArrow" {...props} /> */}
+      </span>
     </div>
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
     <div>
       <p className="aside-count"> 0{slideCount}</p>
-      <img src={right} alt="nextArrow" {...props} />
+      <span className="aside-button-next">
+        <Arrow {...props} />
+        {/* <img src={arrow} alt="nextArrow" {...props} /> */}
+      </span>
     </div>
   );
 
@@ -60,7 +67,11 @@ const ImageSlider = ({ slides }) => {
     <div>
       <Slider {...settings}>
         {slides?.map((evt, i) => (
-          <img className="imageslider-img" key={i} src={`${BASE_URL}uploads/images/${evt.img_src}`} />
+          <img
+            className="imageslider-img"
+            key={i}
+            src={`${BASE_URL}uploads/images/${evt.img_src}`}
+          />
         ))}
       </Slider>
     </div>

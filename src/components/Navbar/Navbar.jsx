@@ -39,7 +39,9 @@ const Navbar = () => {
         <div className="container">
           <ul className="navbar-list">
             <li className="navbar-item">
-              <Link className={navbar ? "actives" : "navbar-links"} to="/">
+              <Link 
+               onClick={() => window.scrollTo({ top: 0 })}
+              className={navbar ? "actives" : "navbar-links"} to="/">
                 {t(`head1`)}
               </Link>
             </li>
@@ -67,7 +69,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="navbar-item">
-              <Link className={navbar ? "actives" : "navbar-links"} to="/">
+              <Link
+                onClick={() => window.scrollTo({ top: 2600 })}
+                className={navbar ? "actives" : "navbar-links"}
+                to="/"
+              >
                 {t(`head6`)}
               </Link>
             </li>
@@ -81,12 +87,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="navbar-item">
-              <a href="#communication"
-                className={navbar ? "actives" : "navbar-links"}
+              <Link
+                onClick={() => window.scrollTo({ top: 5900 })}
                 to="/"
+                className={navbar ? "actives" : "navbar-links"}
               >
                 {t(`head4`)}
-              </a>
+              </Link>
             </li>
             <li className="navbar-item">
               <Languages />
@@ -164,7 +171,7 @@ const Navbar = () => {
             </a>
           </li>
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
-            <Language  />
+            <Language />
           </li>
         </ul>
       </NavModal>
