@@ -81,11 +81,12 @@
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
-  width: 180px;
+  width: 220px;
   position: relative;
   max-height: 46px;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: 0.7px;
 }
 
 .content-text {
