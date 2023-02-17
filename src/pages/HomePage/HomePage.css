@@ -1214,7 +1214,7 @@
     display: none;
   }
 
-  .category-box {
+ .category .category-box {
     display: block;
   }
   .App .category .category-right {

@@ -13,7 +13,6 @@ const ImageSlider = ({ slides }) => {
       <p className="aside-counts">0{currentSlide + 1} / </p>
       <span className="aside-button-prev">
         <Arrow {...props} />
-        {/* <img src={arrow} alt="prevArrow" {...props} /> */}
       </span>
     </div>
   );
