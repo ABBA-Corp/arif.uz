@@ -255,10 +255,10 @@
     width: 100%;
   }
 
-  .header-name,
-  .header-text,
-  .header-title,
-  .header-list {
+  .header .header-name,
+  .header .header-text,
+  .header .header-title,
+  .header .header-list {
     padding-left: 60px;
   }
 
@@ -831,7 +831,7 @@
     margin-left: auto;
     padding-left: 0;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
   }
   .header .header-name {
     font-size: 27px;
@@ -1168,7 +1168,7 @@
   }
 
   body .App .aside-name {
-    font-size: 20px;
+    font-size: 26px;
   }
   body .App .meeting {
     padding: 20px 10px;
@@ -1261,6 +1261,12 @@
 @media (max-width: 415px) {
   .container {
     width: 100%;
+  }
+
+  .section .section-button-next {
+  }
+  .App .section .section-button-prev {
+    left: 47%;
   }
   .homepage-list {
     height: 100vh;
@@ -1366,6 +1372,9 @@
   .contact .form-lists {
     padding-left: 15px;
   }
+  body .aside-page .aside-spans{
+    margin-left: 25px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -1411,9 +1420,13 @@
   }
   body .aside-page .aside-button {
     top: 40%;
+    left: 23%;
+  }
+  body .aside-page .aside-button-prev {
+    left: 8%;
   }
 
-  body .modal_content .header-input{
+  body .modal_content .header-input {
     padding: 15px;
     width: 90%;
   }

@@ -267,7 +267,7 @@ span {
   height: 40px;
 }
 
-.section .slick-prev {
+/* .section .slick-prev {
   left: 60%;
   width: 40px;
   height: 40px;
@@ -279,4 +279,64 @@ span {
   width: 40px;
   height: 40px;
   top: 0;
+} */
+
+.section .slick-next {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+}
+.section .slick-prev {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.section .section-button-next {
+  border: 0.622417px solid #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -9%;
+  left: 73%;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.section .section-button-prev {
+  border: 0.85216px solid #2C3442;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -9%;
+  left: 56%;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.section .section-button-prev:hover {
+  background: #000;
+}
+
+.section .section-button-next:hover {
+  background: #000;
+}
+
+.section .section-button-next:hover svg path {
+  fill: #fff;
+}
+
+.section .section-button-prev:hover svg path {
+  fill: #fff;
+}
+
+.section .section-button-next svg path {
+  fill: #000000;
+}
+
+.section .section-button-prev svg path {
+  fill: #000000;
 }

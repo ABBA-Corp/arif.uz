@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import insta from "../../../../assets/img/insta.png";
-import telegram from "../../../../assets/img/telegram.png";
-import phone from "../../../../assets/img/phone.png";
+import insta from "../../../../assets/img/insta.svg";
+import telegram from "../../../../assets/img/phone.svg";
+import phone from "../../../../assets/img/call.svg";
 import close from "../../../../assets/img/+.png";
 import ModalSucces from "../../../ReactModal/components/ModalSucces/ModalSucces";
 import { useTranslation } from "react-i18next";

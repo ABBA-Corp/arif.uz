@@ -5,6 +5,14 @@
   padding-bottom: 0;
 }
 
+.aside-page .aside-titles:nth-child(4) {
+  opacity: 1;
+}
+
+.aside-page .aside-titles1:nth-child(4) {
+  opacity: 1;
+}
+
 .aside-page .aside-button-next {
   width: 50px;
   height: 50px;
@@ -219,7 +227,7 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 70.8%;
+  top: 71.2%;
   left: 30%;
   font-family: "SF Pro";
   font-style: normal;
@@ -261,17 +269,17 @@
   font-style: normal;
   font-weight: 590;
   font-size: 22px;
-  line-height: 18px;
+  line-height: 22px;
   color: #ffffff;
   overflow: hidden;
   flex-wrap: nowrap;
-  max-height: 30px;
+  max-height: 45px;
 }
 
 .aside-titles {
   align-items: center;
   display: flex;
-  margin-bottom: -20px;
+  /* margin-bottom: -20px; */
   transition: 0.5s;
   cursor: pointer;
   opacity: 0.2;
@@ -289,11 +297,11 @@
 .aside-logo {
   width: 55px;
   height: 55px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .aside-items {
-  margin-left: 12px;
+  margin-left: 20px;
 }
 
 .aside-left {
@@ -665,7 +673,7 @@
     top: 105%;
     left: 47%;
   }
-  body .aside-button{
+  body .aside-button {
     top: 42%;
   }
   .aside-page .aside-count {
@@ -674,7 +682,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   body .aside-title {
     width: 100%;
   }
@@ -700,6 +708,7 @@
     display: block;
     position: absolute;
     top: 42%;
+    margin-left: 40px;
   }
 
   body .App .aside-right {
@@ -708,11 +717,13 @@
   }
   body .App .aside-right1 {
     margin-top: 300px;
-    height: 500px !important;
+    height: 550px !important;
   }
 
   body .aside-button {
-    top: 38%;
+    top: 36%;
+    left: 30%;
+    right: auto;
   }
 
   .aside .aside-item {
@@ -728,13 +739,6 @@
     left: 40%;
   }
 
-  /* .aside-page .slick-next {
-    top: 120%;
-  }
-  .aside-page .slick-prev {
-    top: 120%;
-    left: 22%;
-  } */
   .aside-count {
     top: 106%;
   }
@@ -743,7 +747,16 @@
     left: 40%;
   }
   .aside-page .aside-button-prev {
-    left: 22%;
+    left: 15%;
+  }
+  .aside-page .aside-counts{
+    left: 40%;
+  }
+  .aside-page .aside-count{
+    left: 51%;
+  }
+  .aside-page .aside-button-next {
+    left: 63%;
   }
 }
 

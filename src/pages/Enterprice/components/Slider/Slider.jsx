@@ -3,8 +3,6 @@ import "./Slider.css";
 import { useTranslation } from "react-i18next";
 import { BASE_URL } from "../../../../services";
 import Slider from "react-slick";
-import right from "../../../../assets/icons/right.svg";
-import left from "../../../../assets/icons/left.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Arrow from "../../../../assets/Arrow";

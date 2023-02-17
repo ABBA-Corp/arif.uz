@@ -178,7 +178,7 @@ export default function Aside() {
               <div
                 key={i}
                 className={
-                  i == 1 ? "aside-titles opasity-killer" : "aside-titles"
+                  i == 1 && i == evt.length - 1 ? "aside-titles opasity-killer" : "aside-titles"
                 }
               >
                 <img

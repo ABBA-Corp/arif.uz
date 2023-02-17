@@ -4,13 +4,18 @@
   display: none;
 }
 
-
-
 .contact .container {
   background: url("../../../../assets/img/forms.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-bottom: 58px;
+}
+
+.contact .form-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-name {
@@ -117,9 +122,18 @@ textarea {
   transition: 0.5s;
 }
 
-.form-icon {
-  margin-top: 5px;
+.form .form-icon {
+  /* margin-top: 5px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* .form-icon {
+  margin-top: 5px;
+  margin-left: 1.8px;
+} */
 
 .form-item:hover {
   transform: scale(1.2);
@@ -160,5 +174,3 @@ textarea {
   text-align: center;
   padding: 15px 0;
 }
-
-
