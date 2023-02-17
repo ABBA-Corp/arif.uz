@@ -978,11 +978,11 @@
     width: 200px;
   }
   .content .content-span {
-    font-size: 14px;
-    width: 95px;
+    font-size: 12px;
+    width: 135px;
+    left: 15%;
     margin-top: -40px;
     max-height: 38px;
-    left: 25%;
   }
   .content .content-text {
     color: #ffffff;
@@ -1214,7 +1214,7 @@
     display: none;
   }
 
- .category .category-box {
+  .category .category-box {
     display: block;
   }
   .App .category .category-right {
@@ -1363,5 +1363,56 @@
   }
   .contact .form-lists {
     padding-left: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .App .content .content-span {
+    left: 12%;
+    font-size: 10px;
+    width: 110px;
+    padding-bottom: 15px;
+  }
+  .content .content-name {
+    width: 130px;
+    font-size: 30px;
+  }
+  body .modal .header-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .modal .header-submit {
+    width: 100%;
+  }
+
+  body .modal_content-buy {
+    width: 280px;
+  }
+  body .modal_content-buy .aside-modal-close {
+    margin-left: 250px;
+  }
+
+  body .modal_content-buy .aside-textarea {
+    height: 50px;
+  }
+  .aside-modal-text {
+    margin-left: 45px;
+    width: 100%;
+  }
+
+  body .App .aside-page .aside-right1 {
+    height: 360px !important;
+  }
+
+  body .aside-page .aside-spans {
+    top: 48%;
+  }
+  body .aside-page .aside-button {
+    top: 40%;
+  }
+
+  body .modal_content .header-input{
+    padding: 15px;
+    width: 90%;
   }
 }
