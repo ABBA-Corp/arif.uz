@@ -129,6 +129,7 @@
   width: 330px;
   max-height: 80px;
   overflow: hidden;
+  flex-wrap: nowrap;
   text-overflow: ellipsis;
   margin-left: -40px;
 }

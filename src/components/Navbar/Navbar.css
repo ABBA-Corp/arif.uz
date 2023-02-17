@@ -87,6 +87,13 @@ svg path {
   padding-right: 15px;
 }
 
+.navbar-modal-lists{
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+}
+
+
 .navbar-close {
   background: #dcbe7a;
   width: 35px;
@@ -132,7 +139,7 @@ svg path {
 }
 
 .navbar-modal-item {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .navbar-modal-link {
@@ -140,7 +147,33 @@ svg path {
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 15.1852px;
+  font-size: 18px;
   line-height: 18px;
   text-decoration: none;
+}
+
+
+
+
+.navbar-modals-links {
+  background: #000000;
+  border-radius: 2240.1px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  margin: 0 10px;
+  transition: 0.5s all ease-out;
+  border: 1px solid #000000;
+}
+
+.navbar-modals-links:hover{
+  background-color: #fce8bd;
+  border: 1px solid #000;
+}
+
+
+.navbar-modals-links:hover svg path {
+  fill: #000;
 }

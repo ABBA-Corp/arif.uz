@@ -5,13 +5,11 @@
   padding-bottom: 0;
 }
 
-.aside-page .aside-titles:nth-child(4) {
-  opacity: 1;
-}
 
 .aside-page .aside-titles1:nth-child(4) {
   opacity: 1;
 }
+
 
 .aside-page .aside-button-next {
   width: 50px;
@@ -202,7 +200,7 @@
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 274;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 136.6%;
   color: #ffffff;
   margin-top: 0;
@@ -227,7 +225,7 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 70.8%;
+  top: 71.2%;
   left: 30%;
   font-family: "SF Pro";
   font-style: normal;
@@ -749,14 +747,14 @@
   .aside-page .aside-button-prev {
     left: 15%;
   }
-  .aside-page .aside-counts{
+  .aside-page .aside-counts {
     left: 40%;
   }
-  .aside-page .aside-count{
+  .aside-page .aside-count {
     left: 51%;
   }
   .aside-page .aside-button-next {
-    left: 63%;
+    left: 60%;
   }
 }
 

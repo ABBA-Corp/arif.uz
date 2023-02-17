@@ -10,6 +10,9 @@ import NavModal from "../../pages/ReactModal/components/NavModal/NavModal";
 import Languages from "../Language/Language";
 import { useTranslation } from "react-i18next";
 import Language from "./Language/Language";
+import { FaTelegramPlane } from "react-icons/fa";
+import Facebook from "../../assets/icons/facebook";
+import Instagram from "../../assets/icons/instagram";
 
 const Navbar = () => {
   const [greatModal, setGreatModal] = useState(false);
@@ -230,6 +233,34 @@ const Navbar = () => {
           </li>
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             <Language />
+          </li>
+          <li className="navbar-modal-item">
+            <div className="navbar-modal-lists">
+              <li className="navbar-modal-title">
+                <a
+                  href="https://www.instagram.com/uzexim/"
+                  className="navbar-modals-links"
+                >
+                  <Instagram />
+                </a>
+              </li>
+              <li className="navbar-modal-title">
+                <a
+                  href="https://www.facebook.com/people/Uzexim/100079201327733/"
+                  className="navbar-modals-links"
+                >
+                  <Facebook />
+                </a>
+              </li>
+              <li className="navbar-modal-title">
+                <a
+                  href="https://t.me/uzeximmachinery"
+                  className="navbar-modals-links footer-telegram"
+                >
+                  <FaTelegramPlane />
+                </a>
+              </li>
+            </div>
           </li>
         </ul>
       </NavModal>

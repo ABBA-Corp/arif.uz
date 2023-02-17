@@ -1014,7 +1014,7 @@
     width: 180px;
   }
   .service .service-text {
-    font-size: 14px;
+    font-size: 16px;
     max-height: 39px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1130,7 +1130,7 @@
   }
 
   .header .header-links {
-    font-size: 12px;
+    font-size: 14px;
     padding: 11px 28px;
   }
   .header .header-list {
@@ -1188,6 +1188,13 @@
 @media (max-width: 450px) {
   .container {
     width: 100%;
+  }
+
+  .App .section .section-button-next {
+    left: 50%;
+  }
+  .App .section .section-button-prev {
+    left: 30%;
   }
 
   .category .category-page-box {
@@ -1263,11 +1270,6 @@
     width: 100%;
   }
 
-  .section .section-button-next {
-  }
-  .App .section .section-button-prev {
-    left: 47%;
-  }
   .homepage-list {
     height: 100vh;
   }
@@ -1372,7 +1374,7 @@
   .contact .form-lists {
     padding-left: 15px;
   }
-  body .aside-page .aside-spans{
+  body .aside-page .aside-spans {
     margin-left: 25px;
   }
 }

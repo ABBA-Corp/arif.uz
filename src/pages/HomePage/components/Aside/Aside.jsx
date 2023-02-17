@@ -9,6 +9,12 @@ import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/scrollbar";
+// import required modules
+import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 
 export default function Aside() {
   const [discount, setDiscount] = useState([]);
@@ -65,7 +71,7 @@ export default function Aside() {
 
       e.target[2].value = "";
 
-      setBuy()
+      setBuy();
       openGreatModal();
     } else {
       if (e.target[0].value.length < 1) {
@@ -178,7 +184,7 @@ export default function Aside() {
               <div
                 key={i}
                 className={
-                  i == 1 && i == evt.length - 1 ? "aside-titles opasity-killer" : "aside-titles"
+                  i == 1 ? "aside-titles opasity-killer" : "aside-titles"
                 }
               >
                 <img
@@ -293,10 +299,7 @@ export default function Aside() {
         </button>
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <button
-            onClick={() => setGreatModal()}
-            className="form-modal-link"
-          >
+          <button onClick={() => setGreatModal()} className="form-modal-link">
             Ok
           </button>
         </div>
