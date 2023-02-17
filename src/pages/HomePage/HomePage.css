@@ -631,6 +631,8 @@
 
   .App .navbar-mobile {
     display: block;
+    padding-top: 6px;
+    padding-bottom: 3px;
   }
 
   body .modal_content {
