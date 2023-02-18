@@ -82,6 +82,7 @@
   .header .header-text{
     width: 80%;
     padding-left: 30px;
+    white-space: normal;
   }
 }
 

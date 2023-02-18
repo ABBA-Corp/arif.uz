@@ -19,13 +19,13 @@ const Service = () => {
             <img src={gold} alt="" className="service-img servcie__pic" />
           </div>
           <div className="service-title">
-            <p style={{ paddingTop: 70 }} className="service-text">
+            <p style={{ paddingTop: 50 }} className="service-text">
               {t("xizmat2")}
             </p>
             <img src={notebook} alt="" className="service-img service__pics" />
           </div>
           <div className="service-title">
-            <p style={{ width: 180, paddingTop: 60 }} className="service-text">
+            <p style={{ width: 250, paddingTop: 60 }} className="service-text">
               {t("xizmat3")}
             </p>
             <img

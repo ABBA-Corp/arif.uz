@@ -84,14 +84,18 @@ svg path {
   padding-top: 30px;
   padding-bottom: 25px;
   display: none;
-  padding-left: 15px;
+  padding-left: -15px;
   padding-right: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1007;
 }
 
 .navbar-modal-lists{
   display: flex;
   align-items: center;
   margin-left: -15px;
+  margin-top: 430px;
 }
 
 
@@ -123,6 +127,10 @@ svg path {
   background-color: transparent;
   border: none;
   width: 45px;
+  margin-left: 10px;
+}
+.navbar-mogile-link{
+  margin-right: 15px;
 }
 .navbar-logo {
   width: 35px;

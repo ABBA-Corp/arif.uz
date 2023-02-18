@@ -68,35 +68,7 @@ const Meeting = () => {
         </div>
       </div>
 
-      <div className="meeting-box">
-        <img
-          src={`${BASE_URL}uploads/images/${about?.img_src}`}
-          alt=""
-          className="meeting-box-img"
-        />
-        <div className="meeting-box-page">
-          <Swiper
-            slidesPerView={1.6}
-            spaceBetween={0}
-            loop={true}
-            pagination={{
-              clickable: true
-            }}
-            modules={[FreeMode, Pagination]}
-          >
-            <SwiperSlide>
-              {about?.images?.map((evt, i) => (
-                <img
-                  key={i}
-                  src={`${BASE_URL}uploads/images/${evt}`}
-                  alt=""
-                  className="meeting-img"
-                />
-              ))}
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
+     
 
       <VideoModal show={videoModal}>
         <div>

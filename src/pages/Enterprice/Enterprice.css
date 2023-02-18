@@ -134,6 +134,7 @@
   body .App .catalog {
     padding: 40px 30px;
     margin-top: 0px;
+    padding-top: 90px;
   }
 
   .slick .slick-item {
@@ -171,7 +172,7 @@
   }
   .slick .slick-name {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 16px;
   }
   .slick .slick-names {
     margin-left: 50px;
@@ -286,7 +287,7 @@
   }
 
   .footerr .footer-list:nth-child(1) {
-    margin-left: 60px;
+    margin-left: 10px;
   }
 
   .footerr .footerr-texts {
@@ -297,6 +298,7 @@
   .footerr .footerr-text {
     font-size: 14px;
     width: 180px;
+    line-height: 20px;
   }
 
   .footerr .footer-list:nth-child(2) {

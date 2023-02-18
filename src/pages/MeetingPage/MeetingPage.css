@@ -29,7 +29,7 @@
     width: 100%;
   }
 
-  .meeting-text{
+  .meeting-text {
     max-height: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -77,8 +77,14 @@
     width: 100%;
   }
 
-  .meeting-name {
-    width: 100%;
+  .meeting .meeting-name {
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .meeting .meeting-title {
+    margin-left: 0;
   }
 
   .meeting .meeting-page {

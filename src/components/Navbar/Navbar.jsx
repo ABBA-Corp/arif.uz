@@ -45,7 +45,7 @@ const Navbar = () => {
           <ul className="navbar-list">
             <li className="navbar-item">
               <Link
-                onClick={() => window.scrollTo({ top: 0 })}
+                onClick={() => window.scrollTo({ top: 1200 })}
                 className={navbar ? "actives" : "navbar-links"}
                 to="/"
               >
@@ -127,14 +127,24 @@ const Navbar = () => {
           <img src={close} alt="" />
         </button>
         <ul className="navbar-modal-list">
-          <li className="navbar-modal-item">
-            <Link
-              onClick={() => setGreatModal()}
-              to="/"
-              className="navbar-modal-link"
-            >
-              {t(`head1`)}
-            </Link>
+          <li onClick={() => setGreatModal()} className="navbar-modal-item">
+            {location.pathname === "/" ? (
+              <a
+                href="#"
+                onClick={() => window.scrollTo({ top: 1200 })}
+                className="navbar-modal-link"
+              >
+                {t(`head1`)}
+              </a>
+            ) : (
+              <Link
+                onClick={() => window.scrollTo({ top: 1200 })}
+                to="/"
+                className="navbar-modal-link"
+              >
+                {t(`head1`)}
+              </Link>
+            )}
           </li>
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (

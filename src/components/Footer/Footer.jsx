@@ -8,7 +8,7 @@ import Facebook from "../../assets/icons/facebook";
 // import Github from "../../assets/icons/github";
 import { useTranslation } from "react-i18next";
 import Call from "../../assets/icons/call";
-import { FaTelegramPlane} from 'react-icons/fa'
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -46,8 +46,11 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-items">
-                <a href="https://t.me/uzeximmachinery" className="footer-links footer-telegram">
-                  <FaTelegramPlane /> 
+                <a
+                  href="https://t.me/uzeximmachinery"
+                  className="footer-links footer-telegram"
+                >
+                  <FaTelegramPlane />
                 </a>
               </li>
             </ul>
@@ -94,7 +97,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-list">
-            <h3 className="footer-name"> {t(`head4`)}</h3>
+            <h3 className="footer-name footer__names"> {t(`head4`)}</h3>
             <ul className="footer--list">
               <li className="footer-item">
                 <a href="tel:+998995595353" className="footer-link">
@@ -113,7 +116,7 @@ const Footer = () => {
               </li>
               <li className="footer-item">
                 <a
-                  href="https://goo.gl/maps/FqPydKZVYZhJWwxf7"
+                  href="https://www.google.com/maps/place/SEMENTO/@41.2766913,69.2158004,15z/data=!4m2!3m1!1s0x0:0x2de5ffe55005d8b8?sa=X&ved=2ahUKEwiKv9yprPf8AhUYD-wKHXVjCIIQ_BJ6BAhYEAg"
                   className="footer-link"
                 >
                   {t("manzil")} <br />

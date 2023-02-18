@@ -102,6 +102,11 @@ function Aside() {
 
   const [t, i18next] = useTranslation();
 
+useEffect(() => {
+  axios.get(BASE_URL + "promotions")
+  .then((res) => setDiscount(res?.data?.data))
+  .catch((err) => console.log(err))
+},[])
   const [data, setData] = useState([]);
   const [loop, setLoop] = useState([]);
 
@@ -117,14 +122,11 @@ function Aside() {
         ...apiData?.data,
         ...apiData?.data,
         ...apiData?.data,
-        ...apiData?.data,
-        ...apiData?.data,
         ...apiData?.data
       ]);
     };
     fetchData();
   }, []);
-
 
   console.log(data);
 
@@ -242,7 +244,7 @@ function Aside() {
             }}
             className="aside-right1"
           >
-            {data?.map((evt, i) => (
+            {discount?.map((evt, i) => (
               <div
                 key={i}
                 className={

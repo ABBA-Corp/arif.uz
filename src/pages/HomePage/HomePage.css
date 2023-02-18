@@ -817,10 +817,12 @@
 
   .header .container {
     height: calc(790px - 126px - 80px);
+    margin-top: 80px;
   }
 
   .App .rating .rating-name {
     padding-top: 20px;
+    margin-bottom: 0;
   }
 
   body .App .header {
@@ -1031,8 +1033,8 @@
     width: 180px;
   }
   .service .service-text {
-    font-size: 16px;
-    max-height: 39px;
+    font-size: 20px;
+    max-height: 56px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -1044,9 +1046,9 @@
   .App .service .service_img {
     margin-left: 10px;
   }
-  .service .service-text:nth-child(1) {
+  /* .service .service-text:nth-child(1) {
     margin-top: 35px;
-  }
+  } */
   .slider .slider-name {
     font-size: 12px;
     margin-left: -45px;
@@ -1069,6 +1071,9 @@
   }
   .footer .footer-name {
     margin-left: 40px;
+  }
+  .footer .footer__names{
+    margin-top: 50px;
   }
   .footer .footer-list {
     margin: 0;
@@ -1208,6 +1213,10 @@
     width: 100%;
   }
 
+  .content .content-titles{
+    margin-left: 140px;
+  }
+
   .header .header-title {
     padding-left: 30px;
   }
@@ -1319,12 +1328,14 @@
   .slider .slider-name {
     font-size: 14px;
     width: 180px;
-    margin-left: -40px;
+    margin-left: -80px;
   }
   .slider .slider-text {
     font-size: 10px;
-    width: 150px;
-    margin-left: -30px;
+    width: 220px;
+    line-height: 16px;
+    margin-left: 0px;
+    max-height: 45px;
   }
   .App .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: 0px;
@@ -1367,7 +1378,7 @@
   }
 
   body .App .header {
-    padding-top: 30px;
+    padding-top: 100px;
   }
 
   .content .content-text {

@@ -113,7 +113,7 @@ const Footer = () => {
               </li>
               <li className="footer-item">
                 <a
-                  href="https://goo.gl/maps/FqPydKZVYZhJWwxf7"
+                  href="https://www.google.com/maps/place/SEMENTO/@41.2766913,69.2158004,15z/data=!4m2!3m1!1s0x0:0x2de5ffe55005d8b8?sa=X&ved=2ahUKEwiKv9yprPf8AhUYD-wKHXVjCIIQ_BJ6BAhYEAg"
                   className="footerr-link"
                 >
                   {t("manzil")} <br />
