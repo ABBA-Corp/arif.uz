@@ -21,11 +21,8 @@
   color: #ffffff;
   width: 400px;
   margin: 20px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   /* flex-wrap: nowrap; */
   max-height: 70px;
-  white-space: nowrap;
 }
 
 .header-btn {

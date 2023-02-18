@@ -54,9 +54,7 @@
   color: #ffffff;
   padding-left: 25px;
   padding-top: 50px;
-  text-overflow: ellipsis;
   width: 350px;
-  overflow: hidden;
 }
 .service-list {
   display: flex;

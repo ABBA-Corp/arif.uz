@@ -43,12 +43,14 @@
 .slick .slick-next {
   position: absolute;
   top: 52%;
-  left: 30%;
+  left: 2%;
+  padding: 15px;
 }
 .slick .slick-prev {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 2%;
+  padding: 15px;
+  left: 2%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
