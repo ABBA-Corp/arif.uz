@@ -871,7 +871,7 @@
     width: 90%;
   }
   .rating .rating-number {
-    font-size: 30px;
+    font-size: 22px;
   }
   .rating .rating-text {
     font-size: 16px;
@@ -884,7 +884,7 @@
   }
 
   .rating .rating-title {
-    margin-left: 0;
+    margin-left: -8px;
   }
 
   .about .about-name {
@@ -1105,7 +1105,7 @@
 
   .content .content-btn {
     width: 200px;
-    margin: 15px 10px;
+    margin: 15px 0;
     font-size: 12px;
   }
 
@@ -1217,6 +1217,9 @@
     width: 100%;
   }
 
+  .App .slider{
+    padding: 25px 0;
+  }
   .content .content-titles{
     margin-left: 140px;
   }
@@ -1313,7 +1316,7 @@
 
   .footer .footer-list:nth-child(1){
     margin-right:auto;
-    margin-left: 23px;
+    margin-left: 45px;
   }
 
   .homepage-list {
@@ -1344,6 +1347,7 @@
     font-size: 14px;
     width: 180px;
     margin-left: -80px;
+    max-height: 16px;
   }
   .slider .slider-text {
     font-size: 10px;

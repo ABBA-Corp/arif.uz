@@ -1,7 +1,7 @@
 import React from "react";
 import "./Section.css";
-import eye from "../../../../assets/img/eye.png";
-import kesh from "../../../../assets/img/kesh.png";
+import eye from "../../../../assets/img/eye.svg";
+import kesh from "../../../../assets/img/document.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";

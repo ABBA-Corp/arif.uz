@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Bottom from "./components/Bottom/Bottom";
 import Enterprice from "./pages/Enterprice/Enterprice";
 import FilterPage from "./pages/FilterPage/FilterPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -21,6 +22,7 @@ const Redirect = () => {
         <Route path="/news/about=:id" element={<NewsAbout />} />
         <Route path="/meeting=:id" element={<MeetingPage />} />
       </Routes>
+      <Bottom />
     </>
   );
 };

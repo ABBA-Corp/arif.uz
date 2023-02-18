@@ -1,16 +1,19 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import './Bottom.css'
 
 const Bottom = () => {
   const {t} = useTranslation()
+  const location=  useLocation().pathname
+  console.log(location)
   return (
-    <div className="bottom">
+    <div className={`${location === "/" ? "bottom" : "bottom-page"}`} >
       <div className="container">
-        <p className="bottom-name">
+        <p className={`${location === "/" ? "bottom-name" : "bottom-page-name"}`}>
           {t("footerbottom")}
         </p>
-        <p className="bottom-name bottom-names">{t("since")} </p>
+        <p className={`${location === "/" ? "bottom-names" : "bottom-page-names"}`}>{t("since")} </p>
       </div>
     </div>
   );

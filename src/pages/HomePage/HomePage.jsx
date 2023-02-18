@@ -35,7 +35,7 @@ const HomePage = () => {
       <Contact />
       <Form />
       <Footer />
-      <Bottom />
+      {/* <Bottom /> */}
     </div>
   );
 };
