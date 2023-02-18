@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import gold from "../../../../assets/img/gold.png";
+import gold from "../../../../assets/img/golds.png";
 import notebook from "../../../../assets/img/notebook.png";
 import setting from "../../../../assets/img/settings.png";
 import car from "../../../../assets/img/car.png";
@@ -16,7 +16,7 @@ const Service = () => {
         <div className="service-list">
           <div className="service-title">
             <p className="service-text">{t("xizmat1")} </p>
-            <img src={gold} alt="" className="service-img servcie__pic" />
+            <img src={gold} alt="" className="service-img service__pic" />
           </div>
           <div className="service-title">
             <p style={{ paddingTop: 50 }} className="service-text">

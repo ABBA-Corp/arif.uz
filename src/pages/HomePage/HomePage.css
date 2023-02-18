@@ -1034,7 +1034,7 @@
   .service .service-img:nth-child(2) {
     margin-left: 40px;
     width: 150px;
-    margin-top: 40px;
+    margin-top: 33px;
   }
   .service .service-text {
     font-size: 20px;
@@ -1312,6 +1312,12 @@
 @media (max-width: 415px) {
   .container {
     width: 100%;
+  }
+
+  .service .service-img:nth-child(2){
+    width: 150px;
+    height: 120px;
+    margin-top: 60px;
   }
 
   .footer .footer-list:nth-child(1){
