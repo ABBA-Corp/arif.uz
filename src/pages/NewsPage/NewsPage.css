@@ -147,6 +147,12 @@
   }
 }
 
+@media (max-width: 380px) {
+  body .aside-button{
+    left: 26%;
+  }
+}
+
 @media (max-width: 355px) {
   .news .news-home {
     padding: 0;
@@ -247,7 +253,8 @@
     height: 45px;
   }
   body .aside-button {
-    top: 37%;
+    top: 34%;
+    left: 25.5%;
   }
   body .aside-spans {
     top: 42%;
