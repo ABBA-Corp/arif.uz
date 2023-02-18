@@ -90,6 +90,7 @@ span {
   width: 460px;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* white-space: no; */
   max-height: 58px;
   margin-top: -5px;
 }
@@ -143,27 +144,29 @@ span {
   opacity: 0.85;
   margin-bottom: 0;
   margin-top: 0;
-  padding-left: 22px;
+  padding-left: 15px;
   max-height: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section-subtext {
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 10.2323px;
+  font-size: 12px;
   line-height: 14px;
   color: #ffffff;
   opacity: 0.85;
   width: 170px;
-  padding-left: 22px;
+  padding-left: 15px;
   margin-top: 5px;
   margin-bottom: 0;
-  max-height: 28px;
+  /* max-height: 28px; */
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section-links {
@@ -174,7 +177,7 @@ span {
   line-height: 14px;
   text-decoration-line: underline;
   color: #ffffff;
-  padding-left: 22px;
+  padding-left: 15px;
 }
 
 .section-pic {

@@ -62,6 +62,9 @@
   .container {
     width: 100%;
   }
+  .App .sublime{
+    padding-bottom: 20px;
+  }
 
   .sublime .sublime-name{
     width: 100%;
@@ -78,6 +81,7 @@
   }
   .header .header-text{
     width: 80%;
+    padding-left: 30px;
   }
 }
 

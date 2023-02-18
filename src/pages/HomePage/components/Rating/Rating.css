@@ -5,6 +5,7 @@
   padding-top: 80px;
   padding-bottom: 105px;
   margin-top: -25px;
+  padding-left: 110px;
 }
 
 .rating-list {
@@ -48,5 +49,4 @@
 
 .rating-title {
   display: flex;
-  margin-left: -50px;
 }

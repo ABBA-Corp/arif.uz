@@ -8,7 +8,7 @@
 .about-icons {
   position: absolute;
   top: 34%;
-  left: 8%;
+  left: 5%;
   z-index: 1001;
 }
 
@@ -79,7 +79,7 @@
 .about-title {
   display: flex;
   align-items: center;
-  margin-left: -200px;
+  margin-left: -150px;
 }
 
 .about-item {
@@ -104,7 +104,7 @@
 
 .about-item-link {
   margin-top: 80px;
-  margin-left: -230px;
+  margin-left: -160px;
 }
 
 .about-name {
@@ -116,7 +116,7 @@
   color: #ffffff;
   padding-top: 120px;
   width: 400px;
-  margin-left: 25px;
+  margin-left: 65px;
 }
 
 .about-text {
@@ -124,14 +124,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
   color: #ffffff;
-  width: 330px;
-  max-height: 80px;
+  width: 310px;
+  max-height: 100px;
   overflow: hidden;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   text-overflow: ellipsis;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 }
 
 .about-btn {

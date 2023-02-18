@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Section.css'
+import Arrow from "../../../../assets/Arrow";
 
 const Section = () => {
   const [news, setNews] = useState([]);
@@ -23,13 +24,21 @@ const Section = () => {
   }, []);
   const [t, i18next] = useTranslation();
 
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={left} className="slider-prev" alt="prevArrow" {...props} />
-  );
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => {
+    return (
+      <span className="section-button-prev">
+        <Arrow {...props} />
+      </span>
+    );
+  };
 
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src={right} className="slider-next" alt="nextArrow" {...props} />
-  );
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => {
+    return (
+      <span className="section-button-next">
+        <Arrow {...props} />
+      </span>
+    );
+  };
 
   const settings = {
     speed: 500,

@@ -102,9 +102,10 @@
   font-size: 15.3px;
   line-height: 19px;
   color: #141414;
-  max-height: 40px;
-  overflow: hidden;
+  width: 100%;
+  overflow: auto;
   text-overflow: ellipsis;
+  max-height: 40px;
 }
 
 .sublime-spans {

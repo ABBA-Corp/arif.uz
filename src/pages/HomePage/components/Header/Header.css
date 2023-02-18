@@ -2,7 +2,6 @@
   padding-top: 150px;
 }
 
-
 .header-name {
   font-family: "SF Pro";
   font-style: normal;
@@ -23,8 +22,10 @@
   width: 400px;
   margin: 20px 0;
   overflow: hidden;
-  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  /* flex-wrap: nowrap; */
   max-height: 70px;
+  white-space: nowrap;
 }
 
 .header-btn {
@@ -128,7 +129,7 @@
 }
 
 .header-closes {
-  background: #f5e1b2;
+  background: #dcbe7a;
   width: 32px;
   height: 32px;
   border: none;
@@ -198,7 +199,7 @@
 }
 
 .header-close {
-  background: #f5e1b2;
+  background: #dcbe7a;
   border: none;
   width: 32px;
   height: 32px;

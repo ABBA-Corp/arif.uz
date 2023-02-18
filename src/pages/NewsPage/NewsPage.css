@@ -150,6 +150,9 @@
   .news .news-home {
     padding: 0;
   }
+  .content .content-titles{
+    margin-left: 90px;
+  }
   .news .news-name {
     text-align: center;
     margin-bottom: 15px;
@@ -258,12 +261,12 @@
     width: 40px;
     height: 40px;
   } */
-  .aside-counts {
-    top: 101%;
+ .aside-page .aside-counts {
+    top: 105%;
     left: 38%;
   }
-  .aside-count {
-    top: 101%;
+ .aside-page .aside-count {
+    top: 105%;
   }
   .about .about-item-link {
     margin-left: -60px;
@@ -373,9 +376,11 @@
 
   .slick .slick-button-next {
     top: -36%;
+    left: 80%;
   }
   .slick .slick-count {
     top: -37.5%;
+    left: 70%;
   }
   .slick .slick-counts {
     top: -37.5%;

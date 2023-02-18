@@ -54,10 +54,15 @@
   color: #ffffff;
   padding-left: 25px;
   padding-top: 50px;
+  text-overflow: ellipsis;
+  width: 350px;
+  overflow: hidden;
+  max-height: 60px;
 }
 .service-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service-img{

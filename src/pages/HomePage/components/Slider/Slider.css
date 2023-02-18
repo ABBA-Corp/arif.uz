@@ -62,9 +62,10 @@
   color: #ffffff;
   width: 450px;
   margin-left: -10px;
-  max-height: 45px;
+  /* max-height: 45px; */
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .slider-img {

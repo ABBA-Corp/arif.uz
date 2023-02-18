@@ -16,7 +16,7 @@ import "swiper/css/scrollbar";
 // import required modules
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 
-export default function Aside() {
+function Aside() {
   const [discount, setDiscount] = useState([]);
   const [company, setCompany] = useState([]);
   const [products, setProducts] = useState([]);
@@ -102,12 +102,31 @@ export default function Aside() {
 
   const [t, i18next] = useTranslation();
 
+  const [data, setData] = useState([]);
+  const [loop, setLoop] = useState([]);
+
   useEffect(() => {
-    axios
-      .get(BASE_URL + "promotions")
-      .then((res) => setDiscount(res.data.data))
-      .catch((err) => console.log(err));
+    const fetchData = async () => {
+      const response = await fetch(BASE_URL + "promotions");
+      const apiData = await response.json();
+      setData([
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data,
+        ...apiData?.data
+      ]);
+    };
+    fetchData();
   }, []);
+
+
+  console.log(data);
 
   useEffect(() => {
     axios
@@ -174,13 +193,13 @@ export default function Aside() {
               }
               elements[
                 Math.round(
-                  document.querySelector(".aside-right").scrollTop / 100
+                  document.querySelector(".aside-right").scrollTop / 140
                 ) + 1
               ].classList.add("opasity-killer");
             }}
             className="aside-right"
           >
-            {discount?.map((evt, i) => (
+            {data?.map((evt, i) => (
               <div
                 key={i}
                 className={
@@ -223,7 +242,7 @@ export default function Aside() {
             }}
             className="aside-right1"
           >
-            {discount?.map((evt, i) => (
+            {data?.map((evt, i) => (
               <div
                 key={i}
                 className={
@@ -307,3 +326,5 @@ export default function Aside() {
     </div>
   );
 }
+
+export default Aside;

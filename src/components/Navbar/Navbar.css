@@ -34,7 +34,8 @@ svg path {
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  width: 1100px;
+  width: 1140px;
+  max-width: 1140px;
   margin: 15px auto;
 }
 
@@ -136,6 +137,7 @@ svg path {
 .navbar-modal-list {
   list-style: none;
   margin-top: 45px;
+  margin-left: -23px;
 }
 
 .navbar-modal-item {
@@ -147,7 +149,7 @@ svg path {
   font-family: "SF Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 18px;
   text-decoration: none;
 }
