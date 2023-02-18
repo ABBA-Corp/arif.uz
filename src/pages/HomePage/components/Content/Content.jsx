@@ -31,12 +31,7 @@ const Content = () => {
     setVideoModal(!videoModal);
   }
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, []);
+   
 
   const [worker, setWorker] = useState([]);
 
