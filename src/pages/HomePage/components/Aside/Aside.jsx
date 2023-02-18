@@ -104,7 +104,7 @@ function Aside() {
 
 useEffect(() => {
   axios.get(BASE_URL + "promotions")
-  .then((res) => setDiscount(res?.data?.data))
+  .then((res) => setDiscount([...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data,]))
   .catch((err) => console.log(err))
 },[])
   const [data, setData] = useState([]);
@@ -525,8 +525,7 @@ useEffect(() => {
     fetchData();
   }, []);
 
-  console.log(data);
-
+ 
   useEffect(() => {
     axios
       .get(BASE_URL + "companies")
