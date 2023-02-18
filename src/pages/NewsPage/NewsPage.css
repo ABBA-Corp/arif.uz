@@ -357,7 +357,11 @@
   }
   .footer .footer-name {
     text-align: center;
-    margin: 15px auto;
+    margin: 10px auto;
+  }
+
+  .footer .footer__names{
+    margin-top: 25px;
   }
   .footer .footer-list:nth-child(2) {
     margin: 0;
@@ -407,5 +411,6 @@
 
   body .App .footer .footer-list {
     text-align: center;
+    margin-left: 0;
   }
 }
