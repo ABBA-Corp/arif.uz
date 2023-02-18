@@ -1034,7 +1034,6 @@
   }
   .service .service-text {
     font-size: 20px;
-    max-height: 56px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -1272,6 +1271,12 @@
   .App .category .category-texts {
     margin-top: 20px;
     display: none;
+  }
+  .header .header-title{
+    padding-left: 20px;
+  }
+  .content .content-btn:last-child{
+    margin-left: 0;
   }
 }
 

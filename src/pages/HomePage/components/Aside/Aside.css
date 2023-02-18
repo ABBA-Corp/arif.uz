@@ -29,7 +29,8 @@
 
 .aside-page .slick-next {
   top: 50%;
-  left: 30%;
+  left: 2%;
+  padding: 15px;
   width: 20px;
 }
 
@@ -47,8 +48,9 @@
 }
 
 .aside-page .slick-prev {
-  top: 30%;
-  left: 30%;
+  top: 2%;
+  left: 2%;
+  padding: 15px;
   width: 20px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
