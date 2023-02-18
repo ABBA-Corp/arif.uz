@@ -29,9 +29,13 @@ const Content = () => {
 
   function handleVideoModal() {
     setVideoModal(!videoModal);
+    document.body.classList.add("no-scroll");
   }
 
-   
+  function handleCloseModal(){
+    setVideoModal(false)
+    document.body.classList.remove("no-scroll");
+  }
 
   const [worker, setWorker] = useState([]);
 
@@ -106,7 +110,7 @@ const Content = () => {
       <VideoModal show={videoModal}>
         <div>
           <div className="content-modal-item">
-            <button onClick={() => setVideoModal()} className="close-modal">
+            <button onClick={handleCloseModal} className="close-modal">
               <img className="aside-close-img" src={closes} alt="" />
             </button>
           </div>

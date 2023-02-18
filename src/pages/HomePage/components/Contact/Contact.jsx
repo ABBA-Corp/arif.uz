@@ -14,8 +14,6 @@ const Contact = () => {
     setGreatModal(!greatModal);
   }
 
-   
-
   const formBtn = (e) => {
     e.preventDefault();
     if (e.target[0].value.length > 0 && e.target[1].value.length > 0) {
@@ -126,7 +124,6 @@ const Contact = () => {
       </div>
 
       <ModalSucces shows={greatModal}>
-        
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
           <a

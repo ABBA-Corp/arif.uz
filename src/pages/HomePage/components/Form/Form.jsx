@@ -12,6 +12,12 @@ const Form = () => {
 
   function openGreatModal() {
     setGreatModal(!greatModal);
+    document.body.classList.add("no-scroll");
+  }
+
+  function closeGreatModal() {
+    setGreatModal(false);
+    document.body.classList.remove("no-scroll");
   }
 
   const formBtn = (e) => {
@@ -75,8 +81,6 @@ const Form = () => {
     }
   };
 
- 
-
   const { t } = useTranslation();
 
   return (
@@ -126,14 +130,9 @@ const Form = () => {
       </div>
 
       <ModalSucces shows={greatModal}>
-       
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <button
-            // href="/"
-            onClick={() => setGreatModal()}
-            className="form-modal-link"
-          >
+          <button onClick={closeGreatModal} className="form-modal-link">
             Ok
           </button>
         </div>

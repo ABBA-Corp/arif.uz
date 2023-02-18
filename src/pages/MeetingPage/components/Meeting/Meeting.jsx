@@ -19,9 +19,14 @@ import { FreeMode, Pagination } from "swiper";
 
 const Meeting = () => {
   const [videoModal, setVideoModal] = useState(false);
-
   function handleVideoModal() {
     setVideoModal(!videoModal);
+    document.body.classList.add("no-scroll");
+  }
+
+  function handleCloseModal() {
+    setVideoModal(false);
+    document.body.classList.remove("no-scroll");
   }
 
   const [t, i18next] = useTranslation();
@@ -34,8 +39,6 @@ const Meeting = () => {
       .then((res) => setAbout(res.data.data))
       .catch((err) => console.log(err));
   }, []);
-
-   
 
   return (
     <>
@@ -70,12 +73,10 @@ const Meeting = () => {
         </div>
       </div>
 
-     
-
       <VideoModal show={videoModal}>
         <div>
           <div className="content-modal-item">
-            <button onClick={() => setVideoModal()} className="close-modal">
+            <button onClick={handleCloseModal} className="close-modal">
               <img className="aside-close-img" src={closes} alt="" />
             </button>
           </div>

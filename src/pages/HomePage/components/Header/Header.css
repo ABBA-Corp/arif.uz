@@ -2,6 +2,10 @@
   padding-top: 150px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header-name {
   font-family: "SF Pro";
   font-style: normal;

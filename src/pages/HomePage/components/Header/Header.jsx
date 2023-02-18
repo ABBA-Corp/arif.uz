@@ -19,15 +19,24 @@ const Header = () => {
 
   const handleConnection = () => {
     setConnection(!connection);
+    document.body.classList.add("no-scroll");
+  };
+
+  const handleCloseModal = () => {
+    setConnection(false);
+    document.body.classList.remove("no-scroll");
   };
 
   const [greatModal, setGreatModal] = useState(false);
 
   function openGreatModal() {
     setGreatModal(!greatModal);
+    document.body.classList.add("no-scroll");
   }
-
-  
+  function openCloseModal() {
+    setGreatModal(false);
+    document.body.classList.remove("no-scroll");
+  }
 
   const formBtn = (e) => {
     e.preventDefault();
@@ -151,7 +160,7 @@ const Header = () => {
         ))}
       </Swiper>
       <Modal show={connection}>
-        <button onClick={() => setConnection()} className="header-close">
+        <button onClick={handleCloseModal} className="header-close">
           <img src={close} alt="" />
         </button>
         <div className="header-modal">
@@ -180,12 +189,9 @@ const Header = () => {
       </Modal>
 
       <ModalSucces shows={greatModal}>
-        <button onClick={() => setGreatModal()} className="header-closes">
-          <img src={close} className="form-img" alt="" />
-        </button>
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
-          <button onClick={() => setGreatModal()} className="form-modal-link">
+          <button onClick={openCloseModal} className="form-modal-link">
             Ok
           </button>
         </div>
