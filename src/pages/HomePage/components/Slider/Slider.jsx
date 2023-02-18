@@ -18,7 +18,7 @@ const Slider = () => {
   useEffect(() => {
     axios
       .get(BASE_URL + "services")
-      .then((res) => setService(res?.data?.data))
+      .then((res) => setService([...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data]))
       .catch((err) => console.log(err));
   }, []);
 

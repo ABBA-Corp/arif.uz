@@ -11,6 +11,12 @@
   padding-bottom: 58px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form-name {
   padding-top: 35px;
   font-family: "SF Pro";

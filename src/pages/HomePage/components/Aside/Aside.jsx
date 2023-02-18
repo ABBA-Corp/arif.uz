@@ -28,6 +28,13 @@ function Aside() {
     setGreatModal(!greatModal);
   }
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   const formBtn = (e) => {
     e.preventDefault();
     if (e.target[0].value.length > 0 && e.target[1].value.length > 0) {
@@ -89,6 +96,8 @@ function Aside() {
       }
     }
   };
+
+  
 
   const setDuration = (e) => {
     document.querySelectorAll(".aside-btn").forEach((e) => {
@@ -708,9 +717,7 @@ useEffect(() => {
       </BuyModal>
 
       <ModalSucces shows={greatModal}>
-        <button onClick={() => setGreatModal()} className="form-close">
-          <img src={close} className="form-img" alt="" />
-        </button>
+        
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
           <button onClick={() => setGreatModal()} className="form-modal-link">

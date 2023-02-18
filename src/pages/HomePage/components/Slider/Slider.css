@@ -82,7 +82,7 @@
   object-fit: contain;
 }
 
-.slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
+.App .slider .swiper-slide:nth-child(1) {
   margin-left: -880px;
 }
 

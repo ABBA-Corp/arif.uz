@@ -35,6 +35,13 @@ const Meeting = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   return (
     <>
       <div className="meeting">

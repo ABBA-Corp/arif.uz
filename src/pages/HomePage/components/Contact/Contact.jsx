@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import insta from "../../../../assets/img/insta.svg";
 import telegram from "../../../../assets/img/phone.svg";
@@ -13,6 +13,13 @@ const Contact = () => {
   function openGreatModal() {
     setGreatModal(!greatModal);
   }
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   const formBtn = (e) => {
     e.preventDefault();
@@ -124,9 +131,7 @@ const Contact = () => {
       </div>
 
       <ModalSucces shows={greatModal}>
-        <button onClick={() => setGreatModal()} className="form-close">
-          <img src={close} className="form-img" alt="" />
-        </button>
+        
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
           <a

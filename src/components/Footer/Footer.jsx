@@ -110,8 +110,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-item">
-                <a href="mailto:info@arifgroup.uz" className="footer-link">
-                  info@arifgroup.uz
+                <a href="mailto:info@arif.uz" className="footer-link">
+                info@arif.uz
                 </a>
               </li>
               <li className="footer-item">

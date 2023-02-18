@@ -290,9 +290,7 @@ export default function Aside() {
       </BuyModal>
 
       <ModalSucces shows={greatModal}>
-        <button onClick={() => setGreatModal()} className="form-close">
-          <img src={close} className="form-img" alt="" />
-        </button>
+        
         <h3 className="form-modal-name">{t("succes")}</h3>
         <div className="form-modal-title">
           <a

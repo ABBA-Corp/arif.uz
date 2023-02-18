@@ -27,6 +27,13 @@ const Header = () => {
     setGreatModal(!greatModal);
   }
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   const formBtn = (e) => {
     e.preventDefault();
     if (e.target[0].value.length > 0 && e.target[1].value.length > 0) {
