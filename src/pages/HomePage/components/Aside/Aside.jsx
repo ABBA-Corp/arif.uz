@@ -7,15 +7,12 @@ import ModalSucces from "../../../ReactModal/components/ModalSucces/ModalSucces"
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { BASE_URL } from "../../../../services";
-import { Link } from "react-router-dom";
-import ImageSlider from "./ImageSlider";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+ import ImageSlider from "./ImageSlider";
+ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 // import required modules
-import { FreeMode, Scrollbar, Mousewheel } from "swiper";
-
+ 
 function Aside() {
   const [discount, setDiscount] = useState([]);
   const [company, setCompany] = useState([]);
@@ -108,8 +105,7 @@ useEffect(() => {
   .catch((err) => console.log(err))
 },[])
   const [data, setData] = useState([]);
-  const [loop, setLoop] = useState([]);
-
+ 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(BASE_URL + "promotions");
