@@ -32,8 +32,8 @@ const Content = () => {
     document.body.classList.add("no-scroll");
   }
 
-  function handleCloseModal(){
-    setVideoModal(false)
+  function handleCloseModal() {
+    setVideoModal(false);
     document.body.classList.remove("no-scroll");
   }
 
@@ -50,10 +50,12 @@ const Content = () => {
 
   useEffect(() => {
     axios
-      .get(BASE_URL + `workers/${linkId}`)
-      .then((res) => setYoutube(res.data.data))
+      .get(BASE_URL + "workers")
+      .then((res) => setYoutube(res?.data?.data?.find((e) => e?.id === linkId)))
       .catch((err) => console.log(err));
   }, []);
+
+  console.log(youtube);
 
   return (
     <div className="content">
@@ -115,14 +117,31 @@ const Content = () => {
             </button>
           </div>
 
-          {!!videoModal && (
+          {videoModal ? (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${youtube?.video_url}`}
+              src={`https://www.youtube.com/embed/${worker[0]?.video_url}`}
               title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             ></iframe>
+          ) : (
+            <p
+              style={{
+                fontSize: "50px",
+                fontWeight: 500,
+                fontFamily: "Fredoka",
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                display: "flex",
+                alignItems: "center",
+                position: "absolute"
+              }}
+            >
+              Loading...
+            </p>
           )}
         </div>
       </VideoModal>

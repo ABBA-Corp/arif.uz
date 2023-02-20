@@ -40,6 +40,8 @@ const Meeting = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  console.log(about)
+
   return (
     <>
       <div className="meeting">
@@ -83,7 +85,7 @@ const Meeting = () => {
           {!!videoModal && (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${about?.video_url}`}
+              src={`https://www.youtube.com/embed/${about[0]?.video_url}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

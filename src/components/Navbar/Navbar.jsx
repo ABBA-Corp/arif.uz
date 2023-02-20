@@ -131,14 +131,14 @@ const Navbar = () => {
             {location.pathname === "/" ? (
               <a
                 href="#"
-                onClick={() => window.scrollTo({ top: 1200 })}
+                onClick={() => window.scrollTo({ top: 900 })}
                 className="navbar-modal-link"
               >
                 {t(`head1`)}
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 1200 })}
+                onClick={() => window.scrollTo({ top: 900 })}
                 to="/"
                 className="navbar-modal-link"
               >
@@ -149,7 +149,7 @@ const Navbar = () => {
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (
               <a
-                onClick={() => window.scrollTo({ top: 3100 })}
+                onClick={() => window.scrollTo({ top: 5800 })}
                 href="#"
                 className="navbar-modal-link"
               >
@@ -157,7 +157,7 @@ const Navbar = () => {
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 3100 })}
+                onClick={() => window.scrollTo({ top: 5800 })}
                 to="/"
                 className="navbar-modal-link"
               >
@@ -168,7 +168,7 @@ const Navbar = () => {
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (
               <a
-                onClick={() => window.scrollTo({ top: 3100 })}
+                onClick={() => window.scrollTo({ top: 900 })}
                 href="#"
                 className="navbar-modal-link"
               >
@@ -176,7 +176,7 @@ const Navbar = () => {
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 3100 })}
+                onClick={() => window.scrollTo({ top: 900 })}
                 to="/"
                 className="navbar-modal-link"
               >
@@ -187,7 +187,7 @@ const Navbar = () => {
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (
               <a
-                onClick={() => window.scrollTo({ top: 3200 })}
+                onClick={() => window.scrollTo({ top: 2700 })}
                 href="#"
                 className="navbar-modal-link"
               >
@@ -195,7 +195,7 @@ const Navbar = () => {
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 3200 })}
+                onClick={() => window.scrollTo({ top: 2700 })}
                 to="/"
                 className="navbar-modal-link"
               >
@@ -206,7 +206,7 @@ const Navbar = () => {
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (
               <a
-                onClick={() => window.scrollTo({ top: 7500 })}
+                onClick={() => window.scrollTo({ top: 6500 })}
                 href="#"
                 className="navbar-modal-link"
               >
@@ -214,7 +214,7 @@ const Navbar = () => {
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 7500 })}
+                onClick={() => window.scrollTo({ top: 6500 })}
                 to="/"
                 className="navbar-modal-link"
               >
@@ -225,7 +225,7 @@ const Navbar = () => {
           <li onClick={() => setGreatModal()} className="navbar-modal-item">
             {location.pathname === "/" ? (
               <a
-                onClick={() => window.scrollTo({ top: 4700 })}
+                onClick={() => window.scrollTo({ top: 3600 })}
                 href="#"
                 className="navbar-modal-link"
               >
@@ -233,7 +233,7 @@ const Navbar = () => {
               </a>
             ) : (
               <Link
-                onClick={() => window.scrollTo({ top: 4700 })}
+                onClick={() => window.scrollTo({ top: 3600 })}
                 to="/"
                 className="navbar-modal-link"
               >
