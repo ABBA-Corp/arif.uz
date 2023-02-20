@@ -118,11 +118,10 @@ const Content = () => {
           {!!videoModal && (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${youtube.video_url}`}
+              src={`https://www.youtube.com/embed/${youtube?.video_url}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
             ></iframe>
           )}
         </div>

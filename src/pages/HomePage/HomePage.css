@@ -6,7 +6,6 @@
 }
 
 @media (max-width: 2000px) {
-
   .homepage-list {
     height: 100vh;
   }
@@ -25,7 +24,6 @@
 }
 
 @media (max-width: 1800px) {
-
   .homepage-list {
     height: 100vh;
   }
@@ -59,7 +57,7 @@
     width: 100%;
   }
 
-  .App .nav .nav-list{
+  .App .nav .nav-list {
     justify-content: center;
   }
 
@@ -137,7 +135,6 @@
   .header .header-list {
     padding-left: 110px;
   }
-
 
   .App .catalog {
     padding: 50px 190px;
@@ -457,7 +454,7 @@
     width: 100%;
   }
 
-  .about .about-text{
+  .about .about-text {
     margin-left: -45px;
   }
 
@@ -574,7 +571,7 @@
     margin-left: 20px;
   }
 
-  .about .about-item-link{
+  .about .about-item-link {
     margin-left: -210px;
   }
 
@@ -635,7 +632,7 @@
     left: -15%;
   }
 
-  .content .content-titles{
+  .content .content-titles {
     margin-left: 160px;
   }
 
@@ -1084,7 +1081,7 @@
   .footer .footer-name {
     margin-left: 40px;
   }
-  .footer .footer__names{
+  .footer .footer__names {
     margin-top: 50px;
   }
   .footer .footer-list {
@@ -1225,10 +1222,14 @@
     width: 100%;
   }
 
-  .App .slider{
+  body .App .slider .swiper-slide:nth-child(1) {
+    margin-left: -390px;
+  }
+
+  .App .slider {
     padding: 25px 0;
   }
-  .content .content-titles{
+  .content .content-titles {
     margin-left: 140px;
   }
 
@@ -1288,10 +1289,10 @@
     margin-top: 20px;
     display: none;
   }
-  .header .header-title{
+  .header .header-title {
     padding-left: 20px;
   }
-  .content .content-btn:last-child{
+  .content .content-btn:last-child {
     margin-left: 0;
   }
 }
@@ -1322,14 +1323,14 @@
     width: 100%;
   }
 
-  .service .service-img:nth-child(2){
+  .service .service-img:nth-child(2) {
     width: 150px;
     height: 120px;
     margin-top: 60px;
   }
 
-  .footer .footer-list:nth-child(1){
-    margin-right:auto;
+  .footer .footer-list:nth-child(1) {
+    margin-right: auto;
     margin-left: 58px;
   }
 
@@ -1502,7 +1503,7 @@
     width: 90%;
   }
 
-  .App .section .section-button-prev{
+  .App .section .section-button-prev {
     left: 26%;
   }
 }
