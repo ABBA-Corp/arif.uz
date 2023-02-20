@@ -63,6 +63,10 @@
     justify-content: center;
   }
 
+  .App .sidebar .sidebar-list {
+    margin-left: 120px;
+  }
+
   /* .App .navbar {
     bottom: 86%;
   } */
@@ -136,7 +140,7 @@
 
 
   .App .catalog {
-    padding: 50px 160px;
+    padding: 50px 190px;
   }
 
   .news .news-top {
