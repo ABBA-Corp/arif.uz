@@ -59,6 +59,10 @@
     width: 100%;
   }
 
+  .App .nav .nav-list{
+    justify-content: center;
+  }
+
   /* .App .navbar {
     bottom: 86%;
   } */
