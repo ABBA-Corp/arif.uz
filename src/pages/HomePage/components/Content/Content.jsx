@@ -13,6 +13,7 @@ import axios from "axios";
 import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
 import closes from "../../../../assets/icons/close.png";
+import YouTube from "react-youtube";
 
 const settings = {
   dots: true,
@@ -53,9 +54,7 @@ const Content = () => {
       .get(BASE_URL + "workers")
       .then((res) => setYoutube(res?.data?.data?.find((e) => e?.id === linkId)))
       .catch((err) => console.log(err));
-  }, []);
-
-  console.log(youtube);
+  }, [linkId]);
 
   return (
     <div className="content">
@@ -77,7 +76,6 @@ const Content = () => {
               <div className="content-titles">
                 <h2 className="content-name">{evt.name}</h2>
                 <p className="content-span">
-                  {" "}
                   {evt[`position_${i18next.language}`]}
                 </p>
               </div>
@@ -116,11 +114,10 @@ const Content = () => {
               <img className="aside-close-img" src={closes} alt="" />
             </button>
           </div>
-
-          {videoModal ? (
+          {youtube ? (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${worker[0]?.video_url}`}
+              src={`https://www.youtube.com/embed/${youtube?.video_url}`}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -137,12 +134,11 @@ const Content = () => {
                 justifyContent: "center",
                 display: "flex",
                 alignItems: "center",
-                position: "absolute"
               }}
             >
               Loading...
             </p>
-          )}
+          )}{" "}
         </div>
       </VideoModal>
     </div>
