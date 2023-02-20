@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import gold from "../../../../assets/img/golds.png";
+import gold from "../../../../assets/img/gold.png";
 import notebook from "../../../../assets/img/notebook.png";
 import setting from "../../../../assets/img/settings.png";
 import car from "../../../../assets/img/car.png";
