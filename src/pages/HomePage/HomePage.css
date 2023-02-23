@@ -57,6 +57,10 @@
     width: 100%;
   }
 
+  body .App .homepage .homepage-list {
+    height: 123vh;
+  }
+
   .App .nav .nav-list {
     justify-content: center;
   }
@@ -172,6 +176,15 @@
   }
 }
 
+@media (max-width: 1330px) {
+  .container {
+    width: 100%;
+  }
+  .App .navbar .navbar-list {
+    width: 1050px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 100%;
@@ -242,10 +255,6 @@
 
   .App .footer .container {
     width: 100%;
-  }
-
-  body .navbar {
-    bottom: 89%;
   }
 }
 
@@ -1223,7 +1232,7 @@
   }
 
   body .App .slider .swiper-slide:nth-child(1) {
-    margin-left: -410px;
+    margin-left: -435px;
   }
 
   .App .slider {

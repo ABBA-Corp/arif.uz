@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.header .swiper .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+  display: none;
+}
+
 .header-name {
   font-family: "SF Pro";
   font-style: normal;

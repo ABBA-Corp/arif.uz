@@ -136,7 +136,7 @@ const Content = () => {
                 alignItems: "center",
               }}
             >
-              ...
+              Loading...
             </p>
           )}{" "}
         </div>
