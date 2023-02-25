@@ -2,8 +2,10 @@ import React from "react";
 import "./NewFooter.css";
 import arifLogo from "../../assets/img/footer-img.svg";
 import mobile from "../../assets/img/mobile.svg";
+import { useTranslation } from "react-i18next";
 
 const NewFooter = () => {
+  const {t} = useTranslation()
   return (
     <div className="newfooter">
       <div className="container">
@@ -12,36 +14,36 @@ const NewFooter = () => {
           <a href="#" className="newfooter-link">
             <div className="newfooter-title">
               <img src={mobile} alt="" className="newfooter-logo" />
-              <p className="newfooter-contact">Qo'ng'iroq qilish</p>
+              <p className="newfooter-contact">{t("call")}</p>
             </div>
           </a>
         </div>
         <div className="newfooter-page">
           <ul className="newfooter-titles">
-            <h3 className="newfooter-name">Kompaniyamiz</h3>
+            <h3 className="newfooter-name">{t("company")}</h3>
             <li className="newfooter-item">
               <a href="#" className="newfooter-link">
-                Korxonalar
+              {t("head3")}
               </a>
             </li>
             <li className="newfooter-item">
               <a href="#" className="newfooter-link">
-                Biz haqimizda
+              {t("head2")}
               </a>
             </li>
             <li className="newfooter-item">
               <a href="#" className="newfooter-link">
-                Yangiliklar
+              {t("head")}
               </a>
             </li>
             <li className="newfooter-item">
               <a href="#" className="newfooter-link">
-                Tadbirlar
+                {t("party")}
               </a>
             </li>
           </ul>
           <ul className="newfooter-titles">
-            <h3 className="newfooter-name">Aloqa</h3>
+            <h3 className="newfooter-name">{t("head4")}</h3>
             <li className="newfooter-item">
               <a href="tel:+998995595353" className="newfooter-link">
                 +998995595353
@@ -58,9 +60,9 @@ const NewFooter = () => {
               </a>
             </li>
             <li className="newfooter-item">
-              <a href="#" className="newfooter-link">
-                Toshkent shahar, Uchtepa <br />
-                tumani, 283A uy
+              <a href="https://www.google.com/maps/place/SEMENTO/@41.2766913,69.2158004,15z/data=!4m2!3m1!1s0x0:0x2de5ffe55005d8b8?sa=X&ved=2ahUKEwiKv9yprPf8AhUYD-wKHXVjCIIQ_BJ6BAhYEAg" className="newfooter-link">
+                {t("manzil")} <br />
+                {t("manzil1")}
               </a>
             </li>
           </ul>
