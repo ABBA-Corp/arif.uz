@@ -3,11 +3,12 @@
   "semento": "About cement cements",
   "link": "Get to know in detail",
   "arif": "ARIF international holding team projects",
-  "loyiha": "Currently, we have 6 projects",
+  "loyiha": "Nowadays",
+  "loyiha1":"we have a project",
   "batafsil": "Learn More",
   "xizmat": "Our services",
-  "xizmat1": "Financial audience",
-  "xizmat2": "Solar panels",
+  "xizmat1": "Installation of equipment",
+  "xizmat2": "Installation of solar panels",
   "xizmat3": "Repair correction service",
   "xizmat4":"Customs services",
   "video": "Detailed video",
@@ -56,5 +57,5 @@
   "uzexim": "Uzehim package BLK200",
   "link1": "Read more",
   "footerbottom": "Developed by ABBA MARKETING and ABBA CODING",
-  "since":"since 2022"
+  "since":" 2022"
 }

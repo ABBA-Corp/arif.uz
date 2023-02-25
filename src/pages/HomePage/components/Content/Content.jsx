@@ -14,6 +14,7 @@ import { BASE_URL } from "../../../../services";
 import { useTranslation } from "react-i18next";
 import closes from "../../../../assets/icons/close.png";
 import YouTube from "react-youtube";
+import { useRef } from "react";
 
 const settings = {
   dots: true,
@@ -55,6 +56,8 @@ const Content = () => {
       .then((res) => setYoutube(res?.data?.data?.find((e) => e?.id === linkId)))
       .catch((err) => console.log(err));
   }, [linkId]);
+
+
 
   return (
     <div className="content">
@@ -107,7 +110,7 @@ const Content = () => {
         ))}
       </Swiper>
 
-      <VideoModal show={videoModal}>
+      <VideoModal  show={videoModal}>
         <div>
           <div className="content-modal-item">
             <button onClick={handleCloseModal} className="close-modal">
@@ -133,7 +136,7 @@ const Content = () => {
                 height: "100%",
                 justifyContent: "center",
                 display: "flex",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               Loading...

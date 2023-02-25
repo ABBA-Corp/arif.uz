@@ -20,7 +20,14 @@
   width: 380px;
   border-radius: 10px;
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+body .App .category .slick-next{
+  display: none;
+}
+.category .slick-prev{
+  display: none;
 }
 
 .category-name {
@@ -88,8 +95,8 @@
 .category-subname {
   font-family: "SF Pro";
   font-style: normal;
-  font-weight: 590;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 120%;
   margin-bottom: 0;
 }

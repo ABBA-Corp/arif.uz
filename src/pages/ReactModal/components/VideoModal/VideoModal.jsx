@@ -5,7 +5,7 @@ const VideoModal = ({ show, children, w, mh }) => {
   return reactDom.createPortal(
     <>
       {show ? (
-        <div className={`modalContainer ${show ? "show" : ""}`}>
+        <div  className={`modalContainer ${show ? "show" : ""}`}>
           <div
             className="video-modal"
             onClick={(e) => e.stopPropagation()}

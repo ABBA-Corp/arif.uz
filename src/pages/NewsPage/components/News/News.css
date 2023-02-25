@@ -13,6 +13,8 @@
   font-size: 32px;
   line-height: 38px;
   color: #222936;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .news-button {
   background: #d9cbac;
@@ -111,7 +113,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
 
 .news-links {
   margin-left: 8.5px;

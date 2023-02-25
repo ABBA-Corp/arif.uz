@@ -63,7 +63,7 @@ const Category = () => {
                 <div key={i} className="category-page">
                   <div className="category-left">
                     <h2 className="category-name">{t("arif")}</h2>
-                    <p className="category-text">{t("loyiha")}</p>
+                    <p className="category-text">{t("loyiha")} {company?.length} {t("loyiha1")}</p>
                     <Link
                       onClick={() => window.scrollTo({ top: 0 })}
                       className="category-link"

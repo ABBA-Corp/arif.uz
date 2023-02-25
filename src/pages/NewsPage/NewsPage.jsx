@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../../components/Nav/Nav";
 import Navbar from "../../components/Navbar/Navbar";
+import NewFooter from "../../components/NewFooter/NewFooter";
 import Footer from "../Footer/Footer";
 import News from "./components/News/News";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -15,6 +16,7 @@ const NewsPage = () => {
       <Nav />
       <Sidebar />
       <News />
+      <NewFooter />
       <Footer />
     </div>
   );

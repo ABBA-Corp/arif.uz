@@ -38,7 +38,7 @@ const Meeting = () => {
       .get(BASE_URL + `about/${id}`)
       .then((res) => setAbout(res.data.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   console.log(about)
 
@@ -85,7 +85,7 @@ const Meeting = () => {
           {!!videoModal && (
             <iframe
               className="content-video-modal"
-              src={`https://www.youtube.com/embed/${about[0]?.video_url}`}
+              src={`https://www.youtube.com/embed/${about?.video_url}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

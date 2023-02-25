@@ -7,6 +7,11 @@
   src: url("../../../../assets/icons/San\ Francisco\ Font.otf");
 }
 
+@font-face {
+  font-family: Integral CF;
+  src: url("../../../../assets/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf");
+}
+
 @media (max-width: 2000px) {
   .content .container {
     display: flex;
@@ -56,11 +61,11 @@
 }
 
 .content-name {
-  font-family: "SF Pro";
+  font-family: 'Integral CF';
   font-style: normal;
-  font-weight: bold;
-  font-size: 90px;
-  line-height: 95%;
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 103.5%;
   color: #ffffff;
   max-width: 450px;
   margin-bottom: 0;
@@ -81,11 +86,12 @@
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
-  width: 220px;
+  width: 120px;
   position: relative;
   max-height: 46px;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 200px;
 }
 
 .content-text {
@@ -125,7 +131,7 @@
   transition: 0.5s all ease-out;
 }
 
-.content-btn:last-child{
+.content-btn:last-child {
   margin-left: 20px;
 }
 
@@ -134,15 +140,11 @@
   color: #000;
 }
 
-.content .swiper .swiper-pagination {
-  top: 100%;
-  z-index: 2;
-  position: relative;
-  left: 50%;
-}
-
 .content .swiper .swiper-pagination-bullet-active {
   background-color: #fff;
+  width: 20px;
+  height: 8px;
+  border-radius: 997.566px;
 }
 
 .swiper {

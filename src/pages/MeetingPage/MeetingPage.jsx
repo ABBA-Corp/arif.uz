@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../../components/Nav/Nav";
 import Navbar from "../../components/Navbar/Navbar";
+import NewFooter from "../../components/NewFooter/NewFooter";
 import Footer from "../Footer/Footer";
 import Meeting from "./components/Meeting/Meeting";
 import "./MeetingPage.css";
@@ -13,6 +14,7 @@ const MeetingPage = () => {
       </div>
       <Nav />
       <Meeting />
+      <NewFooter />
       <Footer />
     </div>
   );

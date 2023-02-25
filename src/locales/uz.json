@@ -1,13 +1,15 @@
+
 {
   "scroll": "Batafsil bilish uchun scroll qiling",
   "semento": "Semento sementlari haqida",
   "link": "Batafsil tanishish",
   "arif": "ARIF international holding jamoasi loyihalari",
-  "loyiha": "Hozirgi kunda 6 ta loyihamiz mavjud",
+  "loyiha": "Hozirgi kunda ",
+  "loyiha1":" ta loyihamiz mavjud",
   "batafsil": "Batafsil o'qish",
   "xizmat": "Bizning xizmatlarimiz",
-  "xizmat1": "Moliyaviy auditoriya",
-  "xizmat2": "Quyosh panellari",
+  "xizmat1": "Uskunalarni o'rnatib berish",
+  "xizmat2": "Quyosh panellari o'rnatish",
   "xizmat3": "Ta`mirlash tuzatish xizmati",
   "xizmat4":"Bojxona xizmatlari",
   "video": "Batafsil video",

@@ -73,6 +73,25 @@ const Section = () => {
     <div className="section">
       <div className="container">
         <div className="section-list">
+          <div className="section-pages">
+            <div className="section__items">
+              <button className="section-btn">
+                {!!filter && filter[`news_type_${i18next?.language}`]}
+              </button>
+              <span className="section-span">
+                <img src={eye} alt="" className="section-icon" />
+                <p className="section-sub">
+                  {filter?.viewers} {t("views")}
+                </p>
+              </span>
+              <span className="section-span">
+                <img src={kesh} alt="" className="section-icon" />
+                <p className="section-sub">
+                  {!!filter?.createdAt && filter?.createdAt.slice(0, 10)}
+                </p>
+              </span>
+            </div>
+          </div>
           <img
             src={`${BASE_URL}uploads/images/${filter?.img_src}`}
             alt=""

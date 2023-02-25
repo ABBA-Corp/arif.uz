@@ -15,6 +15,7 @@ import Footer from "../../components/Footer/Footer";
 import Bottom from "../../components/Bottom/Bottom";
 import Number from "./components/Number/Number";
 import Contact from "./components/Contact/Contact";
+import NewFooter from "../../components/NewFooter/NewFooter";
 
 const HomePage = () => {
   return (
@@ -35,6 +36,7 @@ const HomePage = () => {
       <Contact />
       <Form />
       <Footer />
+      <NewFooter />
       {/* <Bottom /> */}
     </div>
   );

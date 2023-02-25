@@ -99,10 +99,12 @@ const Contact = () => {
             required
             className="form-input"
           />
-          <textarea placeholder={t("text")} name="tel" id="tel" />
-          <button type="submit" className="form-button">
-            {t("send")}
-          </button>
+          <div className="contact__item">
+            <textarea placeholder={t("text")} name="tel" id="tel" />
+            <button type="submit" className="form-button">
+              {t("send")}
+            </button>
+          </div>
         </form>
         <ul className="form-lists">
           <li className="form-item">

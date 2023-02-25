@@ -44,6 +44,17 @@ span {
   margin-top: -6px;
 }
 
+.section__items {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+
+.section-pages {
+  display: none;
+}
+
 .section-btn {
   background: #363f4e;
   border-radius: 17.4756px;
@@ -73,6 +84,7 @@ span {
   line-height: 22px;
   color: #000000;
   opacity: 0.99;
+  letter-spacing: 1.5px;
 }
 
 .section-names {
@@ -208,7 +220,7 @@ span {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
-  padding: 12px 35px;
+  padding: 12px 55px;
 }
 
 .section-button:hover {
@@ -311,7 +323,7 @@ span {
 }
 
 .section .section-button-prev {
-  border: 0.85216px solid #2C3442;
+  border: 0.85216px solid #2c3442;
   width: 50px;
   height: 50px;
   border-radius: 50%;

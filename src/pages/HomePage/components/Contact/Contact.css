@@ -48,10 +48,16 @@ input::-webkit-inner-spin-button {
   opacity: 0.99;
   border-radius: 20px;
   width: 443px;
-  padding: 15px 20px;
+  padding: 20px;
   outline: none;
   border: none;
   margin-top: 13px;
+}
+
+.form-input::placeholder {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-size: 14px;
 }
 
 textarea {
@@ -60,11 +66,17 @@ textarea {
   border-radius: 20px;
   margin-top: 13px;
   width: 443px;
-  padding: 15px 20px;
+  padding: 20px;
   outline: none;
   border: none;
   resize: none;
   height: 140px;
+}
+
+textarea::placeholder {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-size: 14px;
 }
 
 .form-button {
