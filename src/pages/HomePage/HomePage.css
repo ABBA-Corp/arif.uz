@@ -30,11 +30,26 @@
   .header {
     padding-top: 220px;
   }
+  body .App .slider .slider-list {
+    width: 1000px;
+  }
+
+  body .App .slider .swiper-slide:nth-child(1) {
+    margin-left: -950px;
+  }
 }
 
 @media (max-width: 1600px) {
   .homepage-list {
     height: 100vh;
+  }
+
+  body .App .slider .slider-list {
+    width: 900px;
+  }
+
+  body .App .slider .swiper-slide:nth-child(1) {
+    margin-left: -840px;
   }
 
   .header {
@@ -167,7 +182,7 @@
   .App .form {
     padding: 40px 70px;
   }
-  .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
+ body .slider .swiper-backface-hidden .swiper-slide:nth-child(1) {
     margin-left: -750px;
   }
 
