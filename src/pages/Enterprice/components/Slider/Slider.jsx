@@ -17,7 +17,6 @@ const SliderPage = ({ company }) => {
         <span className="slick-button-prev">
           <Arrow {...props} />
         </span>
-        {/* <img src={left} className="slick-left" alt="prevArrow" {...props} /> */}
       </div>
     );
   };

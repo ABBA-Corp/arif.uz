@@ -11,14 +11,22 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Navigation, Pagination } from "swiper";
+import Arrow from "../../../../assets/Arrow";
 const Slider = () => {
   const [service, setService] = useState([]);
 
   useEffect(() => {
     axios
       .get(BASE_URL + "services")
-      .then((res) => setService([...res?.data?.data,...res?.data?.data,...res?.data?.data,...res?.data?.data]))
+      .then((res) =>
+        setService([
+          ...res?.data?.data,
+          ...res?.data?.data,
+          ...res?.data?.data,
+          ...res?.data?.data
+        ])
+      )
       .catch((err) => console.log(err));
   }, []);
 
@@ -30,8 +38,12 @@ const Slider = () => {
         slidesPerView={1.4}
         spaceBetween={0}
         loop={true}
-        modules={[FreeMode]}
+        modules={[FreeMode, Navigation]}
         className="slider-item"
+        navigation={{
+          nextEl: ".button-next-slide",
+          prevEl: ".button-prev-slide"
+        }}
       >
         {service &&
           service?.map((evt, i) => (
@@ -60,6 +72,16 @@ const Slider = () => {
               </div>
             </SwiperSlide>
           ))}
+        <div className="button-next-slide">
+          <span className="slider-button-next">
+            <Arrow />
+          </span>
+        </div>
+        <div className="button-prev-slide">
+          <span className="slider-button-prev">
+            <Arrow />
+          </span>
+        </div>
       </Swiper>
 
       <Swiper

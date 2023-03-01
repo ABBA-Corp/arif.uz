@@ -1340,6 +1340,8 @@
 
   .App .slider {
     padding: 25px 0;
+    height: auto;
+    margin-top: 0;
   }
   .content .content-titles {
     margin-left: 330px;

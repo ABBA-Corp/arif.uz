@@ -1,8 +1,8 @@
 .slider {
   background: #fce8bd;
-  padding: 85px 0;
   position: relative;
   margin-top: -10px;
+  height: 500px;
 }
 
 .slider-list {
@@ -62,7 +62,6 @@
   color: #ffffff;
   width: 450px;
   margin-left: -10px;
-  /* max-height: 45px; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -86,3 +85,56 @@
   margin-left: -850px;
 }
 
+
+
+.slider-button-prev {
+  border: 0.622417px solid #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.slider-button-next {
+  border: 0.622417px solid #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 79%;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.slider .slider-button-prev svg path {
+  fill: #000000;
+}
+
+.slider .slider-button-next svg path {
+  fill: #000000;
+}
+
+.button-next-slide {
+  position: absolute;
+  z-index: 1100;
+  top:85%;
+  left: 50%;
+}
+
+.button-prev-slide {
+  position: absolute;
+  z-index: 11;
+  top: 85%;
+  left: 40%;
+}
+
+.slider .slider-button-next:hover {
+  background: #d7b677;
+}
+
+.slider .slider-button-prev:hover {
+  background: #d7b677;
+}

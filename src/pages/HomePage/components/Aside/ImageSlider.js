@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BASE_URL } from "../../../../services";
-import arrow from "../../../../assets/img/arrow.svg";
-import arrow1 from "../../../../assets/img/arrows.svg";
 import Arrow from "../../../../assets/Arrow";
 
 const ImageSlider = ({ slides }) => {
