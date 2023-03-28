@@ -100,9 +100,9 @@ const Footer = () => {
             <h3 className="footer-name footer__names"> {t(`head4`)}</h3>
             <ul className="footer--list">
               <li className="footer-item">
-                <a href="tel:+998995595353" className="footer-link">
-                  +998995595353
-                </a>
+                <a href="tel:+998950000755" className="footer-link">
+                  +998950000755
+                  </a>
               </li>
               <li className="footer-item">
                 <a href="tel:+998712770707" className="footer-link">
